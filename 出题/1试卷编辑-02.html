@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>试卷预编辑</title><!--[if IE 6]>
+    <script src="../js/iePNG.js" type="text/javascript"></script>
+    <script type="text/javascript"> DD_belatedPNG.fix('.add-new-question,.add-new-column,.jn .container-exam .sidebar ul li a');</script>
+    <![endif]-->
+    <link href="../css/CSS-reset.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jquery-ui-1.8.17.custom.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jn-question.css" type="text/css" rel="styleSheet"><!--[if lte IE 7]>
+    <link href="../css/question/jn-question-ie.css" type="text/css" rel="styleSheet"><![endif]-->
+  </head>
+  <body class="jn body-grey">
+    <div class="exam-nav clearfix">
+      <ul class="left-nav">
+        <li><a href="#" class="selected">试卷编辑</a></li>
+        <li><a href="#">试卷设置</a></li>
+        <li><a href="#">竞赛信息填写</a></li>
+        <li><a href="#" class="last">&nbsp</a></li>
+      </ul>
+      <ul class="right-nav">
+        <li><a href="#" class="scan">预览</a></li>
+        <li><a href="#" class="publish">发布</a></li>
+        <li><a href="#" class="close">关闭</a></li>
+      </ul>
+    </div>
+    <div class="container-exam">
+      <div class="sidebar">
+        <ul>
+          <li class="cover hover"><a href="#">试卷封面</a></li>
+          <li class="category"><a href="#">试卷目录</a></li>
+          <!--试卷目录下面全部的题型与题目-->
+          <div class="paper-all">
+            <!--第一组题目的标题-->
+            <div class="paper-title"><a href="#" class="sub-nav-title">一、文学知识拓展训练</a>
+              <!--每一题-->
+            </div>
+            <ul class="child-list">
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+            </ul>
+          </div>
+          <li class="manage"><a href="#">试卷目录管理</a></li>
+        </ul>
+      </div>
+      <div class="container-paper">
+        <div class="container-paper-inner">
+          <div class="header">高中古文学知识测评试卷</div>
+          <!--每个问题的全部内容放到一个block中-->
+          <div class="question-title">一. <span class="core-title">文学知识拓展训练</span>（2分）
+            <div class="small-icon clearfix"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="share"></a></div>
+          </div>
+          <div class="question-review">
+            <!-- 每道题一个review-->
+            <div class="question-item-review">
+              <div class="tigan"><span class="tihao">01.</span> 当我们浪费粮食时，老爷爷经常用唐代李绅的诗句来教育我们：（ 单选<span class="red-value"> 2分 </span>）</div>
+              <ul class="question-list">
+                <li class="clearfix select-background">
+                  <div class="input-block">
+                    <input type="radio" id="radio1" name="danxuan">
+                  </div>
+                  <label for="radio1" class="red-value">A.春种一粒粟，秋收万颗子</label>
+                </li>
+                <li class="clearfix">
+                  <div class="input-block">
+                    <input type="radio" id="radio2" name="danxuan">
+                  </div>
+                  <label for="radio2">B.锄禾日当午，汗滴禾下土</label>
+                </li>
+                <li class="clearfix">
+                  <div class="input-block">
+                    <input type="radio" id="radio3" name="danxuan">
+                  </div>
+                  <label for="radio3">C.四海无闲田，农夫犹饿死</label>
+                </li>
+                <li class="clearfix">
+                  <div class="input-block">
+                    <input type="radio" id="radio4" name="danxuan">
+                  </div>
+                  <label for="radio4">D.谁知盘中餐，粒粒皆辛苦</label>
+                </li>
+              </ul>
+              <div class="zhishidian-show clearfix">
+                <div class="intro">知识点:</div>
+                <ul>
+                  <li>古诗词</li>
+                  <li>农夫</li>
+                  <li>语文</li>
+                </ul>
+              </div>
+              <div class="small-right-icon"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="share"></a><a href="#" class="add"></a></div>
+            </div>
+          </div>
+          <div class="function-menu">
+            <ul>
+              <li><a href="#" class="add-new-question"> 添加新题</a></li>
+              <li><a href="#">|</a></li>
+              <li><a href="#">批量导入</a></li>
+              <li><a href="#">|</a></li>
+              <li><a href="#">题库选择</a></li>
+              <li><a href="#" class="add-new-column">添加新栏目</a></li>
+            </ul>
+            <div class="total-value">
+              <div class="zongfen">总分值</div>
+              <div class="number">8/100</div>
+            </div>
+          </div>
+          <div class="tanchuang">
+            <div class="open-add-content">
+              <div class="open-header">
+                <div class="title"> 修改栏目名称</div><a href="#" class="close"></a>
+              </div>
+              <div class="open-content">
+                <div class="col-content clearfix">
+                  <div class="col-title">
+                    <div class="col-name">栏目：</div>
+                    <div class="input-block">
+                      <label for="col-name4"></label>
+                      <input type="text" id="col-name4" class="col-name input_item">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="open-button">
+                <div class="open-container clearfix"><a href="#" class="cancel">取 消</a><a href="#" class="save">保 存</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="tanchuang">
+            <div class="open-question-delete">
+              <div class="open-header">
+                <div class="title"> 提示</div><a href="#" class="close"></a>
+              </div>
+              <div class="open-content">
+                <div class="col-content clearfix">
+                  <div class="col-title">
+                    <div class="col-name">是否真的删除本题目</div>
+                  </div>
+                </div>
+              </div>
+              <div class="open-button">
+                <div class="open-container clearfix"><a href="#" class="cancel">取 消</a><a href="#" class="save">确 认</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="tanchuang">
+            <div class="open-delete-setting">
+              <div class="open-header">
+                <div class="title"> 删除设置</div><a href="#" class="close"></a>
+              </div>
+              <div class="open-content">
+                <div class="confirm-information">您是否要删除栏目一古诗词文集精选？</div>
+                <div class="item-list clearfix">
+                  <div class="input-block">
+                    <input type="radio" name="delete-col" id="delete-all">
+                  </div>
+                  <label for="delete-all">删除栏目及栏目下所有内容</label>
+                </div>
+                <div class="item-list clearfix">
+                  <div class="input-block">
+                    <input type="radio" name="delete-col" id="delete-col">
+                  </div>
+                  <label for="delete-col">只删除栏目</label>
+                </div>
+                <div class="move">试题批量移动至</div>
+                <select class="move-paper">
+                  <option value="guwen">栏目二 古文选集</option>
+                  <option value="xiaoshuo">栏目三 小说</option>
+                  <option value="sixiang">栏目四 思想与表达</option>
+                  <option value="hulianwang">栏目五 互联网文学冲击下的传统文学</option>
+                  <option value="yinyue">栏目六 音乐与先秦散文</option>
+                  <option value="dianshang">栏目七 电商时代</option>
+                  <option value="renminbi">栏目八 人民币</option>
+                </select>
+                <!--table.col-list
+                thead
+                	tr
+                		th 栏目二 古文选集
+                tbody
+                	tr
+                		td 栏目三 小说
+                	tr
+                		td 栏目四 思想与表达
+                	tr
+                		td 栏目五 互联网文学冲击下的传统文学
+                	tr
+                		td 栏目六 音乐与先秦散文
+                	tr
+                		td 栏目七 电商时代
+                	tr
+                		td 栏目八 人民币
+                -->
+              </div>
+              <div class="open-button">
+                <div class="open-container clearfix"><a href="#" class="cancel">取 消</a><a href="#" class="save">保 存</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script src="../js/jquery-tab.js"></script>
+    <script src="../js/jn.js"></script>
+    <script src="../js/placeholder.js"></script>
+    <script src="../js/pride.js"></script>
+  </body>
+</html>

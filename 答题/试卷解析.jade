@@ -1,0 +1,265 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title 答题页面
+		link(href="../css/CSS-reset.css" type="text/css" rel="styleSheet")
+		link(href="../css/question/jn-question.css" type="text/css" rel="styleSheet")
+		script(src="../js/jquery-1.8.2.min.js")
+	body.jn
+		include 菜单
+		.jiexi-outer-container
+			.jiexi-location 首页 > 百科知识 > 中国知识百科知识竞赛 > 详细解答
+			.jiexi-top-container
+				.header  中国知网知识百科竞赛<span class="subheader">（详细解答）<span>
+				.sub-title 试卷范围：百科知识类   考试时间：120min   本次得分：<span class="strong">90</span>分   历史最高得分：<span class="strong">98</span>分
+			.jiexi-question-tabs
+				.tabs-header.clearfix
+					ul.question-group.clearfix
+						li
+							a(href="#") 全部
+						li
+							a(href="#") 错题
+						li
+							a(href="#").select 一、选择题 <span class="value">(<span class="right-value">45</span>/50)</span>
+						li
+							a(href="#") 二
+						li
+							a(href="#") 三
+						li
+							a(href="#") 四
+					.tabs-header-right.clearfix
+						ul.icon.clearfix
+							li.clearfix
+								.right
+								.text 正确
+							li.clearfix
+								.wrong
+								.text 错误
+							li.clearfix
+								.unanswer
+								.text 未答
+						.add-tiku.clearfix
+							.input-block
+								input(type="checkbox")
+							label 错题全部加入题库
+				.tabs-body
+					ul.clearfix
+						li
+							a(href="#").right 1
+						li
+							a(href="#").wrong 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4
+						li
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4
+						li
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4
+						li
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4
+						li
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4
+						li
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4
+						li
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4
+						li
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4
+						li
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4
+						li
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4
+
+			.jiexi-question-container
+				.jiexi-question-lanmu 一、我是栏目名称
+				.jiexi-question-block
+					.right-sign
+					.add-tiku-button
+					.tigan <span class="tihao">01.</span> 当我们浪费粮食时，老爷爷经常用唐代李绅的诗句来教育我们：（ 单选<span class="bold-value"> 2分 </span>）
+
+					ul.question-list-answer
+						li.clearfix
+							.input-block.right-circle
+								input(type="radio" id="danxuan1" name="danxuan")
+							label(for="danxuan1").right-answer A.春种一粒粟，秋收万颗子
+						li.clearfix
+							.input-block
+								input(type="radio" id="danxuan2" name="danxuan")
+							label(for="danxuan2") B.锄禾日当午，汗滴禾下土
+						li.clearfix
+							.input-block
+								input(type="radio" id="danxuan3" name="danxuan")
+							label(for="danxuan3") C.四海无闲田，农夫犹饿死
+						li.clearfix
+							.input-block
+								input(type="radio" id="danxuan4" name="danxuan")
+							label(for="danxuan4") D.谁知盘中餐，粒粒皆辛苦
+					.answer-block
+						.answer-line 参考答案：<span class="right-color">B</span>
+						.answer-line 您的答案：<span class="right-color">A</span>
+						div.zhishidian-show.clearfix
+							div.intro 知识点:
+							ul.zhishidian-tab
+								li 古诗词
+								li 农夫
+								li 语文
+
+				.jiexi-question-block
+					.wrong-sign
+					.add-tiku-button
+					.tigan <span class="tihao">01.</span> 当我们浪费粮食时，老爷爷经常用唐代李绅的诗句来教育我们：（ 单选<span class="bold-value"> 2分 </span>）
+
+					ul.question-list-answer
+						li.clearfix
+							.input-block
+								input(type="radio" id="danxuan1" name="danxuan")
+							label(for="danxuan1").right-answer A.春种一粒粟，秋收万颗子
+						li.clearfix
+							.input-block.right-circle
+								input(type="radio" id="danxuan2" name="danxuan")
+							label(for="danxuan2") B.锄禾日当午，汗滴禾下土
+						li.clearfix
+							.input-block
+								input(type="radio" id="danxuan3" name="danxuan")
+							label(for="danxuan3") C.四海无闲田，农夫犹饿死
+						li.clearfix
+							.input-block
+								input(type="radio" id="danxuan4" name="danxuan")
+							label(for="danxuan4") D.谁知盘中餐，粒粒皆辛苦
+					.answer-block
+						.answer-line 参考答案：<span class="right-color">B</span>
+						.answer-line 您的答案：<span class="alert-color">A</span>
+						div.zhishidian-show.clearfix
+							div.intro 知识点:
+							ul.zhishidian-tab
+								li 古诗词
+								li 农夫
+								li 语文
+
+				.jiexi-question-block
+					.wrong-sign
+					.add-tiku-button
+					.tigan <span class="tihao">01.</span> 当我们浪费粮食时，老爷爷经常用唐代李绅的诗句来教育我们：（ 单选<span class="bold-value"> 2分 </span>）
+
+					ul.question-list-answer
+						li.clearfix
+							.input-block.right-circle
+								input(type="radio" id="danxuan1" name="danxuan")
+							label(for="danxuan1").right-answer A.春种一粒粟，秋收万颗子
+						li.clearfix
+							.input-block.right-circle
+								input(type="radio" id="danxuan2" name="danxuan")
+							label(for="danxuan2") B.锄禾日当午，汗滴禾下土
+						li.clearfix
+							.input-block.right-circle
+								input(type="radio" id="danxuan3" name="danxuan")
+							label(for="danxuan3") C.四海无闲田，农夫犹饿死
+						li.clearfix
+							.input-block
+								input(type="radio" id="danxuan4" name="danxuan")
+							label(for="danxuan4") D.谁知盘中餐，粒粒皆辛苦
+					.answer-block
+						.answer-line 参考答案：<span class="right-color">A</span><span class="right-color">B</span><span class="right-color">C</span>
+						.answer-line 您的答案：<span class="alert-color">A</span>
+						div.zhishidian-show.clearfix
+							div.intro 知识点:
+							ul.zhishidian-tab
+								li 古诗词
+								li 农夫
+								li 语文
+
+				.jiexi-question-block
+					.wrong-sign
+					.add-tiku-button
+					.tigan <span class="tihao">02.</span> 当小荷才露尖尖角，早有蜻蜓立上头。《________》 ______ 绝句  _______（朝代） _______（作者）的代表作。（ 填空<span class="red-value"> 2分 </span>）
+					.answer-block
+						.answer-line 参考答案：<span class="right-color">小池</span>  <span class="right-color">七言绝句</span>  <span class="right-color">南宋</span>  <span class="right-color">杨万里</span>
+						.answer-line 您的答案：<span class="answer-color">未作答</span>
+						div.zhishidian-show.clearfix
+							div.intro 知识点:
+							ul.zhishidian-tab
+								li 古诗词
+								li 农夫
+								li 语文
+				.jiexi-question-block
+					.wrong-sign
+					.add-tiku-button
+					.tigan <span class="tihao">02.</span> 墙角数枝梅，凌寒独自开。诗中的梅与兰 竹 菊被誉为花中四君子（ 判断<span class="red-value"> 2分 </span>）
+					.answer-block
+						.answer-line 参考答案：<span class="right-color">正确</span>
+						.answer-line 您的答案：<span class="alert-color">错误</span>
+						div.zhishidian-show.clearfix
+							div.intro 知识点:
+							ul.zhishidian-tab
+								li 古诗词
+								li 农夫
+								li 语文
+				.jiexi-question-block
+					.tigan <span class="tihao">02.</span> 王国维说：“红杏枝头春意闹”，著一“闹”字而境界全出。试品味杜甫《蜀相》中的“映阶碧草自春色，隔叶黄鹂空好音”这两句诗说说这一联中哪两个字眼跟境界的关系更为密切，并浅述为什么：( 简答题 <span class="red-value">10分</span>）
+					.answer-block
+						.answer-line 参考答案：<span class="right-color">“映”字让“碧草”化静为动，动静皆宜生机盎然“隔”字一来写出了黄鹂鸟的位置，又使全是生动活泼，有背景映衬而不显得单调空洞，动静皆宜生机盎然。</span>
+						.answer-line 您的答案：<span class="answer-color">“映”字让“碧草”化静为动，动静皆宜生机盎然“隔”字一来写出了黄鹂鸟的位置，又使全是生动活泼，有背景映衬而不显得单调空洞，动静皆宜生机盎然。</span>
+						div.zhishidian-show.clearfix
+							div.intro 知识点:
+							ul.zhishidian-tab
+								li 古诗词
+								li 农夫
+								li 语文
+
+

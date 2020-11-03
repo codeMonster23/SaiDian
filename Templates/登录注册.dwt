@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>无标题文档</title>
+<!-- TemplateEndEditable -->
+
+<link rel="stylesheet" type="text/css" href="../css/CSS-reset.css">
+<link rel="stylesheet" type="text/css" href="../css/organization-center/jn-style.css">
+<!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="login-page">
+<div class="jn">
+<div class="wrapper ">
+  <header class="login-person jn-clearfix">
+    <h1 class="login_logo">
+    </h1>
+    <div class="jn-menu jn-login-menu">
+        <ul class="jn-menu-list jn-menu-horizontal">
+            <li class="jn-menu-item"><a href="#" class="jn-menu-link">首页</a></li>
+            <li class="jn-menu-item"><a href="#" class="jn-menu-link">赛事</a></li>
+            <li class="jn-menu-item"><a href="#" class="jn-menu-link">分类</a></li>
+            <li class="jn-menu-item"><a href="#" class="jn-menu-link">题库</a></li>
+        </ul>
+    </div>
+    <div class="login-search" style="padding-left:145px;padding-top:25px;">
+ 
+       <form action="" class="jn-form">
+      
+       <input class="search-input" type="text" value="搜试卷" onfocus="if(value=='搜试卷') {value=''}" onblur="if (value=='') {value='搜试卷'}"  size="30" style="color:#e5e1e1;"><input class="jn-button search-button" type="button" value="搜 索">
+      
+        </form>
+        
+    </div>
+    <ul class="login-register-button">
+    	<li><a href="#" style="border-right:2px solid #9c9c9c;">登录</a></li>
+        <li><a href="#">注册</a></li>
+    </ul>
+  </header>
+</div>
+  <!-- TemplateBeginEditable name="section" -->
+
+  <!-- TemplateEndEditable -->
+  
+ <!-- <footer class="login-footer jn-clearfix">
+      <div class="footer-left">
+      数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司 <br/>
+      京ICP证040431号  互联网出版许可证 新出网证(京)字008号
+      </div>
+      <div class="footer-right">
+      在线发行：同方知网（北京）技术有限公司<br/>
+      北京市公安局海淀分局 备案号110 1081725
+      </div>
+  </footer>
+  -->
+</div>
+</body>
+</html>

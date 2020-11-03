@@ -1,0 +1,108 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title 试卷预编辑
+		<!--[if IE 6]>
+		<script src="../js/iePNG.js" type="text/javascript"></script>
+		<script type="text/javascript"> DD_belatedPNG.fix('.add-new-question,.add-new-column,.jn .container-exam .sidebar ul li a');</script>
+		<![endif]-->
+		link(href="../css/CSS-reset.css" type="text/css" rel="styleSheet")
+		link(href="../css/question/jn-question.css" type="text/css" rel="styleSheet")
+		link(href="../css/question/jquery.datetimepicker.css" type="text/css" rel="styleSheet")
+		<!--[if lte IE 7]>
+		link(href="../css/question/jn-question-ie.css" type="text/css" rel="styleSheet")
+		<![endif]-->
+
+	body.jn.body-grey
+		div.exam-nav.clearfix
+			ul.left-nav
+				li
+					a(href="#") 试卷编辑
+				li
+					a(href="#") 试卷设置
+				li
+					a(href="#").selected 竞赛信息填写
+				li
+					a(href="#").last &nbsp
+
+			ul.right-nav
+				li
+					a(href="#").scan 预览
+				li
+					a(href="#").publish 发布
+				li
+					a(href="#").close 关闭
+
+		div.container-exam
+
+			div.sidebar
+				ul
+					li.cover.jieshao.shouqi
+						a(href="#") 活动介绍
+					//试卷目录下面全部的题型与题目
+					div.paper-all.no-height
+						//第一组题目的标题
+						ul
+							li
+								a(href="#") 比赛介绍
+							li
+								a(href="#") 奖品设置
+							li
+								a(href="#").blue-hover 资质证明
+							li
+								a(href="#") 协办单位
+					li.cover.qingkuang.shouqi
+						a 比赛情况
+					div.paper-all.no-height
+						//第一组题目的标题
+						ul
+							li
+								a(href="#") 活动动态
+							li
+								a(href="#") 开放的统计排行
+					li.cover.gexingsheji
+						a(href="#") 个性模块设计
+					li.cover.jieshaosheji
+						a(href="#") 介绍页面设计
+			div.sidebar-right
+				div.scan 活动页面概览
+				ul
+					li
+						img(src="../images/question/jn-exam-information_06.jpg")
+					li
+						img(src="../images/question/jn-exam-information_06.jpg")
+				div.right-arrow.right-arrow-close
+
+			div.container-paper.container-has-right-cal
+				div.container-paper-inner.container-paper-inner1.container-paper-small
+					div.paper-assign-block.jiangpinshezhi
+						div.no-pride-line.clearfix
+							div.input-block
+								input(type="radio" name="jiangpin" id="wujiangpin")
+							label(for="wujiangpin") 无资质证明
+						div.has-pride-line.clearfix
+							div.input-block
+								input(type="radio" name="jiangpin" id="youjiangpin")
+							label(for="youjiangpin") 拥有资质证明
+						div.zishi-image-block
+							ul.clearfix
+								li
+									image(src="../imagestemp/organization-jn/jn-jingsai-upload-zhengshu.jpg")
+								li
+									image(src="../imagestemp/organization-jn/jn-jingsai-upload-zhengshu.jpg")
+								li.upload
+									a(href="#")
+										image(src="../images/question/jn-jingsai-upload-images.jpg")
+
+
+
+
+
+
+
+
+		script(src="../js/jquery-1.8.2.min.js")
+		script(src="../js/placeholder.js")
+		script(src="../js/pride.js")
+

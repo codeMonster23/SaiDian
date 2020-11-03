@@ -1,0 +1,25 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title 答题页面
+		link(href="../css/CSS-reset.css" type="text/css" rel="styleSheet")
+		link(href="../css/question/jn-question.css" type="text/css" rel="styleSheet")
+		script(src="../js/jquery-1.8.2.min.js")
+	body.jn.zuoti
+		include 菜单
+		.zuoti-container
+			.dati-block.clearfix
+				.dati-body.clearfix
+					.dati-body-head 中国海洋大学
+					.dati-body-subtitle.clearfix
+						.dati-subtitle-block 满分：<span class="dati-subtitle-value">100分</span>
+						.dati-subtitle-block 限时：<span class="dati-subtitle-value">60分钟</span>
+					.dati-body-info.clearfix
+						.dati-id.dati-xingming 姓名：
+						.dati-id-input
+							input(type="text")
+						.dati-id.dati-kaohao 考号：
+						.dati-id-input
+							input(type="text")
+					a.dati-exam-submit 开始考试

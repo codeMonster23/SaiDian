@@ -1,0 +1,53 @@
+/**
+ * Created by happyday on 2016/5/6.
+ */
+$(document).ready(function(){
+    $("#piliang-invite").click(function(){
+        $("#piliang1").show();
+    })
+    $(".popup .close").click(function(){
+        $(this).parent().hide();
+    })
+    $("#upload-excel").click(function(){
+        $("#piliang1").hide();
+        $("#piliang2").show();
+    })
+    $("#upload-again").click(function(){
+        $("#piliang2").hide();
+        $("#piliang1").show();
+    })
+    $("#group-invite").click(function(){
+        $("#piliang2").hide();
+        $("#piliang3").show();
+    })
+    $("#complete").click(function(){
+        $("#piliang3").hide();
+    })
+    $("#single-invite,.single-invite").click(function(){
+        $("#single1").show();
+
+
+    })
+    $("#single-cancel").click(function(){
+        $("#single1").hide();
+    })
+
+    $("#single-confirm").click(function(){
+        $("#single1").hide();
+        $("#single2").show();
+    })
+    $("#single2").click(function(){
+        $(this).hide();
+
+    })
+    $(".add-group").click(function(){
+        $("#add-group-window").show();
+    })
+    $(".alert-yanzheng").click(function(){
+        $("#alert-yanzheng-window").show();
+    })
+    $(".close-alert").click(function(){
+        $(this).parent().parent().parent().hide();
+    })
+
+})

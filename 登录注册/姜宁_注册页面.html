@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>个人用户注册</title>
+
+
+<link rel="stylesheet" type="text/css" href="../css/CSS-reset.css">
+<link rel="stylesheet" type="text/css" href="../css/organization-center/jn-style.css">
+<!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+<![endif]-->
+<script src="../js/jquery-1.8.2.min.js"></script>
+</head>
+
+<body class="person-rigister" style="text-align:center" >
+<div class="jn" style="text-align:left;">
+    <div class="person-register-wrapper">
+
+            <header>
+                <h1></h1>
+                <div class="login" ><span style="color:#dadada;">已注册过账号</span> <a href="#">直接登录&gt;&gt;</a></div>
+            </header>
+    <section class="person-login-main">
+            
+     <div class="person-login-box">
+        <ul class="login-title jn-clearfix">
+        	<li><a href="#" id="id0" onClick="showTab(0)" class="focus">个人用户注册</a></li>
+        	<li><a href="#" id="id1" onClick="showTab(1)" class="un-selected">企业用户注册</a></li>
+        </ul>
+      <!--个人-->
+      <div class="login-box-content" id="tab0" >
+       <!-- 给下面的class设置为login-right，右侧会出现绿色对勾，设为login-wrong，右侧会出现错误× -->
+
+        <div class="login-right">
+            <input class="user-name" type="text" value="用户名(6-40位英文字母、数字、下划线)" onfocus="if(value=='用户名(6-40位英文字母、数字、下划线)') {value='';style='border:1px solid #66b2e6;background-color:#f5fbfe'}" onblur="if (value=='') {value='用户名(6-40位英文字母、数字、下划线)';style='border:1px solid #dadada;background-color:#ffffff;color:#b5b5b5'}"  size="30" style="color:#b5b5b5;*font-size:14px;">
+      </div>
+      <!--把下面的login alert black 换成login-alert 下面会出现带叹号的红色错误提示。内容要写在div中 -->
+       <div class="login-alert-black">.</div>
+       
+        <div class="login-wrong">
+        <!--下面的class加上alert-border，会出现橙色提示边框 -->
+            <input class="password alert-border" type="text" value="密码名(6-20位英文字母、数字、下划线)" onfocus="if(value=='密码名(6-20位英文字母、数字、下划线)') {value='';style='border:1px solid #66b2e6;background-color:#f5fbfe'}" onblur="if (value=='') {value='密码名(6-20位英文字母、数字、下划线)';style='border:1px solid #dadada;background-color:#ffffff;color:#b5b5b5'}"  size="30" style="color:#b5b5b5;*font-size:14px;">
+           </div>
+      <div class="login-alert-black">.</div>
+
+          <input type="text" value="手机号(11位手机号码)" onfocus="if(value=='手机号(11位手机号码)') {value='';style='border:1px solid #66b2e6;background-color:#f5fbfe'}" onblur="if (value=='') {value='手机号(11位手机号码)';style='border:1px solid #dadada;background-color:#ffffff;color:#b5b5b5'}"  size="30" style="color:#b5b5b5;*font-size:14px;">
+         <div class="login-alert">手机号码不能为空！</div>
+        
+          <div class="yanzheng-group jn-clearfix">
+
+              <input class="yanzheng" type="text" value="验证码" onfocus="if(value=='验证码') {value='';style='border:1px solid #66b2e6;background-color:#f5fbfe'}" onblur="if (value=='') {value='验证码';style='border:1px solid #dadada;background-color:#ffffff;color:#b5b5b5'}"  size="30" style="color:#b5b5b5;*font-size:14px; ">
+         <!--如果下面的class是zdicifasong，那么是灰色状态，否则class应该是huoquyanzheng -->
+        <input class="huoquyanzheng" type="button" value="获取验证码" >
+         </div>
+          <div class="login-alert-black">.</div>
+        <div class="login-setting jn-clearfix">
+          <input type="checkbox"  class="read-agree">
+          <span class="tip">我已阅读并同意</span>
+          <span class="noid agree">《赛点相关条例》</span></div>
+        
+        <input type="button" value="立即注册" class="jn-button login-button">
+        
+        <div class="other-login">
+        <div class="hezuo jn-clearfix">使用合作网站账号登录</div>
+        <div class="other-three-login" style="width:130px; margin:0 auto;overflow:hidden;">
+        <a href="#"><img src="../images/organization-jn/jn-login-weibo.jpg" alt=""></a>
+        <a href="#"><img src="../images/organization-jn/jn-icon-weichat.jpg" alt=""></a>
+        <a href="#" style="margin-right:0;"><img src="../images/organization-jn/jn-icon-qq.jpg" alt=""></a>
+        </div>
+        </div>
+        </div>
+        <!--个人 end-->
+        <!--企业-->
+      <div class="login-box-content" id="tab1" style="display:none;">
+       <!-- 给下面的class设置为login-right，右侧会出现绿色对勾，设为login-wrong，右侧会出现错误× -->
+
+        <div class="login-wrong">
+        <input class="user-name" name="user-name" type="text" value="企业名(请输入真实的企业名称)" onfocus="if(value=='企业名(请输入真实的企业名称)') {value='';style='border:1px solid #66b2e6;background-color:#f5fbfe'}" onblur="if (value=='') {value='企业名(请输入真实的企业名称)';style='border:1px solid #dadada;background-color:#ffffff;color:#b5b5b5'}"  size="30" style="color:#b5b5b5;*font-size:14px;">
+      </div>
+       <div class="login-alert-black">.</div>
+        <div class="login-wrong">
+        <input class="user-name" type="text" value="用户名(6-40位英文字母、数字、下划线)" onfocus="if(value=='用户名(6-40位英文字母、数字、下划线)') {value='';style='border:1px solid #66b2e6;background-color:#f5fbfe'}" onblur="if (value=='') {value='用户名(6-40位英文字母、数字、下划线)';style='border:1px solid #dadada;background-color:#ffffff;color:#b5b5b5'}"  size="30" style="color:#b5b5b5;*font-size:14px;">
+      </div>
+       <div class="login-alert-black">.</div>
+        <div class="login-wrong">
+        <input class="password alert-border" type="text" value="密码名(6-20位英文字母、数字、下划线)" onfocus="if(value=='密码名(6-20位英文字母、数字、下划线)') {value='';style='border:1px solid #66b2e6;background-color:#f5fbfe'}" onblur="if (value=='') {value='密码名(6-20位英文字母、数字、下划线)';style='border:1px solid #dadada;background-color:#ffffff;color:#b5b5b5'}"  size="30" style="color:#b5b5b5;*font-size:14px;">
+           </div>
+      <div class="login-alert-black">.</div>
+        
+        <input type="text" value="手机号(11位手机号码)" onfocus="if(value=='手机号(11位手机号码)') {value='';style='border:1px solid #66b2e6;background-color:#f5fbfe'}" onblur="if (value=='') {value='手机号(11位手机号码)';style='border:1px solid #dadada;background-color:#ffffff;color:#b5b5b5'}"  size="30" style="color:#b5b5b5;*font-size:14px;">
+         <div class="login-alert-black">.</div>
+        
+          <div class="yanzheng-group jn-clearfix">
+       
+        <input class="yanzheng" type="text" value="验证码" onfocus="if(value=='验证码') {value='';style='border:1px solid #66b2e6;background-color:#f5fbfe'}" onblur="if (value=='') {value='验证码';style='border:1px solid #dadada;background-color:#ffffff;color:#b5b5b5'}"  size="30" style="color:#b5b5b5;*font-size:14px; ">
+        <!--如果下面的class是zdicifasong，那么是灰色状态，否则class应该是huoquyanzheng -->
+        <input class="zaicifasong" type="button" value="再次发送(56)" >
+         </div>
+          <div class="login-alert-black">.</div>
+        <div class="login-setting jn-clearfix">
+          <input type="checkbox" class="read-agree" >
+          <span class="tip">我已阅读并同意</span>
+          <span class="noid agree">《赛点相关条例》</span></div>
+        
+        <input type="button" value="立即注册" class="jn-button login-button">
+        
+        <div class="other-login">
+        <div class="hezuo jn-clearfix">使用合作网站账号登录</div>
+        <div class="other-three-login" style="width:130px; margin:0 auto;overflow:hidden;">
+        <a href="#"><img src="../images/organization-jn/jn-login-weibo.jpg" alt=""></a>
+        <a href="#"><img src="../images/organization-jn/jn-icon-weichat.jpg" alt=""></a>
+        <a href="#" style="margin-right:0;"><img src="../images/organization-jn/jn-icon-qq.jpg" alt=""></a>
+        </div>
+        </div>
+        </div>
+        <!--企业 end-->
+      </div>
+    </section>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+function showTab(num){
+for (i=0; i<2; i++)
+{
+document.getElementById("tab"+i).style.display="none";
+document.getElementById("id"+i).className="white";
+
+}
+document.getElementById("tab"+num).style.display="block";
+document.getElementById("id"+num).className="focus";
+}
+
+</script>
+
+</body>
+</html>

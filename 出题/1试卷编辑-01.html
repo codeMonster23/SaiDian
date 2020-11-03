@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>试卷预编辑</title><!--[if IE 6]>
+    <script src="../js/iePNG.js" type="text/javascript"></script>
+    <script type="text/javascript"> DD_belatedPNG.fix('.add-new-question,.add-new-column,.jn .container-exam .sidebar ul li a');</script>
+    <![endif]-->
+    <link href="../css/CSS-reset.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jquery-ui-1.8.17.custom.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jn-question.css" type="text/css" rel="styleSheet"><!--[if lte IE 7]>
+    <link href="../css/question/jn-question-ie.css" type="text/css" rel="styleSheet"><![endif]-->
+  </head>
+  <body class="jn body-grey">
+    <div class="exam-nav clearfix">
+      <ul class="left-nav">
+        <li><a href="#" class="selected">试卷编辑</a></li>
+        <li><a href="#">试卷设置</a></li>
+        <li><a href="#">竞赛信息填写</a></li>
+        <li><a href="#" class="last">&nbsp</a></li>
+      </ul>
+      <ul class="right-nav">
+        <li><a href="#" class="scan">预览</a></li>
+        <li><a href="#" class="publish">发布</a></li>
+        <li><a href="#" class="close">关闭</a></li>
+      </ul>
+    </div>
+    <div class="container-exam">
+      <div class="sidebar">
+        <ul>
+          <li class="cover hover"><a href="#">试卷封面</a></li>
+          <li class="category"><a href="#">试卷目录</a></li>
+          <!--试卷目录下面全部的题型与题目-->
+          <div class="paper-all">
+            <!--第一组题目的标题-->
+            <div class="paper-title"><a href="#" class="sub-nav-title">一、文学知识拓展训练</a>
+              <!--每一题-->
+            </div>
+            <ul class="child-list">
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+            </ul>
+          </div>
+          <li class="manage"><a href="#">试卷目录管理</a></li>
+        </ul>
+      </div>
+      <div class="container-paper">
+        <div class="container-paper-inner">
+          <div class="header">高中古文学知识测评试卷</div>
+          <!--每个问题的全部内容放到一个block中-->
+          <div class="question-title">一.<span class="core-title">文学知识拓展训练</span>（2分）
+            <div class="small-icon clearfix"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="share"></a></div>
+          </div>
+          <div class="question-block">
+            <div id="keydown" class="question-body clearfix">
+              <!--左侧的题干、知识点、提醒、答案部分-->
+              <div class="question-content">
+                <div class="tigan clearfix">
+                  <label>题干:</label>
+                  <div class="tigan-group">
+                    <div class="tigan-text">
+                      <label for="tigan">请在此输入题干信息</label>
+                      <textarea id="tigan" class="input_item"></textarea>
+                    </div>
+                    <div class="tigan-img">
+                      <div class="img-detail clearfix">
+                        <div class="img-block"><img src="../imagestemp/organization-jn/jn-exam-1.jpg"><a class="false"></a></div>
+                        <div class="img-block"><img src="../imagestemp/organization-jn/jn-exam-1.jpg"><a class="false"></a></div>
+                      </div>
+                      <div class="upload clearfix"><a class="photo-icon"></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="zhishidian clearfix">
+                  <label>知识点:</label>
+                  <div class="zhishidian-block">
+                    <label for="zhishidian">请以空格划分不同的知识点</label>
+                    <input type="text" id="zhishidian" class="input_item">
+                  </div>
+                </div>
+                <div id="tixing" class="tixing clearfix">
+                  <label>题型:</label>
+                  <ul class="clearfix">
+                    <li><a href="#tab1">单选</a></li>
+                    <li><a href="#tab2" class="selected">多选</a></li>
+                    <li><a href="#tab3">填空</a></li>
+                    <li><a href="#tab4">判断</a></li>
+                    <li><a href="#tab5">简答</a></li>
+                  </ul>
+                </div>
+                <div id="tab1" class="danxuan-block clearfix">
+                  <div class="xuanxiang">
+                    <label>选项:</label>
+                  </div>
+                  <ul>
+                    <li class="clearfix">
+                      <div class="small-block">
+                        <input type="radio" name="new-danxuan" class="radio">
+                      </div><span class="item">A</span>
+                      <input type="text" class="text"><a href="#" class="false"></a>
+                    </li>
+                    <li class="clearfix">
+                      <div class="small-block">
+                        <input type="radio" name="new-danxuan" class="radio">
+                      </div><span class="item">B</span>
+                      <input type="text" class="text"><a href="#" class="false"></a>
+                    </li>
+                    <li class="clearfix img-item">
+                      <div class="small-block">
+                        <input type="radio" name="new-danxuan" class="radio">
+                      </div><span class="item">C</span>
+                      <div class="img-block"><img src="../imagestemp/organization-jn/jn-exam-1.jpg"><a class="false"></a></div>
+                    </li>
+                    <li class="clearfix img-item">
+                      <div class="small-block">
+                        <input type="radio" name="new-danxuan" class="radio">
+                      </div><span class="item">D</span>
+                      <div class="img-block"><img src="../images/question/jn-question-uploading.jpg"><a class="false"></a></div>
+                    </li>
+                    <li class="other-function"><a href="#" class="danxuan-addtxt">+添加文字选项</a><a href="#" class="danxuan-addimg">+添加图片选项</a>
+                      <input type="radio" checked><span> 选中状态为正确选项</span>
+                    </li>
+                  </ul>
+                </div>
+                <div id="tab2" class="duoxuan-block clearfix">
+                  <div class="xuanxiang">
+                    <label>选项:</label>
+                  </div>
+                  <ul>
+                    <li class="clearfix">
+                      <div class="small-block">
+                        <input type="radio" class="radio">
+                      </div><span class="item">A</span>
+                      <input type="text" class="text"><a href="#" class="false"></a>
+                    </li>
+                    <li class="clearfix">
+                      <div class="small-block">
+                        <input type="radio" class="radio">
+                      </div><span class="item">B</span>
+                      <div class="question-block">
+                        <input type="text" id="question-info" class="text input_item">
+                        <label for="question-info">至少需要两个选项</label>
+                      </div><a href="#" class="false"></a>
+                    </li>
+                    <li class="clearfix">
+                      <div class="small-block">
+                        <input type="radio" class="radio">
+                      </div><span class="item">C</span>
+                      <input type="text" class="text"><a href="#" class="false"></a>
+                    </li>
+                    <li class="clearfix">
+                      <div class="small-block">
+                        <input type="radio" class="radio">
+                      </div><span class="item">D</span>
+                      <input type="text" class="text"><a href="#" class="false"></a>
+                    </li>
+                    <li class="other-function"><a href="#" class="danxuan-addtxt">+添加文字选项</a><a href="#" class="danxuan-addimg">+添加图片选项</a>
+                      <input type="radio" checked><span> 选中状态为正确选项</span>
+                    </li>
+                  </ul>
+                </div>
+                <div id="tab4" class="panduan-block clearfix">
+                  <div class="xuanxiang">
+                    <label>选项:</label>
+                  </div>
+                  <ul>
+                    <li class="clearfix">
+                      <div class="small-block">
+                        <input type="radio" name="true-false" value="true" class="radio">
+                      </div>
+                      <div class="question-block">
+                        <input type="text" id="right-item" class="text input_item">
+                        <label for="question-info">正确</label>
+                      </div><a href="#" class="false"></a>
+                    </li>
+                    <li class="clearfix">
+                      <div class="small-block">
+                        <input type="radio" name="true-false" value="false" class="radio">
+                      </div>
+                      <div class="question-block">
+                        <input type="text" id="wrong-item" class="text input_item">
+                        <label for="wrong-item">错误</label>
+                      </div><a href="#" class="false"></a>
+                    </li>
+                    <li class="other-function">
+                      <input type="radio" checked><span> 选中状态为正确选项</span>
+                    </li>
+                  </ul>
+                </div>
+                <div id="tab3" class="tiankong-block clearfix">
+                  <div class="xuanxiang">
+                    <label>答案:</label>
+                  </div>
+                  <ul>
+                    <li class="clearfix">
+                      <input type="text" class="text"><a href="#" class="false"></a>
+                    </li>
+                    <li class="other-function"><a href="#" class="danxuan-addtxt">+添加多个答案</a></li>
+                  </ul>
+                </div>
+                <div id="tab5" class="jianda-block clearfix">
+                  <div class="xuanxiang">
+                    <label>答案:</label>
+                  </div>
+                  <div class="tigan">
+                    <div class="tigan-group">
+                      <div id="jianda-info" class="tigan-text">
+                        <textarea id="jianda" class="input_item"></textarea>
+                        <label for="jianda">您可以在此输入参考答案，试卷公布答案时，此答案将作为参考公布给答题者。<br/>简答题答案需要人工判分，试卷发布后用户此题答案将发送至试卷管理页，请注意查收</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--浮动在右侧的分值选项-->
+              <div class="question-value">
+                <div class="info">添加分值</div>
+                <div id="plus-value" class="icon">+</div>
+                <div id="question-value-number" class="value">
+                  <input type="text" value="2分">
+                </div>
+                <div id="minus-value" class="icon">-</div>
+              </div>
+            </div>
+            <!--放置确定和取消按钮-->
+            <div class="submit-button clearfix"><a href="#" class="cancel">取消</a><a href="#" class="confirm">确定</a></div>
+          </div>
+          <div class="function-menu">
+            <ul>
+              <li><a href="#" class="add-new-question"> 添加新题</a></li>
+              <li><a href="#">|</a></li>
+              <li><a href="#">批量导入</a></li>
+              <li><a href="#">|</a></li>
+              <li><a href="#">题库选择</a></li>
+              <li><a href="#" class="add-new-column">添加新栏目</a></li>
+            </ul>
+            <div class="total-value">
+              <div class="zongfen">总分值</div>
+              <div class="number">8/100</div>
+            </div>
+          </div>
+          <div class="tanchuang">
+            <div class="open-add-content">
+              <div class="open-header">
+                <div class="title"> 修改栏目名称</div><a href="#" class="close"></a>
+              </div>
+              <div class="open-content">
+                <div class="col-content clearfix">
+                  <div class="col-title">
+                    <div class="col-name">栏目：</div>
+                    <div class="input-block">
+                      <label for="col-name4"></label>
+                      <input type="text" id="col-name4" class="col-name input_item">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="open-button">
+                <div class="open-container clearfix"><a href="#" class="cancel">取 消</a><a href="#" class="save">保 存</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="tanchuang">
+            <div class="open-question-delete">
+              <div class="open-header">
+                <div class="title"> 提示</div><a href="#" class="close"></a>
+              </div>
+              <div class="open-content">
+                <div class="col-content clearfix">
+                  <div class="col-title">
+                    <div class="col-name">是否真的删除本题目</div>
+                  </div>
+                </div>
+              </div>
+              <div class="open-button">
+                <div class="open-container clearfix"><a href="#" class="cancel">取 消</a><a href="#" class="save">确 认</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="tanchuang">
+            <div class="open-delete-setting">
+              <div class="open-header">
+                <div class="title"> 删除设置</div><a href="#" class="close"></a>
+              </div>
+              <div class="open-content">
+                <div class="confirm-information">您是否要删除栏目一古诗词文集精选？</div>
+                <div class="item-list clearfix">
+                  <div class="input-block">
+                    <input type="radio" name="delete-col" id="delete-all">
+                  </div>
+                  <label for="delete-all">删除栏目及栏目下所有内容</label>
+                </div>
+                <div class="item-list clearfix">
+                  <div class="input-block">
+                    <input type="radio" name="delete-col" id="delete-col">
+                  </div>
+                  <label for="delete-col">只删除栏目</label>
+                </div>
+                <div class="move">试题批量移动至</div>
+                <table class="col-list">
+                  <thead>
+                    <tr>
+                      <th>栏目二 古文选集</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>栏目三 小说</td>
+                    </tr>
+                    <tr>
+                      <td>栏目四 思想与表达</td>
+                    </tr>
+                    <tr>
+                      <td>栏目五 互联网文学冲击下的传统文学</td>
+                    </tr>
+                    <tr>
+                      <td>栏目六 音乐与先秦散文</td>
+                    </tr>
+                    <tr>
+                      <td>栏目七 电商时代</td>
+                    </tr>
+                    <tr>
+                      <td>栏目八 人民币</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="open-button">
+                <div class="open-container clearfix"><a href="#" class="cancel">取 消</a><a href="#" class="save">保 存</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script src="../js/jquery-tab.js"></script>
+    <script src="../js/jn.js"></script>
+    <script src="../js/placeholder.js"></script>
+    <script src="../js/pride.js"></script>
+  </body>
+</html>

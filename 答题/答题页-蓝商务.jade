@@ -1,0 +1,125 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title 答题页面
+		link(href="../css/CSS-reset.css" type="text/css" rel="styleSheet")
+		link(href="../css/question/jn-question.css" type="text/css" rel="styleSheet")
+		script(src="../js/jquery-1.8.2.min.js")
+	body.jn.zuoti
+		include 菜单
+		.zuoti-container
+			.zuoti-title 中国海洋大学百科知识竞赛
+			.zuoti-username 用户：晓梅 学号：88888888
+			.zuoti-block.clearfix
+				.zuoti-top.clearfix
+					.zuoti-time 59 : 59 ：00
+					.zuoti-scan-button
+						.zuoti-scan 预览试卷
+						.zuoti-submit 提交试卷
+				.zuoti-body.clearfix
+					.zuoti-sidebar.clearfix
+						.zuoti-sidebar-info.clearfix
+							.zuoti-info-block
+								.zuoti-number-block
+								.zuoti-number-content 未答
+							.zuoti-info-block
+								.zuoti-number-block.zuoti-number-block-yida
+								.zuoti-number-content 已答
+							.zuoti-info-block
+								.zuoti-number-block.zuoti-number-dangqian
+								.zuoti-number-content 当前
+							.zuoti-info-block
+								.zuoti-number-block.zuoti-number-biaoji
+								.zuoti-number-content 标记
+						.zuoti-sidebar-body
+							.zuoti-sidebar-section-title <span class="part">第一部分</span>(24题)
+							.zuoti-sidebar-section.clearfix
+								a(href="#").zuoti-number-block 1
+								a(href="#").zuoti-number-block.zuoti-number-block-yida 2
+								a(href="#").zuoti-number-block.zuoti-number-dangqian 3
+								a(href="#").zuoti-number-block.zuoti-number-biaoji 4
+								a(href="#").zuoti-number-block.zuoti-number-block-yida.zuoti-number-biaoji 5
+								a(href="#").zuoti-number-block.zuoti-number-dangqian.zuoti-number-biaoji 6
+								a(href="#").zuoti-number-block 7
+								a(href="#").zuoti-number-block 8
+								a(href="#").zuoti-number-block 9
+								a(href="#").zuoti-number-block 10
+								a(href="#").zuoti-number-block 11
+								a(href="#").zuoti-number-block 12
+								a(href="#").zuoti-number-block 13
+								a(href="#").zuoti-number-block 14
+								a(href="#").zuoti-number-block 15
+								a(href="#").zuoti-number-block 16
+								a(href="#").zuoti-number-block 17
+								a(href="#").zuoti-number-block 18
+								a(href="#").zuoti-number-block 19
+								a(href="#").zuoti-number-block 20
+								a(href="#").zuoti-number-block 21
+								a(href="#").zuoti-number-block 22
+								a(href="#").zuoti-number-block 23
+								a(href="#").zuoti-number-block 24
+							.zuoti-sidebar-section-title <span class="part">第二部分</span>(30题)
+							.zuoti-sidebar-section.clearfix
+								a(href="#").zuoti-number-block 25
+								a(href="#").zuoti-number-block 26
+								a(href="#").zuoti-number-block 27
+								a(href="#").zuoti-number-block 28
+								a(href="#").zuoti-number-block 29
+								a(href="#").zuoti-number-block 30
+								a(href="#").zuoti-number-block 31
+								a(href="#").zuoti-number-block 32
+								a(href="#").zuoti-number-block 33
+							.zuoti-sidebar-section-title <span class="part">第三部分</span>(30题)
+							.zuoti-sidebar-section.clearfix
+								a(href="#").zuoti-number-block 34
+								a(href="#").zuoti-number-block 35
+								a(href="#").zuoti-number-block 36
+								a(href="#").zuoti-number-block 37
+								a(href="#").zuoti-number-block 38
+								a(href="#").zuoti-number-block 39
+								a(href="#").zuoti-number-block 40
+								a(href="#").zuoti-number-block 41
+								a(href="#").zuoti-number-block 42
+							.zuoti-sidebar-section-title <span class="part">第四部分</span>(30题)
+							.zuoti-sidebar-section.clearfix
+								a(href="#").zuoti-number-block 43
+								a(href="#").zuoti-number-block 44
+								a(href="#").zuoti-number-block 45
+								a(href="#").zuoti-number-block 46
+								a(href="#").zuoti-number-block 47
+								a(href="#").zuoti-number-block 48
+								a(href="#").zuoti-number-block 49
+								a(href="#").zuoti-number-block 50
+								a(href="#").zuoti-number-block 51
+
+					.zuoti-main
+						.zuoti-main-top.clearfix
+							.zuoti-tixing 单选题<span class="value"> (2分)</span>
+							a(href="#").zuoti-addmark 添加标记
+						.zuoti-tigan 02. 关注中国历史上的改革和变法，下列说法正确的是：
+							.zuoti-dot-left
+							.zuoti-dot-right
+						.zuoti-answer
+							.zuoti-line.clearfix
+								.zuoti-input-block
+									input(type="radio" name="answer1" id="answer1-a")
+								label(for="answer1-a").zuoti-item A.秦穆公任用商鞅实行变法
+							.zuoti-line.clearfix
+								.zuoti-input-block
+									input(type="radio" name="answer1" id="answer1-b")
+								label(for="answer1-b").zuoti-item B.戊戌变法的目的是推行君主立宪制
+							.zuoti-line.clearfix
+								.zuoti-input-block
+									input(type="radio" name="answer1" id="answer1-c")
+								label(for="answer1-d").zuoti-item C.管仲主张通过改革实现齐国的国富民强
+							.zuoti-line.clearfix
+								.zuoti-input-block
+									input(type="radio" name="answer1" id="answer1-d")
+								label(for="answer1-d").zuoti-item D.王安石变法意在消除戎兵、戎官的危机
+						.zuoti-move-button.clearfix
+							a.zuoti-down-button.zuoti-last 上一题
+							a.zuoti-down-button.zuoti-next 下一题
+						.zuoti-corner
+				.zuoti-bottom
+		script(src="../js/placeholder.js")

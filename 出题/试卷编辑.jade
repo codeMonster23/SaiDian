@@ -1,0 +1,91 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title 试卷编辑
+		<!--[if IE 6]>
+		<script src="../js/iePNG.js" type="text/javascript"></script>
+		<script type="text/javascript"> DD_belatedPNG.fix('img,.jn .container-exam .sidebar ul li a');</script>
+		<![endif]-->
+		link(href="../css/CSS-reset.css" type="text/css" rel="styleSheet")
+		link(href="../css/question/jquery-ui-1.8.17.custom.css" type="text/css" rel="styleSheet")
+		link(href="../css/question/jn-question.css" type="text/css" rel="styleSheet")
+		<!--[if lte IE 7]>
+		link(href="../css/question/jn-question-ie.css" type="text/css" rel="styleSheet")
+		<![endif]-->
+
+	body.jn.body-grey
+		div.exam-nav.clearfix
+			ul.left-nav
+				li
+					a(href="#").selected 试卷编辑
+				li
+					a(href="#") 试卷设置
+				li
+					a(href="#") 竞赛信息填写
+				//最后一个2像素的li留空，使得上一个border右侧有凹槽效果
+				li
+					a(href="#").last &nbsp
+			ul.right-nav
+				li
+					a(href="#").scan 预览
+				li
+					a(href="#").publish 发布
+				li
+					a(href="#").close 关闭
+
+		div.container-exam
+			div.sidebar
+				ul
+					li.cover.hover
+						a(href="#") 试卷封面
+					li.category
+						a(href="#") 试卷目录
+					li.manage
+						a(href="#") 试卷目录管理
+
+			div.container-pre
+				div.container-pre-inner
+					div.banner
+						div.banner-inner
+							div.title.clearfix
+								div.title-inner.title-inner-single#text-place
+									//textarea
+									//div.show-text-double 好多汉字 好多汉字 好多汉字 好多汉字 好多汉字 好多汉字 好多汉字 好多汉字好多汉字 多汉字 好多汉字好多汉字多汉字 好多汉字好多汉字
+									div.show-text-single 请输入试卷名称
+									img#paper-name(src="../images/question/jn-question-pre-icon.png")
+
+					div.section
+						form
+							div.group.clearfix
+								label 考试类别
+								select(name="exam-type")
+									option(value="first-class") 一级分类
+									option(value="number2") 内容
+								select(name="exam-type")
+									option(value="second-class") 二级分类
+									option(value="number3") 内容
+							div.group.clearfix
+								label 试卷总分
+								select(name="grade")
+									option(value="100") 100分
+									option(value="90") 90分
+							div.group.clearfix
+								label 答卷时限
+								select(name="time")
+									option(value="60") 限时60分钟
+									option(value="50") 限时50分钟
+							div.group.clearfix
+								label
+									span.red-star *
+									span 试卷形态
+								input(type="checkbox" checked)
+								span.type-information  固定试卷
+
+							div.button.clearfix
+								a(href="#").editagain 继续试题编辑
+		script(src="../js/jquery-1.8.2.min.js")
+		script(src="../js/jquery-ui-1.8.17.custom.min.js")
+		script(src="../js/jquery-tab.js")
+		script(src="../js/pre-edit.js")
+		script(src="../js/pride.js")

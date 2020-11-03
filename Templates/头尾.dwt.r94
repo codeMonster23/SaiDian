@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>机构中心-竞赛及试卷-竞赛管理</title>
+<!-- TemplateEndEditable -->
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../css/organization-center/oc-topleft.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+<!--head-->
+<div class="top-ban"></div>
+<div class="oc-head">
+  <div class="oc-head-con">
+    <div class="left">
+      <div>
+        <a href="#" class="head-logo"></a>
+        <span>机构管理中心</span>
+        <div class="top-menu"><a href="#">赛点首页</a>&nbsp;&nbsp;<font>管理中心</font>&nbsp;&nbsp;<a href="#">公司首页</a></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="load-name">
+        <a href="#"><img src="../images/organization-cen/dl_pic.jpg" width="43" height="43" /></a>
+        <div class="load-text"><strong>潇hyhyhdfdfdfdfdfdyhjyj潇</strong>（admin）</div>
+      </div>
+      <div class="link-quit right"><a href="#">退出</a></div>
+    </div>
+  </div>
+</div>
+<!-- TemplateBeginEditable name="EditRegion3" -->EditRegion3<!-- TemplateEndEditable -->
+</body>
+</html>

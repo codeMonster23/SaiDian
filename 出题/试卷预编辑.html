@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>试卷预编辑</title><!--[if IE 6]>
+    <script src="../js/iePNG.js" type="text/javascript"></script>
+    <script type="text/javascript"> DD_belatedPNG.fix('img');</script>
+    <![endif]-->
+    <link href="../css/CSS-reset.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jn-question.css" type="text/css" rel="styleSheet">
+  </head>
+  <body class="jn">
+    <div class="container-pre">
+      <div class="header"> 创建试卷</div>
+      <div class="banner">
+        <div class="banner-inner">
+          <!--为了匹配不同长度的试卷名称，试卷名称后面的nbsp空格占位符要保留，产生于图片之间的空格-->
+          <div class="title clearfix">
+            <div class="title-inner">
+              <textarea></textarea>
+              <!--div.show-text-double 好多汉字 好多汉字 好多汉字 好多汉字 好多汉字 好多汉字 好多汉字 好多汉字好多汉字-->
+              <!--div.show-text-single 好多汉字 好多汉字 好多汉字 好多汉字--><img id="paper-name" src="../images/question/jn-question-pre-icon.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <form>
+          <div class="group clearfix">
+            <label>考试类别</label>
+            <select name="exam-type">
+              <option value="first-class">一级分类</option>
+              <option value="number2">内容</option>
+            </select>
+            <select name="exam-type">
+              <option value="second-class">二级分类</option>
+              <option value="number3">内容</option>
+            </select>
+          </div>
+          <div class="group clearfix">
+            <label>试卷总分</label>
+            <select name="grade">
+              <option value="100">100分</option>
+              <option value="90">90分</option>
+            </select>
+          </div>
+          <div class="group clearfix">
+            <label>答卷时限</label>
+            <select name="time">
+              <option value="60">限时60分钟</option>
+              <option value="50">限时50分钟</option>
+            </select>
+          </div>
+          <div class="group clearfix">
+            <label><span class="red-star">* </span>试卷形态</label>
+            <select name="paper-type">
+              <option value="fix">固定试卷</option>
+              <option value="flex">灵活试卷</option>
+            </select>
+          </div>
+          <div class="information">
+            <p>试卷形态一经创建不可修改。<a href="#">什么是试卷形态？</a></p>
+          </div>
+          <div class="button clearfix"><a href="#" class="create">创建试卷</a><a href="#" class="import">直接导入已有试卷</a></div>
+        </form>
+      </div>
+      <script src="../js/jquery-1.8.2.min.js"></script>
+      <script src="../js/jquery-tab.js"></script>
+      <script src="../js/pre-edit.js"></script>
+    </div>
+  </body>
+</html>

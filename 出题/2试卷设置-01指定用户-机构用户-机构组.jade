@@ -1,0 +1,382 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title 试卷预编辑
+
+		link(href="../css/CSS-reset.css" type="text/css" rel="styleSheet")
+		link(href="../css/question/jn-question.css" type="text/css" rel="styleSheet")
+
+		link(href="../css/question/jquery.datetimepicker.css" type="text/css" rel="styleSheet")
+		<!--[if lte IE 7]>
+		link(href="../css/question/jn-question-ie.css" type="text/css" rel="styleSheet")
+		<![endif]-->
+
+	body.jn.body-grey
+		div.exam-nav.clearfix
+			ul.left-nav
+				li
+					a(href="#") 试卷编辑
+				li
+					a(href="#").selected 试卷设置
+				li
+					a(href="#") 竞赛信息填写
+				li
+					a(href="#").last &nbsp
+
+			ul.right-nav
+				li
+					a(href="#").scan 预览
+				li
+					a(href="#").publish 发布
+				li
+					a(href="#").close 关闭
+
+		div.container-exam
+			div.sidebar
+				ul
+					li.xinxishezhi.shouqi
+						a(href="#") 试卷信息设置
+					//试卷目录下面全部的题型与题目
+					div.paper-all.no-scroll
+						//第一组题目的标题
+						div.paper-title
+						ul
+							li
+								a(href="#").blue-hover 试题分配
+							li
+								a(href="#") 答题次数限制
+							li
+								a(href="#") 答题对象限制
+							li
+								a(href="#") 用户信息收集
+							li
+								a(href="#") 答卷限制
+
+
+			div.container-paper.container-has-cal
+				div.container-paper-inner.container-paper-inner1
+					div.paper-assign-block
+						div.title.clearfix
+							h1 试题分配：
+							div.subtitle  动态实体怎么分配试题及分数？
+							div.more 注：每题分值为整数
+						div.main-content
+							div.total 试卷目标总分：100 分 已分配总分：100 分 已分配题数：67 道题
+							div.col-content-block
+								div.subtitle 一.<span class="bold">微观世界的大道理 </span>(单选题) 总题数: 50 题
+								div.detail-information 动态选题<input value="15" class="type-number"/>道 每题分值<input value="2" class="type-number"/>分 栏目总分数：<span class="number">30</span>分
+							div.col-content-block
+								div.subtitle 一.<span class="bold">栏目名称</span>(多选题) 总题数:50题
+								div.detail-information 动态选题<input value="50" class="type-number"/>道 每题分值<input value="1" class="type-number"/>分 栏目总分数：<span class="number">50</span>分
+							div.col-content-block
+								div.subtitle 一.<span class="bold">栏目名称</span>(简答题) 总题数:50题
+								div.detail-information 动态选题<input value="2" class="type-number"/>道 每题分值<input value="10" class="type-number"/>分 栏目总分数：<span class="number">20</span>分
+					div.paper-assign-block
+						div.title
+							h1 试卷介绍：
+							div.subtitle 所有用户都可以看到您的试卷介绍信息
+						div.main-content.clearfix
+							.input-block-paper-intro
+								textarea(id="paper-intro")
+								label(for="paper-intro") 请介绍下您的试卷，最多500字！
+							.button-line-paper-intro.clearfix
+								.paper-intro-text-num 还可以输入500字！
+								a.paper-intro-submit 确认
+
+					div.paper-assign-block
+						div.title
+							h1 试卷介绍：
+							div.subtitle 所有用户都可以看到您的试卷介绍信息
+						div.main-content.clearfix
+							.input-block-paper-intro
+								textarea(id="paper-intro")
+								label(for="paper-intro") 请介绍下您的试卷，最多500字！
+							.button-line-paper-intro.clearfix
+								.paper-intro-text-num 还可以输入500字！
+								a.paper-intro-submitedit 确认
+
+
+
+					div.paper-assign-block
+						div.title
+							h1 试卷介绍：
+							div.subtitle 所有用户都可以看到您的试卷介绍信息
+						div.main-content.clearfix
+							.input-block-paper-intro
+								.input-block-paper-intro-content 内容内容试卷内容
+							.button-line-paper-intro.clearfix
+								a.paper-intro-edit 编辑
+					div.paper-assign-block
+						div.title
+							h1 答卷次数限制：
+							div.subtitle 用户可以多次答题吗？
+						div.main-content
+							div.input-line.clearfix.selected-input
+								div.input-block
+									input(type="radio" name="times" id="one-person-once")
+								label(for="one-person-once").selected-item 一人一次
+							div.input-line
+								div.input-block
+									input(type="radio" name="times" id="one-person-many")
+								label(for="one-person-many") 一人多次
+								span.more-information （保留单个用户的最高分及答题次数）
+					div.paper-assign-block
+						div.title
+							h1 答卷对象限制：
+							div.subtitle 谁可以作答我的试卷？
+						div.main-content
+							div.input-line
+								div.input-block
+									input(type="radio" name="object" id="open-public")
+								label(for="open-public") 完全公开
+
+							div.input-line.clearfix
+								div.input-block
+									input(type="radio" name="object" id="set-pwd")
+								label(for="set-pwd") 设置答题密码
+
+							div.input-block-password.clearfix
+								label(for="pwd") 请输入6位答题密码
+								input(type="text" id="pwd").input_item
+
+							div.input-line.clearfix.autoheight
+								div.input-block
+									input(type="radio" name="object")#select-user
+								label(for="select-user") 指定用户可答
+
+								div.select-button-group#tabs
+									a(href="#tab1").selected 选择机构用户
+									a(href="#tab2") 选择机构群组
+							div#tab-group
+								div.select-my-friend#tab1
+									div.select-block
+										div.input-keywords
+											label(for="keywords") 请输入关键词
+											input(type="text" id="keywords").input_item
+											a(href="#").input-search-icon
+										div.information-line 全部好友 相关结果2个 相关结果0个
+										div.company-block.clearfix
+											table.company-user
+												thead
+													tr.header-line
+														th 序号
+														th 姓名
+														th 手机号
+														th 工号
+														th 一级部门
+														th 二级部门
+														th 职位
+												tbody
+													tr
+														td
+															.input-block
+																input(type="checkbox")
+																label 01
+														td 苏杨
+														td 1365523789
+														td DM48050
+														td 大众知识分公司
+														td 技术研发部
+														td 员工
+													tr
+														td
+															.input-block
+																input(type="checkbox")
+																label 02
+														td 孙夏洛
+														td 1365523789
+														td DM48050
+														td 大众知识分公司
+														td 技术研发部
+														td 员工
+													tr
+														td
+															.input-block
+																input(type="checkbox")
+																label 03
+														td 杜皮影
+														td 1365523789
+														td DM48050
+														td 大众知识分公司
+														td 技术研发部
+														td 员工
+													tr
+														td
+															.input-block
+																input(type="checkbox")
+																label 04
+														td 白阿狸
+														td 1365523789
+														td DM48050
+														td 大众知识分公司
+														td 技术研发部
+														td 员工
+													tr
+														td
+															.input-block
+																input(type="checkbox")
+																label 05
+														td 公孙茉莉
+														td 1365523789
+														td DM48050
+														td 大众知识分公司
+														td 技术研发部
+														td 员工
+										div.confirm-close 确认收起
+									div.yixuanze-info 已选择
+									div.user-line.clearfix
+										div.title-name 用户(10):
+										div.user-tags.clearfix
+											a.select-tag Admine1
+											a.select-tag 张思敏
+											a.select-tag 张益达
+											a.select-tag 曾小贤
+									div.user-line.clearfix
+										div.title-name 群组 (2):
+										div.user-tags.clearfix
+											a.select-tag 科技博览会1群
+											a.select-tag 科技博览会2群
+								div.select-my-group#tab2
+									div.select-block
+										div.input-keywords
+											label(for="keywords2") 请输入关键词
+											input(type="text" id="keywords2").input_item
+											a(href="#").input-search-icon
+										div.information-line 全部好友 相关结果2个 相关结果0个
+										div.company-block.clearfix
+											table.company-user
+												thead
+													tr.header-line
+														th 序号
+														th 组名
+														th 人数
+														th 组员
+												tbody
+													tr
+														td
+															.input-block
+																input(type="checkbox")
+																label 01
+														td 大众服务公司产品部
+														td 70
+														td 黄菜花、丁香花、曾小贤、张益达、杜皮影、李答
+													tr
+														td
+															.input-block
+																input(type="checkbox")
+																label 02
+														td 赛点设计小组
+														td 120
+														td 黄菜花、丁香花、曾小贤、张益达、杜皮影、李答
+													tr
+														td
+															.input-block
+																input(type="checkbox")
+																label 03
+														td 科技博览会1群
+														td 59
+														td 黄菜花、丁香花、曾小贤、张益达、杜皮影、李答
+													tr
+														td
+															.input-block
+																input(type="checkbox")
+																label 04
+														td 山西分公司科技博览
+														td 132
+														td 黄菜花、丁香花、曾小贤、张益达、杜皮影、李答
+													tr
+														td
+															.input-block
+																input(type="checkbox")
+																label 05
+														td 我们都是好样的
+														td 21
+														td 黄菜花、丁香花、曾小贤、张益达、杜皮影、李答
+										div.confirm-close 确认收起
+									div.yixuanze-info 已选择
+									div.user-line.clearfix
+										div.title-name 用户(10):
+										div.user-tags.clearfix
+											a.select-tag Admine
+											a.select-tag 张思敏
+											a.select-tag 张益达
+											a.select-tag 曾小贤
+											a.select-tag Admine
+											a.select-tag 张思敏
+											a.select-tag 张益达
+											a.select-tag 曾小贤
+											a.select-tag Admine
+											a.select-tag 张思敏
+											a.select-tag 张益达
+											a.select-tag 曾小贤
+									div.user-line.clearfix
+										div.title-name 群组 (2):
+										div.user-tags.clearfix
+											a.select-tag 科技博览会1群
+											a.select-tag 科技博览会2群
+
+
+							div.input-line
+								div.input-block
+									input(type="radio" name="object")#jiaoyan
+								label(for="jiaoyan") 校验用户信息
+								span.more-information （用户必须填写跟上传的一致的内容才可答题）
+							div.jiaoyan-block
+								div.jiaoyan-user-line.first-line
+									span 1) 上传校验信息
+									a(href="#").upload-again 点击上传
+									span.more-information （上传信息须符合信息模板；点击<span class="download">下载校验信息模板</span>）
+								div.jiaoyan-user-line
+									span 2) 选择检验项目
+					div.paper-assign-block
+						div.title
+							h1 用户信息收集：
+							div.subtitle 您可以要求答题者填写一些信息，而这些信息不进行校验。
+						div.main-content
+							div.tab 姓名
+							div.tab 生日
+							div.tab.cancel 省份
+							div.tab 市区
+							div.tab 职业
+							div.tab 单位
+							div.tab 年龄
+							div.tab.user 自定义标签
+
+
+
+					div.paper-assign-block
+						div.title
+							h1 答卷设置：
+							div.subtitle 答题者什么时候可以看到答案及结果？
+						div.main-content
+							div.input-line
+								div.input-block
+									input(type="radio" name="paper-setting" id="hide-answer")
+								label(for="hide-answer") 不公布答案
+							div.input-line
+								div.input-block
+									input(type="radio" name="paper-setting" id="show-answer")
+								label(for="show-answer") 答完题后立即公布答案
+							div.input-line
+								div.input-block
+									input(type="radio" name="paper-setting" id="finish-show-answer")
+								label(for="finish-show-answer") 竞赛活动结束后，立即公布答案
+
+
+							div.set-time.clearfix#tab-time
+								div.input-block
+									label(for="set-time") 请设置具体时间
+									input(type="text" id="set-time" ).input_item_focus
+								div.time-button#time-button
+									img(src="../images/question/jn-examedit-cal.jpg")
+
+
+
+		script(src="../js/jquery-1.8.2.min.js")
+		script(src="../js/jquery-tab.js")
+		script(src="../js/jquery.datetimepicker.full.min.js")
+		script(src="../js/placeholder.js")
+		script(src="../js/paper-assign.js")
+		script(src="../js/date.js")
+

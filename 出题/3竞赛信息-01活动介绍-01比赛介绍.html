@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>试卷预编辑</title><!--[if IE 6]>
+    <script src="../js/iePNG.js" type="text/javascript"></script>
+    <script type="text/javascript"> DD_belatedPNG.fix('.add-new-question,.add-new-column,.jn .container-exam .sidebar ul li a');</script>
+    <![endif]-->
+    <link href="../css/CSS-reset.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jn-question.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jquery.datetimepicker.css" type="text/css" rel="styleSheet"><!--[if lte IE 7]>
+    <link href="../css/question/jn-question-ie.css" type="text/css" rel="styleSheet"><![endif]-->
+  </head>
+  <body class="jn body-grey">
+    <div class="exam-nav clearfix">
+      <ul class="left-nav">
+        <li><a href="#">试卷编辑</a></li>
+        <li><a href="#">试卷设置</a></li>
+        <li><a href="#" class="selected">竞赛信息填写</a></li>
+        <li><a href="#" class="last">&nbsp</a></li>
+      </ul>
+      <ul class="right-nav">
+        <li><a href="#" class="scan">预览</a></li>
+        <li><a href="#" class="publish">发布</a></li>
+        <li><a href="#" class="close">关闭</a></li>
+      </ul>
+    </div>
+    <div class="container-exam">
+      <div class="sidebar">
+        <ul>
+          <li class="cover jieshao shouqi"><a href="#">活动介绍</a></li>
+          <!--试卷目录下面全部的题型与题目-->
+          <div class="paper-all no-height">
+            <!--第一组题目的标题-->
+            <ul>
+              <li class="blue-hover-list"><a href="#" class="blue-hover">比赛介绍</a></li>
+              <li><a href="#">奖品设置</a></li>
+              <li><a href="#">资质证明</a></li>
+              <li><a href="#">协办单位</a></li>
+            </ul>
+          </div>
+          <li class="cover qingkuang shouqi"><a>比赛情况</a></li>
+          <div class="paper-all no-height">
+            <!--第一组题目的标题-->
+            <ul>
+              <li><a href="#">活动动态</a></li>
+              <li><a href="#">开放的统计排行</a></li>
+            </ul>
+          </div>
+          <li class="cover gexingsheji"><a href="#">个性模块设计</a></li>
+          <li class="cover jieshaosheji"><a href="#">介绍页面设计</a></li>
+        </ul>
+      </div>
+      <div class="container-paper container-has-right-cal">
+        <div class="container-paper-inner container-paper-inner1 container-paper-small">
+          <div class="paper-assign-block">
+            <div class="title title2 clearfix">
+              <h1>竞赛基本信息</h1>
+            </div>
+            <div class="main-content">
+              <div class="jingsai-information-line2 clearfix">
+                <div class="title-name">竞赛时间</div>
+                <div class="input-block">
+                  <label for="begin-time">起始时间</label>
+                  <input type="text" id="begin-time" class="input_item_focus">
+                </div>
+                <div class="line">___</div>
+                <div class="input-block">
+                  <label for="close-time">截止时间</label>
+                  <input type="text" id="close-time" class="input_item_focus">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="paper-assign-block">
+            <div class="title title2">
+              <h1>竞赛活动介绍</h1>
+            </div>
+            <div class="main-content main-content-no-margin"><img src="../images/question/jn-exam-information_07.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-right">
+        <div class="scan">活动页面概览</div>
+        <ul>
+          <li><img src="../images/question/jn-exam-information_06.jpg"></li>
+          <li><img src="../images/question/jn-exam-information_06.jpg"></li>
+        </ul>
+        <div class="right-arrow right-arrow-close"></div>
+      </div>
+    </div>
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-tab.js"></script>
+    <script src="../js/jquery.datetimepicker.full.min.js"></script>
+    <script src="../js/placeholder.js"></script>
+    <script src="../js/date.js"></script>
+    <script src="../js/pride.js"></script>
+  </body>
+</html>

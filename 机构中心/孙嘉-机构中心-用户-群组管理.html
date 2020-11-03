@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/头部底部和左侧.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>机构中心-竞赛及试卷-竞赛管理</title>
+<!-- InstanceEndEditable -->
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/organization-center/oc-topleft.css" rel="stylesheet" type="text/css" />
+<link href="../css/organization-center/zhangfang-oc-popup.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.8.2.min.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<link href="../css/organization-center/oc-right.css" rel="stylesheet" type="text/css" />
+
+<!-- InstanceEndEditable -->
+</head>
+
+
+<body>
+ <!-- InstanceBeginEditable name="emptydiv" -->
+     <!--顶部编辑部分-->
+  <!-- InstanceEndEditable -->
+<!--head-->
+<div class="top-ban"></div>
+<div class="oc-head">
+  <div class="oc-head-con">
+    <div class="left">
+      <div>
+        <a href="#" class="head-logo"></a>
+        <span>机构管理中心</span>
+        <div class="top-menu"><a href="#">赛点首页</a>&nbsp;&nbsp;<font>管理中心</font>&nbsp;&nbsp;<a href="#">公司首页</a></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="load-name">
+        <a href="#"><img src="../imagestemp/organization-cen/dl_pic.jpg" width="43" height="43" /></a>
+        <div class="load-text"><strong>潇hyhyhdfdfdfdfdfdyhjyj潇</strong>（Admin）</div>
+      </div>
+      <div class="link-quit right"><a href="#">退出</a></div>
+    </div>
+  </div>
+</div>
+
+<!--main-->
+<div class="oc-main">
+  <!--main左侧-->
+  <div class="left main-l">
+    <!--竞赛及试卷-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon01.png" width="20" height="20" /></i>竞赛及试卷</dt>
+      <dd class="menu-item selected"><a href="#">竞赛管理</a> </dd>
+      <dd class="menu-item"><a href="#">全部试卷</a></dd>
+      <dd class="menu-item"><a href="#">统计数据</a></dd>
+    </dl>
+    <!--题库-->
+    <dl class="l-menu">
+      <dt class="menu-tit clickable"><a href="#"><i class="menu-icon"><img src="../images/organization-cen/left-icon02.png" width="20" height="20" /></i>题库</a></dt>
+    </dl>
+    <!--用户-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon03.png" width="20" height="20" /></i>用户</dt>
+      <dd class="menu-item"><a href="#">群组管理</a> </dd>
+      <dd class="menu-item"><a href="#">用户申请</a></dd>
+      <dd class="menu-item"><a href="#">权限分配</a></dd>
+    </dl>
+    <!--设置-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon04.png" width="20" height="20" /></i>设置</dt>
+      <dd class="menu-item"><a href="#">基本信息</a> </dd>
+      <dd class="menu-item"><a href="#">密码修改</a></dd>
+    </dl>
+    <!--消息-->
+    <dl class="l-menu">
+      <dt class="menu-tit clickable"><a href="#"><i class="menu-icon"><img src="../images/organization-cen/left-icon05.png" width="20" height="20" /></i>消息</a></dt>
+    </dl> 
+  </div>
+  <!--main右侧-->
+  <div class="right main-r">
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+     <!--右侧可编辑部分-->
+     <div class="sj">
+     <div class="r-topban bottom-bian clearfix"><span class="left">群组管理</span><div class="r-search right"> 
+        <!--搜索框-->
+        <div class="search-box right">
+          <form id="keydown">
+            <div class="info positionR"><span class="hint positionA">搜索群组</span><input class="left" type="text" id="name" value=""><label for="name"><a href="#" class="seachbtn"></a></label></div>
+           <script>
+					//点击变色
+						$(".info").click(function(){
+								$(this).addClass("infoclick")
+								$(this).children("label").addClass("labelclick")
+								$(this).children("input").focus()
+								})
+					   $(".info input").blur(function(){
+								$(this).parent(".info").removeClass("infoclick")
+								$(this).siblings("label").removeClass("labelclick")})
+					//文本框值变化			
+					 $("#keydown .info input").each(function(){
+						  var thisVal=$(this).val();
+    						 //判断文本框的值是否为空，有值的情况就隐藏提示语，没有值就显示
+							 if(thisVal!=""){
+							   $(this).siblings("span").hide();
+							  }else{
+							   $(this).siblings("span").show();
+							  }
+							  $(this).keydown(function(){
+							   var val=$(this).val();
+							   $(this).siblings("span").hide();
+							  }).blur(function(){
+								var val=$(this).val();
+								if(val!=""){
+								 $(this).siblings("span").hide();
+								}else{
+								 $(this).siblings("span").show();
+								}})})
+                    </script>
+          </form> 
+        </div>
+      </div></div>  
+     <div class="r-mid minheight01 left">
+        <div class="qz-text">
+          <span>全部邀请用户</span>
+          <p> • 您可以在这里创建多个群组，邀请您机构下的员工、学生加入到您的群组中。</p>
+          <p> • 创建群组后，竞赛及试卷答题时，选择某群组，则该群组内所有人获得答题权。</p>
+          <p> • 通过上传excel进行批量邀请，我们将对您上传的所有手机号用户进行邀请。</p></div>
+        <div class="qz-con clearfix">
+          <div class="qz-box qz-bian">
+            <div class="qz-box-ban">批量邀请（推荐）</div>
+            <div class="qz-box-tab clearfix">
+              <span class="p-text">1.下载批量邀请模版<br />
+2.上传修改后的excel表格（姓名、手机号必填）<br />
+3.系统发出邀请（未注册用户无法收到）<br />
+4.用户收到邀请，回复真实姓名进行符合。<br />
+5.加入成功，可对用户随意分组。
+</span>
+              <a href="#" class="qz-btn" id="piliang-invite">点击邀请</a>
+            </div>
+          </div>
+          <div class="qz-box">
+            <div class="qz-box-ban">单独邀请（推荐）</div>
+            <div class="qz-box-tab">
+              <span class="p-text">1.填写单个用户信息<br />
+2.系统发出邀请（未注册用户无法收到）<br />
+4.用户收到邀请，回复真实姓名进行符合。<br />
+5.加入成功，可对用户随意分组。<br />
+
+</span>
+              <a href="#" class="qz-btn" id="single-invite">点击邀请</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     <div class="r-list right">
+
+        <div class="list-item">
+          <ul>
+            <li><a href="#">全部邀请用户<font>（45）</font></a></li>
+              <li><a href="#" class="add-new-zu " id="new-zu"> 添加新分组</a>
+                  <div class="new-zu-input"><span ><input name='2' type='text' class='jh-fenzu' id='fenzu' /></span><span class="clearfix"><a href='#' class='jh-btn-qd'>确定</a><a href='#' class='jh-btn-qx'>取消</a></span></div>
+              </li>
+          </ul>
+        </div>
+      </div>
+     </div> 
+  <!-- InstanceEndEditable -->
+  </div>
+</div>
+ <!--popup1-->
+ <div class="zhangfang">
+     <div class="popup popup-pl"  id="piliang1">
+         <a href="javascript:void(0)" class="close"></a>
+         <div class="top">批量邀请</div>
+         <div class="cont">
+             <div class="upload-wrap">
+                 <a href="javascript:void(0)" class="box" id="upload-excel"><span>点击上传excel表格</span></a>
+             </div>
+             <div class="rule">
+                 <p>1.请先下载我们的批量邀请模板；<a href="#">员工模板</a><a href="#">学生模板</a></p>
+                 <p>2.请按照我们的模板进行内容填写，其中<span>姓名及手机号必须填写</span>；</p>
+                 <p>3.上传您的表格。成功后，您所有导入的手机号用户将收到“中国知网”员工认证邀请。</p>
+             </div>
+         </div>
+         <div class="btn-wrap"><a href="#" class="yq btn1">批量发出邀请</a></div>
+     </div>
+     <div class="popup popup-pl"  id="piliang2">
+         <a href="javascript:void(0)" class="close"></a>
+         <div class="top">批量邀请</div>
+         <div class="cont">
+             <div class="upload-wrap">
+                 <div class="info clearfix">
+                     <img class="left" src="../images/organization-cen/popup-icon1-excel.gif" width="105" height="124" />
+                     <div class="info-text left">
+                         <p class="name">2015年新员工记录20150806更新.xlm</p>
+                         <p class="count">成功导入：<span>168</span>项</p>
+                         <a href="#" class="reupload" id="upload-again">重新上传</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="rule">
+                 <p>1.请先下载我们的批量邀请模板；<a href="#">员工模板</a></p>
+                 <p>2.请按照我们的模板进行内容填写，其中<span>姓名及手机号必须填写</span>；</p>
+                 <p>3.上传您的表格。成功后，您所有导入的手机号用户将收到“中国知网”员工认证邀请。</p>
+             </div>
+         </div>
+         <div class="btn-wrap"><a href="#" class="yq btn2" id="group-invite">批量发出邀请</a></div>
+     </div>
+     <div class="popup popup-pl" id="piliang3">
+         <a href="javascript:void(0)" class="close"></a>
+         <div class="top">批量邀请</div>
+         <div class="cont">
+             <div class="success">
+                 <div class="text">
+                     <h1>邀请发送完成</h1>
+                     <p>成功发送邀请：<span>2人</span>&nbsp;&nbsp;&nbsp;失败：<span>158人</span></p>
+                 </div>
+             </div>
+             <p class="fail">失败原因：其他用户还未注册，请过段事件再次邀请。</p>
+         </div>
+         <div class="btn-wrap"><a href="#" class="finish btn2" id="complete">完 成</a></div>
+     </div>
+     <div class="popup popup-single" id="single1">
+         <a href="javascript:void(0)" class="close"></a>
+         <div class="top">单个用户邀请</div>
+         <div class="cont">
+             <div class="single">
+                 <h1>请填写用户基本信息，以方便您的组管理</h1>
+                 <div class="info-box">
+                     <div class="datum">
+                         <div class="item clearfix">
+                             <label><span>*</span>姓名：</label>
+                             <div class="input-box"><input type="text" value="" /></div>
+                         </div>
+                         <div class="item clearfix">
+                             <label><span>*</span>手机号：</label>
+                             <div class="input-box"><input type="text" value="" /></div>
+                         </div>
+                         <div class="item clearfix">
+                             <label>工号：</label>
+                             <div class="input-box"><input type="text" value="" /></div>
+                         </div>
+                         <div class="item clearfix">
+                             <label>一级部门：</label>
+                             <div class="input-box"><input type="text" value="" /></div>
+                         </div>
+                         <div class="item clearfix">
+                             <label>二级部门：</label>
+                             <div class="input-box"><input type="text" value="" /></div>
+                         </div>
+                         <div class="item clearfix">
+                             <label>职位：</label>
+                             <div class="input-box"><input type="text" value="" /></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="btn-wrap">
+             <div class="btn-box">
+                 <a href="javascript:void(0)" class="btn3" id="single-cancel">取 消</a>
+                 <a href="javascript:void(0)" class="btn4" id="single-confirm">确认邀请</a>
+             </div>
+         </div>
+     </div>
+     <div class="smallpop" id="single2">
+         <p>邀请发送成功！</p>
+     </div>
+ </div>
+ <script src="../js/jigou.js"></script>
+</body>
+<!-- InstanceEnd --></html>

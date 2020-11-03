@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>机构中心-竞赛及试卷-竞赛管理</title>
+<!-- TemplateEndEditable -->
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/organization-center/oc-topleft.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.8.2.min.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<link href="../css/organization-center/oc-right.css" rel="stylesheet" type="text/css" />
+<!-- TemplateEndEditable -->
+</head>
+
+
+<body>
+ <!-- TemplateBeginEditable name="emptydiv" -->
+     <!--顶部编辑部分-->
+  <!-- TemplateEndEditable -->
+<!--head-->
+<div class="top-ban"></div>
+<div class="oc-head">
+  <div class="oc-head-con">
+    <div class="left">
+      <div>
+        <a href="#" class="head-logo"></a>
+        <span>机构管理中心</span>
+        <div class="top-menu"><a href="#">赛点首页</a>&nbsp;&nbsp;<font>管理中心</font>&nbsp;&nbsp;<a href="#">公司首页</a></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="load-name">
+        <a href="#"><img src="../imagestemp/organization-cen/dl_pic.jpg" width="43" height="43" /></a>
+        <div class="load-text"><strong>潇hyhyhdfdfdfdfdfdyhjyj潇</strong>（Admin）</div>
+      </div>
+      <div class="link-quit right"><a href="#">退出</a></div>
+    </div>
+  </div>
+</div>
+
+<!--main-->
+<div class="oc-main">
+  <!--main左侧-->
+  <div class="left main-l">
+    <!--竞赛及试卷-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon01.png" width="20" height="20" /></i>竞赛及试卷</dt>
+      <dd class="menu-item selected"><a href="#">竞赛管理</a> </dd>
+      <dd class="menu-item"><a href="#">全部试卷</a></dd>
+      <dd class="menu-item"><a href="#">统计数据</a></dd>
+    </dl>
+    <!--题库-->
+    <dl class="l-menu">
+      <dt class="menu-tit clickable"><a href="#"><i class="menu-icon"><img src="../images/organization-cen/left-icon02.png" width="20" height="20" /></i>题库</a></dt>
+    </dl>
+    <!--用户-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon03.png" width="20" height="20" /></i>用户</dt>
+      <dd class="menu-item"><a href="#">群组管理</a> </dd>
+      <dd class="menu-item"><a href="#">用户申请</a></dd>
+      <dd class="menu-item"><a href="#">权限分配</a></dd>
+    </dl>
+    <!--设置-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon04.png" width="20" height="20" /></i>设置</dt>
+      <dd class="menu-item"><a href="#">基本信息</a> </dd>
+      <dd class="menu-item"><a href="#">密码修改</a></dd>
+    </dl>
+    <!--消息-->
+    <dl class="l-menu">
+      <dt class="menu-tit clickable"><a href="#"><i class="menu-icon"><img src="../images/organization-cen/left-icon05.png" width="20" height="20" /></i>消息</a></dt>
+    </dl> 
+  </div>
+  <!--main右侧-->
+  <div class="right main-r">
+  <!-- TemplateBeginEditable name="EditRegion3" -->
+     <!--右侧可编辑部分-->
+  <!-- TemplateEndEditable -->
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/头部底部和左侧.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>机构中心-竞赛及试卷-竞赛管理</title>
+<!-- InstanceEndEditable -->
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/organization-center/oc-topleft.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.8.2.min.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<link href="../css/organization-center/oc-right.css" rel="stylesheet" type="text/css" />
+<link href="../css/organization-center/jn-style.css" type="text/css" rel="stylesheet"/>
+<!-- InstanceEndEditable -->
+</head>
+
+
+<body>
+ <!-- InstanceBeginEditable name="emptydiv" -->
+     <!--顶部编辑部分-->
+  <!-- InstanceEndEditable -->
+<!--head-->
+<div class="top-ban"></div>
+<div class="oc-head">
+  <div class="oc-head-con">
+    <div class="left">
+      <div>
+        <a href="#" class="head-logo"></a>
+        <span>机构管理中心</span>
+        <div class="top-menu"><a href="#">赛点首页</a>&nbsp;&nbsp;<font>管理中心</font>&nbsp;&nbsp;<a href="#">公司首页</a></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="load-name">
+        <a href="#"><img src="../imagestemp/organization-cen/dl_pic.jpg" width="43" height="43" /></a>
+        <div class="load-text"><strong>潇hyhyhdfdfdfdfdfdyhjyj潇</strong>（Admin）</div>
+      </div>
+      <div class="link-quit right"><a href="#">退出</a></div>
+    </div>
+  </div>
+</div>
+
+<!--main-->
+<div class="oc-main">
+  <!--main左侧-->
+  <div class="left main-l">
+    <!--竞赛及试卷-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon01.png" width="20" height="20" /></i>竞赛及试卷</dt>
+      <dd class="menu-item selected"><a href="#">竞赛管理</a> </dd>
+      <dd class="menu-item"><a href="#">全部试卷</a></dd>
+      <dd class="menu-item"><a href="#">统计数据</a></dd>
+    </dl>
+    <!--题库-->
+    <dl class="l-menu">
+      <dt class="menu-tit clickable"><a href="#"><i class="menu-icon"><img src="../images/organization-cen/left-icon02.png" width="20" height="20" /></i>题库</a></dt>
+    </dl>
+    <!--用户-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon03.png" width="20" height="20" /></i>用户</dt>
+      <dd class="menu-item"><a href="#">群组管理</a> </dd>
+      <dd class="menu-item"><a href="#">用户申请</a></dd>
+      <dd class="menu-item"><a href="#">权限分配</a></dd>
+    </dl>
+    <!--设置-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon04.png" width="20" height="20" /></i>设置</dt>
+      <dd class="menu-item"><a href="#">基本信息</a> </dd>
+      <dd class="menu-item"><a href="#">密码修改</a></dd>
+    </dl>
+    <!--消息-->
+    <dl class="l-menu">
+      <dt class="menu-tit clickable"><a href="#"><i class="menu-icon"><img src="../images/organization-cen/left-icon05.png" width="20" height="20" /></i>消息</a></dt>
+    </dl> 
+  </div>
+  <!--main右侧-->
+  <div class="right main-r">
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+     <!--右侧可编辑部分-->
+     <div class="sj jn">
+       <div class="r-topban bottom-bian"><span class="left">群组管理</span>
+         <div class="r-search right"> 
+        <!--搜索框-->
+        <div class="search-box right">
+          <form id="keydown">
+            <div class="info positionR"><span class="hint positionA">请输入关键词</span><input class="left" type="text" id="name" value="" /><label for="name"><a href="#" class="seachbtn"></a></label></div>
+           <script>
+					//点击变色
+						$(".info").click(function(){
+								$(this).addClass("infoclick")
+								$(this).children("label").addClass("labelclick")
+								$(this).children("input").focus()
+								})
+					   $(".info input").blur(function(){
+								$(this).parent(".info").removeClass("infoclick")
+								$(this).siblings("label").removeClass("labelclick")})
+					//文本框值变化			
+					 $("#keydown .info input").each(function(){
+						  var thisVal=$(this).val();
+    						 //判断文本框的值是否为空，有值的情况就隐藏提示语，没有值就显示
+							 if(thisVal!=""){
+							   $(this).siblings("span").hide();
+							  }else{
+							   $(this).siblings("span").show();
+							  }
+							  $(this).keydown(function(){
+							   var val=$(this).val();
+							   $(this).siblings("span").hide();
+							  }).blur(function(){
+								var val=$(this).val();
+								if(val!=""){
+								 $(this).siblings("span").hide();
+								}else{
+								 $(this).siblings("span").show();
+								}})})
+                    </script>
+          </form> 
+        </div>
+      </div></div>
+       <div class="clearfix">
+       <div class="r-mid left minheight01">
+          <div class="mid-ban02">
+            <div class="l-tit left">研发总部</div>
+            <div class="r-link right">
+              <div class="left"><a href="#" class="helpbox02">用户邀请</a></div>
+              <div><a href="#" class="btn-bluebg">批量邀请</a><a href="#" class="btn-bluebg">单独邀请</a></div>
+            </div>
+          </div>     
+          <div class="qz-czban">
+            <div class="left qz-ban-l">
+              <span><input name="01" type="checkbox" value="" onclick="allChecked('quanxuan','user-check')" class="qx-input quanxuan" />全选</span>
+              <span><input name="02" type="checkbox" value="" onclick="allChecked('selectWeiTongGuo','weiTongGuo')" class="qx-input selectWeiTongGuo" />未通过</span>
+              <span><input name="03" type="checkbox" value="" onclick="allChecked('selectYiTongGuo','yiTongGuo')" class="qx-input selectYiTongGuo"  />已通过</span>
+              <span><a href="#" class="btn-huibg">批量删除</a><a href="#" class="btn-huibg">批量邀请</a><a href="#" class="btn-huibg">批量移动</a></span>
+            </div>
+            <div class="right"><a href="#" class="r-orange">批量操作表格</a></div>
+          </div>
+          <!--table-->
+        <div class="inner">
+         <div class="r-con">
+          <table class="user-apply">
+        <tr>
+        	<th>序号</th>
+        	<th>姓名</th>
+        	<th>手机号</th>
+        	<th>工号</th>
+        	<th>一级部门</th>
+        	<th>二级部门</th>
+        	<th>职位</th>
+        	<th>申请时间</th>
+        	<th>状态</th>
+        	<th>操作</th>
+        </tr>
+        <tr>
+        	<td><input name="user" class="user-check weiTongGuo" type="checkbox"> 01</td>
+        	<td>苏杨</td>
+        	<td>13666666666</td>
+        	<td>DM408050</td>
+        	<td>大众知识分公司</td>
+        	<td>技术研发部</td>
+        	<td>员工</td>
+        	<td>2015-12-12 20:02</td>
+        	<td><span class="wait-confirm">已拒绝</span></td>
+        	<td><img src="../images/organization-jn/send.gif" width="18" height="18" /> <img src="../images/organization-jn/edit.gif" width="18" height="18" /> 
+            <img src="../images/organization-jn/delete.gif" width="18" height="18" /></td>
+        </tr>
+        <tr>
+        	<td><input name="user" class="user-check weiTongGuo" type="checkbox"> 02</td>
+        	<td>孙夏洛</td>
+        	<td>13666666666</td>
+        	<td>DM408050</td>
+        	<td>大众知识分公司</td>
+        	<td>技术研发部</td>
+        	<td>总经理</td>
+        	<td>2015-12-12 20:02</td>
+        	<td><span class="wait-confirm">已拒绝</span></td>
+        	<td><img src="../images/organization-jn/send.gif" width="18" height="18" /> <img src="../images/organization-jn/edit.gif" width="18" height="18" /> 
+            <img src="../images/organization-jn/delete.gif" width="18" height="18" /></td>
+        </tr>
+        <tr>
+        	<td><input name="user" class="user-check yiTongGuo" type="checkbox"> 03</td>
+        	<td>杜皮影</td>
+        	<td>13666666666</td>
+        	<td>DM408050</td>
+        	<td>大众知识分公司</td>
+        	<td>技术研发部</td>
+        	<td>员工</td>
+        	<td>2015-12-12 20:02</td>
+        	<td><span class="pass">已通过</span></td>
+        	<td><img src="../images/organization-jn/undo.gif" width="18" height="18" /> <img src="../images/organization-jn/edit.gif" width="18" height="18" /> <img src="../images/organization-jn/delete.gif" width="18" height="18" /></td>
+        </tr>
+        <tr>
+        	<td><input name="user" class="user-check yiTongGuo" type="checkbox"> 04</td>
+        	<td>公孙</td>
+        	<td>13666666666</td>
+        	<td>DM408050</td>
+        	<td>大众知识分公司</td>
+        	<td>技术研发部</td>
+        	<td>员工</td>
+        	<td>2015-12-12 20:02</td>
+        	<td><span class="pass">已通过</span></td>
+        	<td><img src="../images/organization-jn/undo.gif" width="18" height="18" /> <img src="../images/organization-jn/edit.gif" width="18" height="18" /> <img src="../images/organization-jn/delete.gif" width="18" height="18" /></td>
+        </tr>
+        <tr>
+        	<td><input class="user-check" name="user" type="checkbox"> 05</td>
+        	<td>上官</td>
+        	<td>13666666666</td>
+        	<td>DM408050</td>
+        	<td>大众知识分公司</td>
+        	<td>技术研发部</td>
+        	<td>员工</td>
+        	<td>2015-12-12 20:02</td>
+        	<td><span class="reject">未注册</span></td>
+        	<td><img src="../images/organization-jn/send-false.gif" width="18" height="18" /> <img src="../images/organization-jn/edit.gif" width="18" height="18" /> <img src="../images/organization-jn/delete.gif" width="18" height="18" /></td>
+        </tr>
+        </table>
+      </div>
+      </div>
+          <!--table end-->
+       </div>
+       <div class="r-list right">
+
+        <div class="list-item">
+          <ul>
+            <li><a href="#">全部邀请用户</a></li>
+            <li><a href="#">2016年新员工</a></li>
+            <li class="choosed">研发总部</li>
+            <li><a href="#">2015年新员工</a></li>
+              <li><a href="#" class="add-new-zu " id="new-zu"> 添加新分组</a>
+                  <div class="new-zu-input"><span ><input name='2' type='text' class='jh-fenzu' id='fenzu' /></span><span class="clearfix"><a href='#' class='jh-btn-qd'>确定</a><a href='#' class='jh-btn-qx'>取消</a></span></div>
+              </li>
+          </ul>
+        </div>
+      </div>
+       </div>
+     </div>
+    <script src="../js/jn.js">
+    
+    </script>
+  <!-- InstanceEndEditable -->
+  </div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

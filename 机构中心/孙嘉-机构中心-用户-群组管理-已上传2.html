@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/头部底部和左侧.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>机构中心-竞赛及试卷-竞赛管理</title>
+<!-- InstanceEndEditable -->
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/organization-center/oc-topleft.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.8.2.min.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<link href="../css/organization-center/oc-right.css" rel="stylesheet" type="text/css" />
+<link href="../css/organization-center/jn-style.css" type="text/css" rel="stylesheet"/>
+<link href="../css/organization-center/zhangfang-oc-popup.css" rel="stylesheet" type="text/css" />
+
+<!-- InstanceEndEditable -->
+</head>
+
+
+<body>
+ <!-- InstanceBeginEditable name="emptydiv" -->
+     <!--顶部编辑部分-->
+  <!-- InstanceEndEditable -->
+<!--head-->
+<div class="top-ban"></div>
+<div class="oc-head">
+  <div class="oc-head-con">
+    <div class="left">
+      <div>
+        <a href="#" class="head-logo"></a>
+        <span>机构管理中心</span>
+        <div class="top-menu"><a href="#">赛点首页</a>&nbsp;&nbsp;<font>管理中心</font>&nbsp;&nbsp;<a href="#">公司首页</a></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="load-name">
+        <a href="#"><img src="../imagestemp/organization-cen/dl_pic.jpg" width="43" height="43" /></a>
+        <div class="load-text"><strong>潇hyhyhdfdfdfdfdfdyhjyj潇</strong>（Admin）</div>
+      </div>
+      <div class="link-quit right"><a href="#">退出</a></div>
+    </div>
+  </div>
+</div>
+
+<!--main-->
+<div class="oc-main">
+  <!--main左侧-->
+  <div class="left main-l">
+    <!--竞赛及试卷-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon01.png" width="20" height="20" /></i>竞赛及试卷</dt>
+      <dd class="menu-item selected"><a href="#">竞赛管理</a> </dd>
+      <dd class="menu-item"><a href="#">全部试卷</a></dd>
+      <dd class="menu-item"><a href="#">统计数据</a></dd>
+    </dl>
+    <!--题库-->
+    <dl class="l-menu">
+      <dt class="menu-tit clickable"><a href="#"><i class="menu-icon"><img src="../images/organization-cen/left-icon02.png" width="20" height="20" /></i>题库</a></dt>
+    </dl>
+    <!--用户-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon03.png" width="20" height="20" /></i>用户</dt>
+      <dd class="menu-item"><a href="#">群组管理</a> </dd>
+      <dd class="menu-item"><a href="#">用户申请</a></dd>
+      <dd class="menu-item"><a href="#">权限分配</a></dd>
+    </dl>
+    <!--设置-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon04.png" width="20" height="20" /></i>设置</dt>
+      <dd class="menu-item"><a href="#">基本信息</a> </dd>
+      <dd class="menu-item"><a href="#">密码修改</a></dd>
+    </dl>
+    <!--消息-->
+    <dl class="l-menu">
+      <dt class="menu-tit clickable"><a href="#"><i class="menu-icon"><img src="../images/organization-cen/left-icon05.png" width="20" height="20" /></i>消息</a></dt>
+    </dl> 
+  </div>
+  <!--main右侧-->
+  <div class="right main-r">
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+     <!--右侧可编辑部分-->
+     <div class="sj jn">
+       <div class="r-topban bottom-bian"><span class="left">群组管理</span>
+         <div class="r-search right"> 
+        <!--搜索框-->
+        <div class="search-box right">
+          <form id="keydown">
+            <div class="info positionR"><span class="hint positionA">请输入关键词</span><input class="left" type="text" id="name" value="" /><label for="name"><a href="#" class="seachbtn"></a></label></div>
+           <script>
+					//点击变色
+						$(".info").click(function(){
+								$(this).addClass("infoclick")
+								$(this).children("label").addClass("labelclick")
+								$(this).children("input").focus()
+								})
+					   $(".info input").blur(function(){
+								$(this).parent(".info").removeClass("infoclick")
+								$(this).siblings("label").removeClass("labelclick")})
+					//文本框值变化			
+					 $("#keydown .info input").each(function(){
+						  var thisVal=$(this).val();
+    						 //判断文本框的值是否为空，有值的情况就隐藏提示语，没有值就显示
+							 if(thisVal!=""){
+							   $(this).siblings("span").hide();
+							  }else{
+							   $(this).siblings("span").show();
+							  }
+							  $(this).keydown(function(){
+							   var val=$(this).val();
+							   $(this).siblings("span").hide();
+							  }).blur(function(){
+								var val=$(this).val();
+								if(val!=""){
+								 $(this).siblings("span").hide();
+								}else{
+								 $(this).siblings("span").show();
+								}})})
+                    </script>
+          </form> 
+        </div>
+      </div></div>
+       <div class="clearfix">
+       <div class="r-mid left minheight01">
+          <div class="mid-ban02 clearfix">
+            <div class="l-tit left">研发总部</div>
+            <div class="r-link right">
+              <div class="left"><a href="#" class="helpbox02">用户邀请</a></div>
+              <div><a href="#" class="btn-bluebg" id="piliang-invite">批量邀请</a><a href="#" class="btn-bluebg" id="single-invite">单独邀请</a></div>
+            </div>
+          </div>     
+          <div class="qz-czban">
+            <div class="left qz-ban-l">
+              <span><input name="01" type="checkbox" value=""  onclick="allChecked('quanxuan','user-check')" class="qx-input quanxuan" />全选</span>
+              <span><input name="02" type="checkbox" value="" onclick="allChecked('selectWeiTongGuo','weiTongGuo')" class="qx-input selectWeiTongGuo" />未通过</span>
+              <span><input name="03"  type="checkbox" value="" onclick="allChecked('selectYiTongGuo','yiTongGuo')" class="qx-input selectYiTongGuo" />已通过</span>
+              <span><a href="#" class="btn-huibg">批量删除</a><a href="#" class="btn-huibg">批量邀请</a><a href="#" class="btn-huibg">批量移动</a></span>
+            </div>
+            <div class="right"><a href="#" class="r-orange">批量操作表格</a></div>
+          </div>
+          <!--table-->
+          <div class="inner">
+         <div class="r-con">
+          <table class="user-apply-group">
+
+        <tr>
+        	<td rowspan="2" class="check-col"><input class="user-check weiTongGuo" name="user" type="checkbox"></td>
+        	<td>苏杨</td>
+        	<td>13666666666</td>
+        	<td>DM408050</td>
+        	<td>大众知识分公司</td>
+        	<td>技术研发部</td>
+        	<td>员工</td>
+
+        	<td><span class="wait-confirm">待验证</span></td>
+
+        </tr>
+          <tr class="group">
+
+              <td colspan="6"><span class="tab-group">我是一个组</span><span class="tab-group">我是一个组</span><a class="add-new-group"></a></td>
+              <td><img src="../images/organization-jn/send.gif" width="18" height="18" /> <img src="../images/organization-jn/edit.gif" width="18" height="18" />
+                  <img src="../images/organization-jn/delete.gif" width="18" height="18" /></td>
+          </tr>
+        <tr>
+        	<td  rowspan="2" class="check-col"><input class="user-check" name="user" type="checkbox"> </td>
+        	<td>孙夏洛</td>
+        	<td>13666666666</td>
+        	<td>DM408050</td>
+        	<td>大众知识分公司</td>
+        	<td>技术研发部</td>
+        	<td>总经理</td>
+
+        	<td><span class="wait-confirm">已拒绝</span></td>
+
+        </tr>
+              <tr class="group">
+
+                  <td colspan="6"><span class="un-group">未分组1</span><a class="add-new-group"></a></td>
+                  <td><img src="../images/organization-jn/send.gif" width="18" height="18" /> <img src="../images/organization-jn/edit.gif" width="18" height="18" />
+                      <img src="../images/organization-jn/delete.gif" width="18" height="18" /></td>
+              </tr>
+        <tr>
+        	<td rowspan="2" class="check-col"><input class="user-check yiTongGuo" name="user" type="checkbox"></td>
+        	<td>杜皮影</td>
+        	<td>13666666666</td>
+        	<td>DM408050</td>
+        	<td>大众知识分公司</td>
+        	<td>技术研发部</td>
+        	<td>员工</td>
+
+        	<td><span class="yirenzheng">已认证</span></td>
+        </tr>
+              <tr class="group">
+
+                  <td colspan="6"><span class="tab-group">我是一个组</span><span class="tab-group">我是一个组</span><a class="add-new-group"></a></td>
+                  <td> <img src="../images/organization-jn/edit.gif" width="18" height="18" /> <img src="../images/organization-jn/delete.gif" width="18" height="18" /></td>
+
+              </tr>
+        <tr>
+        	<td rowspan="2" class="check-col"><input class="user-check  yiTongGuo" name="user" type="checkbox"></td>
+        	<td>公孙</td>
+        	<td>13666666666</td>
+        	<td>DM408050</td>
+        	<td>大众知识分公司</td>
+        	<td>技术研发部</td>
+        	<td>员工</td>
+
+        	<td><span class="wait-confirm">未认证</span></td>
+        </tr>
+              <tr class="group">
+
+                  <td colspan="6"><span class="tab-group">我是一个组</span><span class="tab-group">我是一个组</span><a class="add-new-group"></a></td>
+                  <td> <img src="../images/organization-jn/send.gif" width="18" height="18" /> <img src="../images/organization-jn/edit.gif" width="18" height="18" /> <img src="../images/organization-jn/delete.gif" width="18" height="18" /></td>
+
+              </tr>
+        <tr>
+        	<td rowspan="2" class="check-col"><input class="user-check" name="user" type="checkbox"></td>
+        	<td>上官</td>
+        	<td>13666666666</td>
+        	<td>DM408050</td>
+        	<td>大众知识分公司</td>
+        	<td>技术研发部</td>
+        	<td>员工</td>
+
+        	<td><span class="reject">未注册</span></td>
+        </tr>
+              <tr class="group">
+
+                  <td colspan="6"><span class="tab-group">我是一个组</span><span class="tab-group">我是一个组</span><a class="add-new-group"></a></td>
+                  <td><img src="../images/organization-jn/send-false.gif" width="18" height="18" /> <img src="../images/organization-jn/edit.gif" width="18" height="18" /> <img src="../images/organization-jn/delete.gif" width="18" height="18" /></td>
+
+              </tr>
+        </table>
+      </div>
+      </div>
+          <!--table end-->
+       </div>
+       <div class="r-list right">
+
+        <div class="list-item">
+          <ul>
+            <li><a href="#">全部邀请用户<font>（45）</font></a></li>
+            <li><a href="#" class="add-new-zu " id="new-zu"> 添加新分组</a>
+                <div class="new-zu-input"><span ><input name='2' type='text' class='jh-fenzu' id='fenzu' /></span><span><a href='#' class='jh-btn-qd'>确定</a><a href='#' class='jh-btn-qx'>取消</a></span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+       </div>
+     </div>
+      <div class="zhangfang">
+          <div class="popup popup-pl"  id="piliang1">
+              <a href="javascript:void(0)" class="close"></a>
+              <div class="top">批量邀请</div>
+              <div class="cont">
+                  <div class="upload-wrap">
+                      <a href="javascript:void(0)" class="box" id="upload-excel"><span>点击上传excel表格</span></a>
+                  </div>
+                  <div class="rule">
+                      <p>1.请先下载我们的批量邀请模板；<a href="#">员工模板</a><a href="#">学生模板</a></p>
+                      <p>2.请按照我们的模板进行内容填写，其中<span>姓名及手机号必须填写</span>；</p>
+                      <p>3.上传您的表格。成功后，您所有导入的手机号用户将收到“中国知网”员工认证邀请。</p>
+                  </div>
+              </div>
+              <div class="btn-wrap"><a href="#" class="yq btn1">批量发出邀请</a></div>
+          </div>
+          <div class="popup popup-pl"  id="piliang2">
+              <a href="javascript:void(0)" class="close"></a>
+              <div class="top">批量邀请</div>
+              <div class="cont">
+                  <div class="upload-wrap">
+                      <div class="info clearfix">
+                          <img class="left" src="../images/organization-cen/popup-icon1-excel.gif" width="105" height="124" />
+                          <div class="info-text left">
+                              <p class="name">2015年新员工记录20150806更新.xlm</p>
+                              <p class="count">成功导入：<span>168</span>项</p>
+                              <a href="#" class="reupload" id="upload-again">重新上传</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="rule">
+                      <p>1.请先下载我们的批量邀请模板；<a href="#">员工模板</a></p>
+                      <p>2.请按照我们的模板进行内容填写，其中<span>姓名及手机号必须填写</span>；</p>
+                      <p>3.上传您的表格。成功后，您所有导入的手机号用户将收到“中国知网”员工认证邀请。</p>
+                  </div>
+              </div>
+              <div class="btn-wrap"><a href="#" class="yq btn2" id="group-invite">批量发出邀请</a></div>
+          </div>
+          <div class="popup popup-pl" id="piliang3">
+              <a href="javascript:void(0)" class="close"></a>
+              <div class="top">批量邀请</div>
+              <div class="cont">
+                  <div class="success">
+                      <div class="text">
+                          <h1>邀请发送完成</h1>
+                          <p>成功发送邀请：<span>2人</span>&nbsp;&nbsp;&nbsp;失败：<span>158人</span></p>
+                      </div>
+                  </div>
+                  <p class="fail">失败原因：其他用户还未注册，请过段事件再次邀请。</p>
+              </div>
+              <div class="btn-wrap"><a href="#" class="finish btn2" id="complete">完 成</a></div>
+          </div>
+          <div class="popup popup-single" id="single1">
+              <a href="javascript:void(0)" class="close"></a>
+              <div class="top">单个用户邀请</div>
+              <div class="cont">
+                  <div class="single">
+                      <h1>请填写用户基本信息，以方便您的组管理</h1>
+                      <div class="info-box">
+                          <div class="datum">
+                              <div class="item clearfix">
+                                  <label><span>*</span>姓名：</label>
+                                  <div class="input-box"><input type="text" value="" /></div>
+                              </div>
+                              <div class="item clearfix">
+                                  <label><span>*</span>手机号：</label>
+                                  <div class="input-box"><input type="text" value="" /></div>
+                              </div>
+                              <div class="item clearfix">
+                                  <label>工号：</label>
+                                  <div class="input-box"><input type="text" value="" /></div>
+                              </div>
+                              <div class="item clearfix">
+                                  <label>一级部门：</label>
+                                  <div class="input-box"><input type="text" value="" /></div>
+                              </div>
+                              <div class="item clearfix">
+                                  <label>二级部门：</label>
+                                  <div class="input-box"><input type="text" value="" /></div>
+                              </div>
+                              <div class="item clearfix">
+                                  <label>职位：</label>
+                                  <div class="input-box"><input type="text" value="" /></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="btn-wrap">
+                  <div class="btn-box">
+                      <a href="javascript:void(0)" class="btn3" id="single-cancel">取 消</a>
+                      <a href="javascript:void(0)" class="btn4" id="single-confirm">确认邀请</a>
+                  </div>
+              </div>
+          </div>
+          <div class="smallpop" id="single2">
+              <p>邀请发送成功！</p>
+          </div>
+      </div>
+      <div class="zhangfang">
+          <div class="popup popup-group" id="add-group-window">
+              <a href="javascript:void(0)" class="close"></a>
+              <div class="top">选择加入的群组</div>
+              <div class="cont">
+                  <div class="choose">
+                      <div class="choose-box">
+                          <div class="row"><input type="checkbox"/><label>2016年新员工</label></div>
+                          <div class="row"><input type="checkbox"/><label>2016年新员工</label></div>
+                          <div class="row"><input type="checkbox"/><label>研发总部</label></div>
+                          <div class="row"><input type="checkbox"/><label>科研与企业知识分部</label></div>
+                          <div class="row"><input type="checkbox"/><label>行政部</label></div>
+                          <div class="row"><input type="checkbox"/><label>人力资源</label></div>
+                          <div class="row"><input type="checkbox"/><label>责任编辑部</label></div>
+                          <div class="add-group">
+                              <a href="javascript:void(0)" class="add">添加新的组</a>
+                              <div class="creat clearfix"><div class="input-item left"><input type="text" /></div><a href="javascript:void(0)" class="a1 left">创 建</a><a href="javascript:void(0)" class="a2 left">取 消</a></div>
+                          </div>
+                      </div>
+                      <script>
+                          $(".row label").click(
+                                  function(){
+                                      if($(this).siblings("input").prop("checked")==true){
+                                          $(this).siblings("input").prop("checked",false)
+                                      }
+                                      else{
+                                          $(this).siblings("input").prop("checked",true)}
+                                  })
+                          $(".add-group .add").click(
+                                  function(){
+                                      $(this).css({"display":"none"}).siblings(".creat").css({"display":"block"})
+                                  })
+                          $(".add-group .creat a").click(
+                                  function(){
+                                      $(this).parent('.creat').css({"display":"none"}).siblings(".add").css({"display":"block"})
+                                  })
+                      </script>
+                  </div>
+              </div>
+              <div class="btn-wrap">
+                  <div class="box">
+                      <a href="javascript:void(0)" class="a1 close-alert">取 消</a>
+                      <a href="javascript:void(0)" class="a2 close-alert">确 认</a>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+      <div class="zhangfang">
+          <div class="popup popup-user" id="alert-yanzheng-window">
+              <a href="javascript:void(0)" class="close"></a>
+              <div class="top">用户验证</div>
+              <div class="cont">
+                  <div class="yz-wrap">
+                      <p class="ts">该用户填写信息与上传信息不同，请您进行手工验证：</p>
+                      <div class="personal">
+                          <div class="card">
+                              <div class="card-child">
+                                  <div class="name"><span>苏杨</span></div>
+                                  <p>电话：15011622629</p>
+                                  <p>工号：5520</p>
+                                  <p>部门1：大众知识服务分公司</p>
+                                  <p>部门2：无线产品设计部</p>
+                                  <p>职位：产品经理</p>
+                              </div>
+                          </div>
+                          <div class="fillout">
+                              <p class="label">该用户填写的姓名为：</p>
+                              <p class="data">苏阳</p>
+                              <p class="tip">如果确认为您想邀请的用户，请点击通过。</p>
+                              <p class="tip">通过后该用户新华名将发生变更。</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="btn-wrap">
+                  <div class="box">
+                      <a href="javascript:void(0)" class="a1 close-alert">拒 绝</a>
+                      <a href="javascript:void(0)" class="a2 close-alert">通 过</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="add-group-alert">
+          <div class="add-group-alert-inner">
+              <div class="select-group-info">选择加入的群组</div>
+              <div class="group-checkbox clearfix">
+                  <div class="group-tab-name">
+                      <input type="checkbox" id="group1">
+                      <label for="group1">研发总部</label>
+                  </div>
+                  <div class="group-tab-name">
+                      <input type="checkbox" id="group2">
+                      <label for="group2">研发总部</label>
+                  </div>
+                  <div class="group-tab-name">
+                      <input type="checkbox" id="group3">
+                      <label for="group3">研发总部</label>
+                  </div>
+                  <div class="group-tab-name">
+                      <input type="checkbox" id="group4">
+                      <label for="group4">研发总部</label>
+                  </div>
+                  <div class="group-tab-name">
+                      <input type="checkbox" id="group5">
+                      <label for="group5">研发总部</label>
+                  </div>
+                  <div class="group-tab-name">
+                      <input type="checkbox" id="group6">
+                      <label for="group6">研发总部</label>
+                  </div>
+                  <div class="group-tab-name">
+                      <input type="checkbox" id="group7">
+                      <label for="group7">研发总部</label>
+                  </div>
+
+              </div>
+              <div class="add-new-group-button clearfix">
+                  <a class="add-group-text">
+                      添加新分组
+                  </a>
+                  <a href="#" class="add-new-group-image"></a>
+              </div>
+              <div class="add-new-group-input">
+                  <input id="new-group-input-area" type="text">
+                  <a href="#" class="add-new-group-submit">添加</a>
+                  <a href="#" class="add-new-group-cancel">取消</a>
+              </div>
+              <div class="add-new-group-alert">
+                  改名称已经存在 请重新输入
+              </div>
+          </div>
+          <div class="btn-wrap">
+              <div class="box">
+                  <a href="javascript:void(0)" class="close-alert">取 消</a>
+                  <a href="javascript:void(0)" class="confirm-alert">确 认</a>
+              </div>
+          </div>
+
+      </div>
+
+      <script src="../js/jn.js"></script>
+      <script src="../js/jigou.js"></script>
+      
+  <!-- InstanceEndEditable -->
+  </div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

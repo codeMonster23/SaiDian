@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>机构中心-竞赛及试卷-竞赛管理</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/organization-center/zhangfang-oc-popup.css" rel="stylesheet" type="text/css" />
+</head>
+<script src="../js/jquery-1.8.2.min.js"></script>
+<script src="../js/jquery.promptToggle.js"></script>
+<body>
+<div class="zhangfang">
+<div class="shade">
+<div class="popup popup-choice" style="margin:100px auto">
+	<a href="javascript:void(0)" class="close"></a>
+	<div class="top">用户选择</div>
+    <div class="cont">
+    	<div class="cont-box">
+        	<div class="search"><input class="colorGrey" type="text" value="搜索用户" /><a href="#" class="go"></a></div>
+            <script>
+				PromptToggle($(".search input"),"搜索用户","colorGrey")
+            </script>
+            <div class="tit">全部已通过用户</div>
+            <div class="table-wrap">
+            	<table width="572" cellpadding="0" cellspacing="0">
+                	<tr>
+                        <th width="72">序号</th>
+                        <th width="70">姓名</th>
+                        <th width="98">手机号</th>
+                        <th width="74">工号</th>
+                        <th width="113">一级部门</th>
+                        <th width="84">二级部门</th>
+                        <th width="55" class="nb">职位</th>
+                     </tr>
+                     <tr>
+                     	<td ><div class="bl"><input type="checkbox" id="01"/><label for="01">01</label></div></td>
+                        <td><div>苏杨</div></td>
+                        <td><div>136 5523 789</div></td>
+                        <td><div>DM48050</div></td>
+                        <td><div>大众知识分公司</div></td>
+                        <td><div>技术研发部</div></td>
+                        <td class="nb"><div class="br">员工</div></td>
+                     </tr>
+                     <tr>
+                     	<td><div class="bl"><input type="checkbox" id="02" /><label for="02">02</label></div></td>
+                        <td><div>孙夏洛</div></td>
+                        <td><div>136 5523 789</div></td>
+                        <td><div>DM48050</div></td>
+                        <td><div>大众知识分公司</div></td>
+                        <td><div>技术研发部</div></td>
+                        <td class="nb"><div class="br">员工</div></td>
+                     </tr>
+                     <tr>
+                     	<td><div class="bl"><input type="checkbox" id="03" /><label for="03">03</label></div></td>
+                        <td><div>孙夏洛</div></td>
+                        <td><div>136 5523 789</div></td>
+                        <td><div>DM48050</div></td>
+                        <td><div>大众知识分公司</div></td>
+                        <td><div>技术研发部</div></td>
+                        <td class="nb"><div class="br">员工</div></td>
+                     </tr>
+                     <tr>
+                     	<td><div class="bl"><input type="checkbox" id="04" /><label for="04">04</label></div></td>
+                        <td><div>孙夏洛</div></td>
+                        <td><div>136 5523 789</div></td>
+                        <td><div>DM48050</div></td>
+                        <td><div>大众知识分公司</div></td>
+                        <td><div>技术研发部</div></td>
+                        <td class="nb"><div class="br">员工</div></td>
+                     </tr>
+                     <tr>
+                     	<td><div class="bl"><input type="checkbox" id="05" /><label for="05">05</label></div></td>
+                        <td><div>孙夏洛</div></td>
+                        <td><div>136 5523 789</div></td>
+                        <td><div>DM48050</div></td>
+                        <td><div>大众知识分公司</div></td>
+                        <td><div>技术研发部</div></td>
+                        <td class="nb"><div class="br">员工</div></td>
+                     </tr>
+                     <tr>
+                     	<td><div class="bl"><input type="checkbox" id="06" /><label for="06">06</label></div></td>
+                        <td><div>孙夏洛</div></td>
+                        <td><div>136 5523 789</div></td>
+                        <td><div>DM48050</div></td>
+                        <td><div>大众知识分公司</div></td>
+                        <td><div>技术研发部</div></td>
+                        <td class="nb"><div class="br">员工</div></td>
+                     </tr>
+                </table>
+                <script>
+					$(".table-wrap table tr:even td").addClass("evenColor")
+					$(".table-wrap table tr").hover(
+						function(){
+							$(this).children("td").addClass("hover")},
+						function(){
+							$(this).children("td").removeClass("hover")})
+					$(".table-wrap table tr input").click(
+					function() {
+                        if($(this).prop("checked")==true){
+							$(this).parents("tr").addClass("click").siblings("tr").removeClass("click")
+							$(".table-wrap input").prop("checked",false)
+							$(this).prop("checked",true)
+						}
+					else{
+						$(this).parents("tr").removeClass("click")
+						}
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="btn-wrap">
+    	<a class="btn5" href="javascript:void(0)">完 成</a>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+.jn .container-exam .container-pre .container-pre-inner{
+    margin-top: 78px;
+    _margin-top:0px;
+}
+.jn .container-exam .container-paper .container-paper-inner{
+    margin-top: 78px;
+    _margin-top:0px;
+}
+
+
+
+* html .jn .container-exam .sidebar ul li.manage{
+    position: static;
+}
+* html.jn .container-exam .sidebar{
+    position: static;
+}
+* html .jn .container-exam .sidebar ul li{
+
+    bottom: 0;
+    width: 100%;
+}
+* html .jn .container-exam .sidebar ul li.manage a{
+    border-top; 0px;
+    border-bottom: 1px solid #e2e2e2;
+
+}
+
+* html .jn .container-exam .sidebar ul div.paper-all{
+    overflow: auto;
+    height: auto;
+}
+* html .add-new-question{
+    width: 56px;
+}
+* html textarea{
+    border: 1px solid white;
+}
+
+.question-review ul.question-list li .input-block input{
+    height : 38px
+}
+
+.jn .top-header .search a{
+    top:1px;
+    position: relative;
+}
+
+.jn .open-content DIV.col-content{
+    display: inline;
+}
+
+
+
+.question-review ul.img-list .vertical .radio .input-block{
+    _padding-top: 65px;
+}
+
+.jn .container-exam{
+    _width:1405px;
+    _padding-top:2px
+}
+.jn .exam-nav{
+    _width:1405px;
+}
+.jn .container-paper{
+    _float: left;
+}
+
+.jn .container-exam .sidebar{
+    _float: left;
+}
+
+.jn .container-exam .container-paper{
+    _margin-left: 20px;
+    _display: inline;
+}
+.jn .container-exam .container-has-right-cal{
+    _margin-right: 20px;
+    _display: inline;
+    _width:790px
+}
+.jn .container-exam .sidebar-right{
+    _float: right;
+    _padding-bottom:30px;
+}
+.jn .container-paper .container-paper-inner DIV.paper-assign-block .comment-block{
+    _width:658px;
+}
+.jn .container-paper .container-paper-inner div.paper-assign-block .comment-block .comment-person-line{
+    _width:auto;
+}
+
+.jn .container-paper .container-paper-inner DIV.paper-assign-block .xieban-name TABLE.xieban TBODY TR TD.number LABEL{
+    _display: inline;
+}
+.jn .container-paper .container-paper-inner DIV.paper-assign-block .xieban-name TABLE.xieban TBODY TR TD.number .input-block{
+    _display: inline;
+}
+.jn .container-paper .container-paper-inner div.paper-assign-block .xieban-name table.xieban tbody tr td.edit a.edit-button{
+    _display: inline;
+    _margin-left: 0px;
+    _margin-top: 0px;
+}
+.jn .container-paper .container-paper-inner div.paper-assign-block .xieban-name table.xieban tbody tr td.edit div.company-name{
+    _display: inline;
+}
+
+.jn .container-paper .container-paper-inner div.jingsai-nopadding{
+    _padding-bottom:0px;
+}
+
+.jn .container-paper .container-paper-inner div.paper-assign-block .xieban-name table.xieban tbody tr td.edit a.edit-button{
+    position: relative;
+    _top: -15px;
+    _left: 15px;
+}
+
+.jn .container-paper .container-paper-inner div.paper-assign-block .xieban-name table.xieban tbody tr td.delete a,.jn .container-paper .container-paper-inner div.paper-assign-block .xieban-name table.xieban tbody tr td.add a.delete-button{
+    _position: relative;
+    _top:-15px;
+}

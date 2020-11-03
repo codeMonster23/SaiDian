@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>试卷预编辑</title><!--[if IE 6]>
+    <script src="../js/iePNG.js" type="text/javascript"></script>
+    <script type="text/javascript"> DD_belatedPNG.fix('.add-new-question,.add-new-column,.jn .container-exam .sidebar ul li a');</script>
+    <![endif]-->
+    <link href="../css/CSS-reset.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jquery-ui-1.8.17.custom.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jn-question.css" type="text/css" rel="styleSheet"><!--[if lte IE 7]>
+    <link href="../css/question/jn-question-ie.css" type="text/css" rel="styleSheet"><![endif]-->
+  </head>
+  <body class="jn body-grey">
+    <div class="exam-nav clearfix">
+      <ul class="left-nav">
+        <li><a href="#" class="selected">试卷编辑</a></li>
+        <li><a href="#">试卷设置</a></li>
+        <li><a href="#">竞赛信息填写</a></li>
+        <li><a href="#" class="last">&nbsp</a></li>
+      </ul>
+      <ul class="right-nav">
+        <li><a href="#" class="scan">预览</a></li>
+        <li><a href="#" class="publish">发布</a></li>
+        <li><a href="#" class="close">关闭</a></li>
+      </ul>
+    </div>
+    <div class="container-exam">
+      <div class="sidebar">
+        <ul>
+          <li class="cover hover"><a href="#">试卷封面</a></li>
+          <li class="category"><a href="#">试卷目录</a></li>
+          <!--试卷目录下面全部的题型与题目-->
+          <div class="paper-all">
+            <!--第一组题目的标题-->
+            <div class="paper-title"><a href="#" class="sub-nav-title">一、文学知识拓展训练</a>
+              <!--每一题-->
+            </div>
+            <ul class="child-list">
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+              <li><a href="#">1. 题目名称题目名称</a></li>
+              <li><a href="#">2. 题目名称题目名称</a></li>
+              <li><a href="#">3. 题目名称题目名称</a></li>
+            </ul>
+          </div>
+          <li class="manage"><a href="#">试卷目录管理</a></li>
+        </ul>
+      </div>
+      <div class="container-paper">
+        <div class="container-paper-inner">
+          <div class="header">高中古文学知识测评试卷</div>
+          <!--每个问题的全部内容放到一个block中-->
+          <div class="question-title">一. <span class="core-title">文学知识拓展训练</span>（2分）
+            <div class="small-icon clearfix"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="add"></a></div>
+          </div>
+          <div class="question-review">
+            <div class="group-question">
+              <!-- 每道题一个review-->
+              <div class="question-item-review">
+                <div class="tigan"><span class="tihao">01.</span> 当我们浪费粮食时，老爷爷经常用唐代李绅的诗句来教育我们：（ 单选<span class="red-value"> 2分 </span>）</div>
+                <ul class="question-list">
+                  <li class="clearfix select-background">
+                    <div class="input-block">
+                      <input type="radio" id="danxuan1" name="danxuan">
+                    </div>
+                    <label for="danxuan1" class="red-value">A.春种一粒粟，秋收万颗子</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="danxuan2" name="danxuan">
+                    </div>
+                    <label for="danxuan2">B.锄禾日当午，汗滴禾下土</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="danxuan3" name="danxuan">
+                    </div>
+                    <label for="danxuan3">C.四海无闲田，农夫犹饿死</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="danxuan4" name="danxuan">
+                    </div>
+                    <label for="danxuan4">D.谁知盘中餐，粒粒皆辛苦</label>
+                  </li>
+                </ul>
+                <div class="zhishidian-show clearfix">
+                  <div class="intro">知识点:</div>
+                  <ul>
+                    <li>古诗词</li>
+                    <li>农夫</li>
+                    <li>语文</li>
+                  </ul>
+                </div>
+                <div class="small-right-icon"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="add"></a></div>
+              </div>
+              <div class="question-item-review">
+                <div class="tigan"><span class="tihao">02.</span> 当我们浪费粮食时，老爷爷经常用唐代李绅的诗句来教育我们：（ 多选<span class="red-value"> 2分 </span>）</div>
+                <ul class="question-list">
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="danxuan-2-A" name="danxuan-2">
+                    </div>
+                    <label for="danxuan-2-A" class="red-value">A.春种一粒粟，秋收万颗子</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="danxuan-2-B" name="danxuan-2">
+                    </div>
+                    <label for="danxuan-2-B">B.锄禾日当午，汗滴禾下土</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="danxuan-2-C" name="danxuan-2">
+                    </div>
+                    <label for="danxuan-2-C">C.四海无闲田，农夫犹饿死</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="danxuan-2-D" name="danxuan-2">
+                    </div>
+                    <label for="danxuan-2-D">D.谁知盘中餐，粒粒皆辛苦</label>
+                  </li>
+                </ul>
+                <div class="zhishidian-show clearfix">
+                  <div class="intro">知识点:</div>
+                  <ul>
+                    <li>古诗词</li>
+                    <li>农夫</li>
+                    <li>语文</li>
+                  </ul>
+                </div>
+                <div class="small-right-icon"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="add"></a></div>
+              </div>
+              <div class="question-item-review">
+                <div class="tigan"><span class="tihao">03.</span> 小荷才露尖尖角，早有蜻蜓立上头。《________》 ______绝句  _______（朝代） _______（作者）的代表作。 （ 填空<span class="red-value"> 2分 </span>）</div>
+                <ul class="question-list">
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="danxuan-3-A" name="danxuan-3">
+                    </div>
+                    <label for="danxuan-3-A" class="red-value">A.春种一粒粟，秋收万颗子</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="danxuan-3-B" name="danxuan-3">
+                    </div>
+                    <label for="danxuan-3-B">B.锄禾日当午，汗滴禾下土</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="danxuan-3-C" name="danxuan-3">
+                    </div>
+                    <label for="danxuan-3-C">C.四海无闲田，农夫犹饿死</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="danxuan-3-D" name="danxuan-3">
+                    </div>
+                    <label for="danxuan-3-D">D.谁知盘中餐，粒粒皆辛苦</label>
+                  </li>
+                </ul>
+                <div class="zhishidian-show clearfix">
+                  <div class="intro">知识点:</div>
+                  <ul>
+                    <li>古诗词</li>
+                    <li>农夫</li>
+                    <li>语文</li>
+                  </ul>
+                </div>
+                <div class="small-right-icon"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="add"></a></div>
+              </div>
+              <div class="question-item-review">
+                <div class="tigan"><span class="tihao">04.</span> 墙角数枝梅，凌寒独自开。诗中的梅与兰 竹 菊被誉为花中四君子： （ 判断<span class="red-value"> 2分 </span>）</div>
+                <ul class="question-list">
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="panduan-4-A" name="panduan-4">
+                    </div>
+                    <label for="panduan-4-A" class="red-value">A.正确</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="panduan-4-B" name="panduan-4">
+                    </div>
+                    <label for="panduan-4-B">B.错误</label>
+                  </li>
+                </ul>
+                <div class="zhishidian-show clearfix">
+                  <div class="intro">知识点:</div>
+                  <ul>
+                    <li>古诗词</li>
+                    <li>农夫</li>
+                    <li>语文</li>
+                  </ul>
+                </div>
+                <div class="small-right-icon"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="add"></a></div>
+              </div>
+              <div class="question-item-review">
+                <div class="tigan"><span class="tihao">05.</span> 墙角数枝梅，凌寒独自开。诗中的梅与兰竹菊被誉为花中四君子： （ 简答<span class="red-value"> 暂不记录分数 </span>）</div>
+                <div class="jianda-answer red-value">“映”字让“碧草”化静为动，动静皆宜生机盎然。<br/>“隔”字一来写出了黄鹂鸟的位置，又使全是生动活泼，有背景映衬而不显得单调空洞。</div>
+                <div class="zhishidian-show clearfix">
+                  <div class="intro">知识点:</div>
+                  <ul>
+                    <li>古诗词</li>
+                    <li>农夫</li>
+                    <li>语文</li>
+                  </ul>
+                </div>
+                <div class="small-right-icon"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="add"></a></div>
+              </div>
+              <div class="question-item-review">
+                <div class="tigan"><span class="tihao">06.</span> 汽车的“燃油效率”是指汽车每消耗1升汽油行驶的里程，下图两图描述了甲、乙、丙三辆汽车在不同速度下的燃油效率情况下列叙述中正确的是:（ 多选<span class="red-value"> 2分 </span>）</div>
+                <ul class="question-list">
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="duoxuan-5-A" name="duoxuan-5">
+                    </div>
+                    <label for="duoxuan-5-A" class="red-value">A.春种一粒粟，秋收万颗子</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="duoxuan-5-B" name="duoxuan-5">
+                    </div>
+                    <label for="duoxuan-5-B">B.锄禾日当午，汗滴禾下土</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="duoxuan-5-C" name="duoxuan-5">
+                    </div>
+                    <label for="duoxuan-5-C">C.四海无闲田，农夫犹饿死</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="duoxuan-5-D" name="duoxuan-5">
+                    </div>
+                    <label for="duoxuan-5-D">D.谁知盘中餐，粒粒皆辛苦</label>
+                  </li>
+                </ul>
+                <div class="zhishidian-show clearfix">
+                  <div class="intro">知识点:</div>
+                  <ul>
+                    <li>古诗词</li>
+                    <li>农夫</li>
+                    <li>语文</li>
+                  </ul>
+                </div>
+                <div class="small-right-icon"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="add"></a></div>
+              </div>
+              <div class="question-item-review">
+                <div class="tigan"><span class="tihao">07.</span> 汽车的“燃油效率”是指汽车每消耗1升汽油行驶的里程，下图两图描述了甲、乙、丙三辆汽 车在不同速度下的燃油效率情况下列叙述中正确的是: （ 多选<span class="red-value"> 2分 </span>）</div>
+                <ul class="img-list clearfix">
+                  <li class="standard clearfix">
+                    <div class="img-block"><img src="../imagestemp/organization-jn/jn-chuti_03.jpg"><a href="#" class="search"></a></div>
+                  </li>
+                  <li class="standard clearfix">
+                    <div class="img-block"><img src="../imagestemp/organization-jn/jn-chuti_03.jpg"><a href="#" class="search"></a></div>
+                  </li>
+                </ul>
+                <ul class="question-list">
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="duoxuan-6-A" name="duoxuan-6">
+                    </div>
+                    <label for="duoxuan-6-A" class="red-value">A.消耗1升汽油，乙车最多可行驶5千米</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="duoxuan-6-B" name="duoxuan-6">
+                    </div>
+                    <label for="duoxuan-6-B">B.以相同速度行驶相同路程，三辆车中，甲车消耗汽油最多</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="duoxuan-6-C" name="duoxuan-6">
+                    </div>
+                    <label for="duoxuan-6-C">C.甲车以80千米/小时的速度行驶1小时，消耗10升汽油</label>
+                  </li>
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" id="duoxuan-6-D" name="duoxuan-6">
+                    </div>
+                    <label for="duoxuan-6-D">D.某城市机动车最高限速80千米/小时. 相同条件下，在该市用丙车比用乙车更省油</label>
+                  </li>
+                </ul>
+                <div class="zhishidian-show clearfix">
+                  <div class="intro">知识点:</div>
+                  <ul>
+                    <li>古诗词</li>
+                    <li>农夫</li>
+                    <li>语文</li>
+                  </ul>
+                </div>
+                <div class="small-right-icon"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="add"></a></div>
+              </div>
+              <div class="question-item-review">
+                <div class="tigan"><span class="tihao">08.</span> 汽车的“燃油效率”是指汽车每消耗1升汽油行驶的里程，下图两图描述了甲、乙、丙三辆汽 车在不同速度下的燃油效率情况下列叙述中正确的是: （ 多选<span class="red-value"> 2分 </span>）</div>
+                <ul class="img-list clearfix">
+                  <li class="standard clearfix">
+                    <div class="img-block"><img src="../imagestemp/organization-jn/jn-chuti_03.jpg"><a href="#" class="search"></a></div>
+                    <div class="radio">
+                      <input type="radio" name="duoxuan-7" id="duoxuan-7-A">
+                      <label for="duoxuan-7-A">A</label>
+                    </div>
+                  </li>
+                  <li class="standard clearfix">
+                    <div class="img-block"><img src="../imagestemp/organization-jn/jn-chuti_03.jpg"><a href="#" class="search"></a></div>
+                    <div class="radio">
+                      <input type="radio" name="duoxuan-7" id="duoxuan-7-B">
+                      <label for="duoxuan-7-B">B</label>
+                    </div>
+                  </li>
+                  <li class="standard clearfix">
+                    <div class="img-block"><img src="../imagestemp/organization-jn/jn-chuti_03.jpg"><a href="#" class="search"></a></div>
+                    <div class="radio">
+                      <input type="radio" name="duoxuan-7" id="duoxuan-7-C">
+                      <label for="duoxuan-7-C">C</label>
+                    </div>
+                  </li>
+                  <li class="standard clearfix">
+                    <div class="img-block"><img src="../imagestemp/organization-jn/jn-chuti_03.jpg"><a href="#" class="search"></a></div>
+                    <div class="radio">
+                      <input type="radio" name="duoxuan-7" id="duoxuan-7-D">
+                      <label for="duoxuan-7-D">D</label>
+                    </div>
+                  </li>
+                </ul>
+                <div class="zhishidian-show clearfix">
+                  <div class="intro">知识点:</div>
+                  <ul>
+                    <li>古诗词</li>
+                    <li>农夫</li>
+                    <li>语文</li>
+                  </ul>
+                </div>
+                <div class="small-right-icon"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="add"></a></div>
+              </div>
+              <div class="question-item-review">
+                <div class="tigan"><span class="tihao">09.</span> 汽车的“燃油效率”是指汽车每消耗1升汽油行驶的里程，下图两图描述了甲、乙、丙三辆汽 车在不同速度下的燃油效率情况下列叙述中正确的是: （ 多选<span class="red-value"> 2分 </span>）</div>
+                <ul class="img-list clearfix">
+                  <li class="vertical clearfix">
+                    <div class="radio">
+                      <div class="input-block">
+                        <input type="radio" name="duoxuan-8" id="duoxuan-8-A">
+                      </div>
+                      <label for="duoxuan-8-A" class="red-value">A</label>
+                    </div>
+                    <div class="img-block"><img src="../imagestemp/organization-jn/jn-chuti_03.jpg"><a href="#" class="search"></a></div>
+                  </li>
+                  <li class="vertical clearfix">
+                    <div class="radio">
+                      <div class="input-block">
+                        <input type="radio" name="duoxuan-8" id="duoxuan-8-B">
+                      </div>
+                      <label for="duoxuan-8-B">B</label>
+                    </div>
+                    <div class="img-block"><img src="../imagestemp/organization-jn/jn-chuti_03.jpg"><a href="#" class="search"></a></div>
+                  </li>
+                  <li class="vertical clearfix">
+                    <div class="radio">
+                      <div class="input-block">
+                        <input type="radio" name="duoxuan-8" id="duoxuan-8-C">
+                      </div>
+                      <label for="duoxuan-8-C">C</label>
+                    </div>
+                    <div class="img-block"><img src="../imagestemp/organization-jn/jn-chuti_03.jpg"><a href="#" class="search"></a></div>
+                  </li>
+                </ul>
+                <ul class="question-list">
+                  <li class="clearfix">
+                    <div class="input-block">
+                      <input type="radio" name="duoxuan-8" id="duoxuan-8-D">
+                    </div>
+                    <label for="duoxuan-8-D">D.以上皆错误</label>
+                  </li>
+                </ul>
+                <div class="zhishidian-show clearfix">
+                  <div class="intro">知识点:</div>
+                  <ul>
+                    <li>古诗词</li>
+                    <li>农夫</li>
+                    <li>语文</li>
+                  </ul>
+                </div>
+                <div class="small-right-icon"><a href="#" class="edit"></a><a href="#" class="delete"></a><a href="#" class="add"></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="function-menu">
+            <ul>
+              <li><a href="#" class="add-new-question"> 添加新题</a></li>
+              <li><a href="#">|</a></li>
+              <li><a href="#">批量导入</a></li>
+              <li><a href="#">|</a></li>
+              <li><a href="#">题库选择</a></li>
+              <li><a href="#" class="add-new-column">添加新栏目</a></li>
+            </ul>
+            <div class="total-value">
+              <div class="zongfen">总分值</div>
+              <div class="number">8/100</div>
+            </div>
+          </div>
+          <div class="tanchuang">
+            <div class="open-add-content">
+              <div class="open-header">
+                <div class="title"> 修改栏目名称</div><a href="#" class="close"></a>
+              </div>
+              <div class="open-content">
+                <div class="col-content clearfix">
+                  <div class="col-title">
+                    <div class="col-name">栏目：</div>
+                    <div class="input-block">
+                      <label for="col-name4"></label>
+                      <input type="text" id="col-name4" class="col-name input_item">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="open-button">
+                <div class="open-container clearfix"><a href="#" class="cancel">取 消</a><a href="#" class="save">保 存</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="tanchuang">
+            <div class="open-question-delete">
+              <div class="open-header">
+                <div class="title"> 提示</div><a href="#" class="close"></a>
+              </div>
+              <div class="open-content">
+                <div class="col-content clearfix">
+                  <div class="col-title">
+                    <div class="col-name">是否真的删除本题目</div>
+                  </div>
+                </div>
+              </div>
+              <div class="open-button">
+                <div class="open-container clearfix"><a href="#" class="cancel">取 消</a><a href="#" class="save">确 认</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="tanchuang">
+            <div class="open-delete-setting">
+              <div class="open-header">
+                <div class="title"> 删除设置</div><a href="#" class="close"></a>
+              </div>
+              <div class="open-content">
+                <div class="confirm-information">您是否要删除栏目一古诗词文集精选？</div>
+                <div class="item-list clearfix">
+                  <div class="input-block">
+                    <input type="radio" name="delete-col" id="delete-all">
+                  </div>
+                  <label for="delete-all">删除栏目及栏目下所有内容</label>
+                </div>
+                <div class="item-list clearfix">
+                  <div class="input-block">
+                    <input type="radio" name="delete-col" id="delete-col">
+                  </div>
+                  <label for="delete-col">只删除栏目</label>
+                </div>
+                <div class="move">试题批量移动至</div>
+                <select class="move-paper">
+                  <option value="guwen">栏目二 古文选集</option>
+                  <option value="xiaoshuo">栏目三 小说</option>
+                  <option value="sixiang">栏目四 思想与表达</option>
+                  <option value="hulianwang">栏目五 互联网文学冲击下的传统文学</option>
+                  <option value="yinyue">栏目六 音乐与先秦散文</option>
+                  <option value="dianshang">栏目七 电商时代</option>
+                  <option value="renminbi">栏目八 人民币</option>
+                </select>
+                <!--table.col-list
+                thead
+                	tr
+                		th 栏目二 古文选集
+                tbody
+                	tr
+                		td 栏目三 小说
+                	tr
+                		td 栏目四 思想与表达
+                	tr
+                		td 栏目五 互联网文学冲击下的传统文学
+                	tr
+                		td 栏目六 音乐与先秦散文
+                	tr
+                		td 栏目七 电商时代
+                	tr
+                		td 栏目八 人民币
+                -->
+              </div>
+              <div class="open-button">
+                <div class="open-container clearfix"><a href="#" class="cancel">取 消</a><a href="#" class="save">保 存</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script src="../js/jquery-tab.js"></script>
+    <script src="../js/jn.js"></script>
+    <script src="../js/pride.js"></script>
+    <script src="../js/placeholder.js"></script>
+  </body>
+</html>

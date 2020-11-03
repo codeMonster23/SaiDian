@@ -1,0 +1,187 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title 试卷预编辑
+		<!--[if IE 6]>
+		<script src="../js/iePNG.js" type="text/javascript"></script>
+		<script type="text/javascript"> DD_belatedPNG.fix('a, img');</script>
+		<![endif]-->
+		link(href="../css/CSS-reset.css" type="text/css" rel="styleSheet")
+		link(href="../css/question/jn-question.css" type="text/css" rel="styleSheet")
+		<!--[if lte IE 7]>
+		link(href="../css/question/jn-question-ie.css" type="text/css" rel="styleSheet")
+		<![endif]-->
+
+	body.jn.body-grey
+		div.exam-nav.clearfix
+			ul.left-nav
+				li
+					a(href="#") 试卷编辑
+				li
+					a(href="#") 试卷设置
+				li
+					a(href="#").selected 竞赛信息填写
+				li
+					a(href="#").last &nbsp
+
+			ul.right-nav
+				li
+					a(href="#").scan 预览
+				li
+					a(href="#").publish 发布
+				li
+					a(href="#").close 关闭
+
+		div.container-exam
+
+			div.sidebar
+				ul
+					li.cover.jieshao.shouqi
+						a(href="#") 活动介绍
+					//试卷目录下面全部的题型与题目
+					div.paper-all.no-height
+						//第一组题目的标题
+						ul
+							li
+								a(href="#") 比赛介绍
+							li
+								a(href="#") 奖品设置
+							li
+								a(href="#") 资质证明
+							li
+								a(href="#").blue-hover 协办单位
+					li.cover.qingkuang.shouqi
+						a(href="#") 比赛情况
+					div.paper-all.no-height
+						//第一组题目的标题
+						ul
+							li
+								a(href="#") 活动动态
+							li
+								a(href="#") 开放的统计排行
+					li.cover.gexingsheji
+						a(href="#") 个性模块设计
+					li.cover.jieshaosheji
+						a(href="#") 介绍页面设计
+
+			div.sidebar-right
+				div.scan 活动页面概览
+				ul
+					li
+						img(src="../images/question/jn-exam-information_06.jpg")
+					li
+						img(src="../images/question/jn-exam-information_06.jpg")
+				div.right-arrow.right-arrow-close
+
+			div.container-paper.container-has-right-cal
+				div.container-paper-inner.container-paper-inner1.container-paper-small
+					div.paper-assign-block
+						div.title-has-start 企业LOGO及介绍
+						div.zhubandanwei.clearfix
+							div.zhuban-title 主办单位
+							div.input-block
+								input(type="text")#zhuban-name.input_item
+								label(for="zhuban-name") 请输入主办单位名称
+						div.radio-block
+							div.radio-line.clearfix.arrow-effect.show-hander
+								div.radio-input-block
+									input(type="radio" name="logo" id="no-logo")
+								label(for="no-logo") 无LOGO及介绍
+							div.radio-line.clearfix.arrow-effect.show-hander
+								div.radio-input-block
+									input(type="radio" name="logo" id="default-logo")
+								label(for="default-logo") 启用默认LOGO及介绍
+							div.default-logo.show-hander-body
+								div.img-block
+									a(href="#")
+										img(src="../images/question/jn-question-xuanchuan-04.jpg")
+								div.company-intro
+									div.company-intro-line    公司介绍
+									div.text-block
+										label(for="default-company-intro") 请在此输入公司简介，最多300字
+										textarea#default-company-intro.input_item
+							div.radio-line.clearfix.arrow-effect.show-hander
+								div.radio-input-block
+									input(type="radio" name="logo" id="upload-logo")
+								label(for="upload-logo") 上传logo及介绍
+							div.new-logo-line.show-hander-body
+								div.logo-pic.clearfix
+									div.img-block
+										a(href="#")
+											img(src="../images/question/jn-question-xuanchuan-02.jpg")
+									div.img-infor 支持jpg、gif、png或bmp格式，大小不超过1M，图片尺寸为200*200px
+								div.company-intro
+									div.company-intro-line    公司简介
+									div.text-block
+										label(for="company-intro") 请在此输入公司简介，最多300字
+										textarea#company-intro.input_item
+
+					div.paper-assign-block.jingsai-nopadding
+						div.title-has-start 竞赛协办单位
+						div.radio-block
+							div.radio-line.clearfix.arrow-effect
+								div.radio-input-block
+									input(type="radio" name="xieban" id="wuxieban")
+								label(for="wuxieban") 无协办单位
+							div.radio-line.clearfix.arrow-effect
+								div.radio-input-block
+									input(type="radio" name="xieban" id="temp1")
+								label(for="temp1") 启用协办单位模板1
+							div.radio-line.clearfix.arrow-effect
+								div.radio-input-block
+									input(type="radio" name="xieban" id="temp2")
+								label(for="temp2") 启用协办单位模板2
+						div.xieban-name
+							div.select-all-line.clearfix
+
+								div.xieban-company-name 请在表内填写协办单位名称
+								div.xieban-close
+							table.xieban
+								thead
+									tr
+										th.number 序号
+										th.edit 协办单位名称
+										th.delete 操作
+								tbody
+									tr
+										td.number 1
+										td.edit.clearfix
+											div.company-name 协办单位名称
+											a(href="#").edit-button
+										td.delete
+											a(href="#").delete-button
+									tr
+										td.number 2
+										td.edit.clearfix
+											div.company-name 协办单位名称
+											a(href="#").edit-button
+										td.delete
+											a(href="#").delete-button
+									tr
+										td.number 3
+										td.edit.clearfix
+											div.company-name 协办单位名称
+											a(href="#").edit-button
+										td.delete
+											a(href="#").delete-button
+									tr
+										td
+										td
+										td.add
+											a(href="#").add-button
+
+
+
+
+
+
+
+
+		script(src="../js/jquery-1.8.2.min.js")
+		script(src="../js/jquery-check-all.min.js")
+		script(src="../js/check-all-file.js")
+		script(src="../js/placeholder.js")
+		script(src="../js/pride.js")
+
+

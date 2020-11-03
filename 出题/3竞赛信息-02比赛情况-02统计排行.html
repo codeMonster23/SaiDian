@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>试卷预编辑</title><!--[if IE 6]>
+    <script src="../js/iePNG.js" type="text/javascript"></script>
+    <script type="text/javascript"> DD_belatedPNG.fix('a');</script>
+    <![endif]-->
+    <link href="../css/CSS-reset.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jn-question.css" type="text/css" rel="styleSheet"><!--[if lte IE 7]>
+    <link href="../css/question/jn-question-ie.css" type="text/css" rel="styleSheet"><![endif]-->
+  </head>
+  <body class="jn body-grey">
+    <div class="exam-nav clearfix">
+      <ul class="left-nav">
+        <li><a>试卷编辑</a></li>
+        <li><a>试卷设置</a></li>
+        <li><a class="selected">竞赛信息填写</a></li>
+        <li><a class="last">&nbsp</a></li>
+      </ul>
+      <ul class="right-nav">
+        <li><a class="scan">预览</a></li>
+        <li><a class="publish">发布</a></li>
+        <li><a class="close">关闭</a></li>
+      </ul>
+    </div>
+    <div class="container-exam">
+      <div class="sidebar">
+        <ul>
+          <li class="cover jieshao shouqi"><a>活动介绍</a></li>
+          <!--试卷目录下面全部的题型与题目-->
+          <div class="paper-all no-height">
+            <!--第一组题目的标题-->
+            <ul>
+              <li><a href="#" class="blue-hover">比赛介绍</a></li>
+              <li><a href="#">奖品设置</a></li>
+              <li><a href="#">资质证明</a></li>
+              <li><a href="#">协办单位</a></li>
+            </ul>
+          </div>
+          <li class="cover qingkuang"><a href="#">比赛情况</a></li>
+          <li class="cover gexingsheji"><a href="#">个性模块设计</a></li>
+          <li class="cover jieshaosheji"><a href="#">介绍页面设计</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-right">
+        <div class="scan">活动页面概览</div>
+        <ul>
+          <li><img src="../images/question/jn-exam-information_06.jpg"></li>
+          <li><img src="../images/question/jn-exam-information_06.jpg"></li>
+        </ul>
+        <div class="right-arrow right-arrow-close"></div>
+      </div>
+      <div class="container-paper container-has-right-cal">
+        <div class="container-paper-inner container-paper-inner1 container-paper-small">
+          <div class="paper-assign-block">
+            <div class="title-has-start">省份统计</div>
+            <div class="radio-block">
+              <div class="radio-line clearfix arrow-effect">
+                <div class="radio-input-block">
+                  <input type="radio" name="tongji" id="no-tongji">
+                </div>
+                <label for="no-tongji">不展示省份统计</label>
+              </div>
+              <div class="radio-line clearfix arrow-effect">
+                <div class="radio-input-block">
+                  <input type="radio" name="tongji" id="show-tongji">
+                </div>
+                <label for="show-tongji">展示省份统计 <span class="more-info">（展示信息将包括全国地图、各省市名称及答题人数）</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="paper-assign-block">
+            <div class="title-has-start">个人排行榜</div>
+            <div class="radio-block">
+              <div class="radio-line clearfix arrow-effect">
+                <div class="radio-input-block">
+                  <input type="radio" name="geren-paihang" id="no-geren-paihang">
+                </div>
+                <label for="no-geren-paihang">不展示排行版</label>
+              </div>
+              <div class="radio-line clearfix arrow-effect">
+                <div class="radio-input-block">
+                  <input type="radio" name="geren-paihang" id="show-geren-paihang">
+                </div>
+                <label for="show-geren-paihang">展示排行榜 <span class="more-info">示例如下</span></label>
+              </div>
+            </div>
+            <div class="xieban-name huodongdongtai">
+              <table class="xieban paihangbang">
+                <thead>
+                  <tr>
+                    <th>排名</th>
+                    <th>用户名</th>
+                    <th>分数</th>
+                    <th>用时</th>
+                    <th>答题时间</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>韩梅梅</td>
+                    <td>98</td>
+                    <td>39分28秒</td>
+                    <td>2015年12月20日 18:50</td>
+                  </tr>
+                  <tr>
+                    <td>01</td>
+                    <td>韩梅梅</td>
+                    <td>98</td>
+                    <td>39分28秒</td>
+                    <td>2015年12月20日 18:50</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="guize"><span class="guize-info">排名规则：</span>个人成绩排名将以总分为准，相同总分，则按答题用时来排序，答题用时较短者排名靠前。</div>
+            </div>
+          </div>
+          <div class="paper-assign-block">
+            <div class="title-has-start">单位排行榜</div>
+            <div class="radio-block">
+              <div class="radio-line clearfix arrow-effect">
+                <div class="radio-input-block">
+                  <input type="radio" name="danwei-paihang" id="no-danwei-paihang">
+                </div>
+                <label for="no-danwei-paihang">不展示排行榜</label>
+              </div>
+              <div class="radio-line clearfix arrow-effect">
+                <div class="radio-input-block">
+                  <input type="radio" name="danwei-paihang" id="show-danwei-paihang">
+                </div>
+                <label for="show-danwei-paihang">展示排行榜 <span class="more-info">示例如下</span></label>
+              </div>
+            </div>
+            <div class="xieban-name huodongdongtai">
+              <table class="xieban paihangbang">
+                <thead>
+                  <tr>
+                    <th>排名</th>
+                    <th>单位</th>
+                    <th>答题人数</th>
+                    <th>平均分</th>
+                    <th>总分</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>中国知网</td>
+                    <td>520</td>
+                    <td>62</td>
+                    <td>12340</td>
+                  </tr>
+                  <tr>
+                    <td>01</td>
+                    <td>中国知网</td>
+                    <td>520</td>
+                    <td>62</td>
+                    <td>12340</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="guize"><span class="guize-info">排名规则：</span>按照总分排序，总分相同的单位则根据平均分排序；</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/pride.js"></script>
+  </body>
+</html>

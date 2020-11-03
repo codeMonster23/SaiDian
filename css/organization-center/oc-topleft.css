@@ -1,0 +1,35 @@
+/*oc-head*/
+.oc-head { height:58px; background:#fff; border-bottom:1px solid #d9dadc;}
+.oc-head .oc-head-con { width:1200px; height:58px; margin:0px auto;}
+.oc-head .oc-head-con a.head-logo { width:160px; height:58px; float:left; display:block; background: url(../../images/organization-cen/top-logo.gif) no-repeat;}
+.oc-head .oc-head-con span { float:left; font-family:"微软雅黑"; line-height:58px; font-size:20px; color:#666; width:180px; display:block;}
+.oc-head .oc-head-con .top-menu { float:left; line-height:58px; font-size:16px; font-weight:bold; width:280px; height:58px; display:block;}
+.oc-head .oc-head-con .top-menu a { color:#666;}
+.oc-head .oc-head-con .top-menu font { color:#09629b;}
+
+.oc-head .oc-head-con .link-quit { width:40px; margin-top:22px; font-size:12px; height:14px; line-height:14px; color:#797979; text-align:center; border-left:1px solid #CCC;}
+.oc-head .oc-head-con .link-quit a { color:#797979;}
+.oc-head .oc-head-con .load-name { display:block; height:50px; float:left; padding-top:8px;line-height:23px; overflow:hidden;}
+.oc-head .oc-head-con .load-name a { width:43px; height:43px; float:left; display:block;}
+.oc-head .oc-head-con .load-name .load-text { float:left; height:43px; line-height:43px; margin-left:10px; font-size:14px;}
+
+/*oc-main-left*/
+.oc-main { width:1198px; border:1px solid #CCC; background:url(../../images/organization-cen/main-bg.gif) repeat-y; margin:36px auto; overflow:hidden;}
+.oc-main .main-l { width:208px; padding-top:12px; padding-bottom:12px; min-height:1000px;}
+.oc-main .main-l .l-menu { padding-bottom:6px; padding-top:6px; border-bottom:1px solid #e7e7eb;}
+.oc-main .main-l .l-menu .menu-tit { width:148px; padding:0 30px; height:36px; line-height:36px; font-size:18px; font-family:"微软雅黑"; color:#29587a; }
+.oc-main .main-l .l-menu .menu-tit .menu-icon { display:inline-block; margin-right:6px; margin-top:0.2em; width:20px;  vertical-align: middle; } /*height:24px;*/
+.oc-main .main-l .l-menu .clickable { padding:0;}
+.oc-main .main-l .l-menu .menu-tit a {color:#29587a; display:block; padding:0 30px; width:148px;}
+.oc-main .main-l .l-menu .menu-tit a:hover {  background:#f1f1f1; text-decoration:none;}
+.oc-main .main-l .l-menu .tiku-selected {background:#289be5; color:#fff; }
+
+.oc-main .main-l .l-menu .menu-item { line-height:36px;}
+.oc-main .main-l .l-menu .menu-item a { display:block; padding-left:57px; overflow:hidden; color:#333; font-size:14px;}
+.oc-main .main-l .l-menu .menu-item a:hover { background:#f1f1f1; text-decoration:none;}
+.oc-main .main-l .l-menu .selected { background:#289be5; color:#fff; font-weight:bold;}
+.oc-main .main-l .l-menu .selected a { color:#fff; }
+.oc-main .main-l .l-menu .selected a:hover {background:#289be5; }
+
+
+

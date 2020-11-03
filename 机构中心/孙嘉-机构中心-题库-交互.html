@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/头部底部和左侧.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>机构中心-竞赛及试卷-竞赛管理</title>
+<!-- InstanceEndEditable -->
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/organization-center/oc-topleft.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.8.2.min.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<link href="../css/organization-center/oc-right.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+</head>
+
+
+<body>
+ <!-- InstanceBeginEditable name="emptydiv" -->
+     <!--顶部编辑部分-->
+  <!-- InstanceEndEditable -->
+<!--head-->
+<div class="top-ban"></div>
+<div class="oc-head">
+  <div class="oc-head-con">
+    <div class="left">
+      <div>
+        <a href="#" class="head-logo"></a>
+        <span>机构管理中心</span>
+        <div class="top-menu"><a href="#">赛点首页</a>&nbsp;&nbsp;<font>管理中心</font>&nbsp;&nbsp;<a href="#">公司首页</a></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="load-name">
+        <a href="#"><img src="../imagestemp/organization-cen/dl_pic.jpg" width="43" height="43" /></a>
+        <div class="load-text"><strong>潇hyhyhdfdfdfdfdfdyhjyj潇</strong>（Admin）</div>
+      </div>
+      <div class="link-quit right"><a href="#">退出</a></div>
+    </div>
+  </div>
+</div>
+
+<!--main-->
+<div class="oc-main">
+  <!--main左侧-->
+  <div class="left main-l">
+    <!--竞赛及试卷-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon01.png" width="20" height="20" /></i>竞赛及试卷</dt>
+      <dd class="menu-item selected"><a href="#">竞赛管理</a> </dd>
+      <dd class="menu-item"><a href="#">全部试卷</a></dd>
+      <dd class="menu-item"><a href="#">统计数据</a></dd>
+    </dl>
+    <!--题库-->
+    <dl class="l-menu">
+      <dt class="menu-tit clickable"><a href="#"><i class="menu-icon"><img src="../images/organization-cen/left-icon02.png" width="20" height="20" /></i>题库</a></dt>
+    </dl>
+    <!--用户-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon03.png" width="20" height="20" /></i>用户</dt>
+      <dd class="menu-item"><a href="#">群组管理</a> </dd>
+      <dd class="menu-item"><a href="#">用户申请</a></dd>
+      <dd class="menu-item"><a href="#">权限分配</a></dd>
+    </dl>
+    <!--设置-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon04.png" width="20" height="20" /></i>设置</dt>
+      <dd class="menu-item"><a href="#">基本信息</a> </dd>
+      <dd class="menu-item"><a href="#">密码修改</a></dd>
+    </dl>
+    <!--消息-->
+    <dl class="l-menu">
+      <dt class="menu-tit clickable"><a href="#"><i class="menu-icon"><img src="../images/organization-cen/left-icon05.png" width="20" height="20" /></i>消息</a></dt>
+    </dl> 
+  </div>
+  <!--main右侧-->
+  <div class="right main-r">
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+     <!--右侧可编辑部分-->
+     <div class="sj">
+     <div class="r-topban bottom-bian"><span class="left">题库管理</span><div class="r-search right"> 
+        <!--搜索框-->
+        <div class="search-box right">
+          <form id="keydown">
+            <div class="info positionR"><span class="hint positionA">请输入关键词</span><input class="left" type="text" id="name" value=""><label for="name"><a href="#" class="seachbtn"></a></label></div>
+           <script>
+					//点击变色
+						$(".info").click(function(){
+								$(this).addClass("infoclick")
+								$(this).children("label").addClass("labelclick")
+								$(this).children("input").focus()
+								})
+					   $(".info input").blur(function(){
+								$(this).parent(".info").removeClass("infoclick")
+								$(this).siblings("label").removeClass("labelclick")})
+					//文本框值变化			
+					 $("#keydown .info input").each(function(){
+						  var thisVal=$(this).val();
+    						 //判断文本框的值是否为空，有值的情况就隐藏提示语，没有值就显示
+							 if(thisVal!=""){
+							   $(this).siblings("span").hide();
+							  }else{
+							   $(this).siblings("span").show();
+							  }
+							  $(this).keydown(function(){
+							   var val=$(this).val();
+							   $(this).siblings("span").hide();
+							  }).blur(function(){
+								var val=$(this).val();
+								if(val!=""){
+								 $(this).siblings("span").hide();
+								}else{
+								 $(this).siblings("span").show();
+								}})})
+                    </script>
+          </form> 
+        </div>
+      </div></div>  
+     <div class="clearfix">
+      <div class="r-mid left">
+        <div class="mid-ban01">
+          <div class="left">
+            <span class="left positionR"><input name="a" type="text" class="" /><a href="#" class="positionA icon-closed"></a></span>
+            <a href="#" class="jh-btn-bc">保存</a>
+            <a href="#" class="jh-btn-qx">取消</a>
+          </div>
+          <div class="right"><a href="#" class="btn-bluebg">总库选题</a><a href="#" class="btn-bluebg">试题录入</a></div>
+        </div>
+        <div class="mid-bg">
+          <div class="quanxuan-ban"><span class="left qx-font"><input name="01" type="checkbox" value="" class="qx-input quanxuan"  onclick="allChecked('quanxuan','question-check')"/>全选</span> <span class="left"><a href="#" class="btn-huibg">批量删除</a><a href="#" class="btn-huibg">批量移动</a></span></div>
+          <div class="mid-box">
+            <div class="box-ban">
+              <ul>
+                <li>成语</li>
+                <li>阅读机</li>
+                <li>初中语文</li>
+                <li>猜成语</li>
+              </ul>
+            </div>
+            <div class="subject01">
+              <dl>
+                <dt><input name="ti01" type="checkbox" value="" class="ti-input question-check" /><font>32.</font>下列叙述中正确的是:（单选）</dt>
+                <dd class="ti-selected"><font>A.</font> 消耗1升汽油，乙车最多可行驶5千米bo</dd>
+                <dd><font>B.</font> 三辆车中，甲车消耗汽油最多</dd>
+                <dd><font>C.</font> 甲车以80千米/小时的速度行驶，消耗10升汽油</dd>
+                <dd><font>D.</font> 最高限速80千米/小时. 在该市用丙车比用乙车更省油</dd>
+              </dl>
+            </div>
+            <div class="ban-di">
+              <div class="left di-left"><span>正确率：100%</span> <span>引用：7</span> <span>被答：99</span></div>
+              <div class="right di-right"><a href="#" class="di-biao03"></a><a href="#" class="di-biao02"></a><a href="#" class="di-biao01"></a></div>
+            </div>
+           </div>
+          <div class="mid-box">
+            <div class="box-ban">
+              <ul>
+                <li>成语</li>
+                <li>阅读机</li>
+                <li>初中语文</li>
+              </ul>
+            </div>
+            <div class="subject02">
+              <dl>
+                <dt><input name="ti01" type="checkbox" value="" class="ti-input question-check" />
+                <font>31.</font>折戟沉沙铁未销，自将磨洗认前朝。东风不与周郎便，铜雀春深锁二乔。这首诗的作者唐代诗人杜
+    活的年代与诗中所描述的历史事件发生的年代大约相隔了几个朝代？</dt>
+                <dd class="laiyuan">来源：《百科知识文库》</dd>
+              </dl>
+            </div>
+            <div class="ban-di">
+              <div class="left di-left"><span>正确率：100%</span> <span>引用：7</span> <span>被答：99</span></div>
+              <div class="right di-right"><a href="#" class="di-biao03"></a><a href="#" class="di-biao02"></a><a href="#" class="di-biao01"></a></div>
+            </div>
+           </div>
+          <div class="mid-box">
+            <div class="box-ban">
+              <ul>
+                <li>成语</li>
+                <li>阅读机</li>
+                <li>初中语文</li>
+                <li>猜成语</li>
+              </ul>
+            </div>
+            <div class="subject01">
+              <dl>
+                <dt><input name="ti01" type="checkbox" value="" class="ti-input question-check" /><font>32.</font>下列叙述中正确的是:（单选）</dt>
+                <dd class="ti-selected"><font>A.</font> 消耗1升汽油，乙车最多可行驶5千米</dd>
+                <dd><font>B.</font> 三辆车中，甲车消耗汽油最多</dd>
+                <dd><font>C.</font> 甲车以80千米/小时的速度行驶，消耗10升汽油</dd>
+                <dd><font>D.</font> 最高限速80千米/小时. 在该市用丙车比用乙车更省油</dd>
+              </dl>
+            </div>
+            <div class="ban-di">
+              <div class="left di-left"><span>正确率：100%</span> <span>引用：7</span> <span>被答：99</span></div>
+              <div class="right di-right"><a href="#" class="di-biao03"></a><a href="#" class="di-biao02"></a><a href="#" class="di-biao01"></a></div>
+            </div>
+           </div>
+          <div class="mid-box">
+            <div class="box-ban">
+              <ul>
+                <li>成语</li>
+                <li>阅读机</li>
+                <li>初中语文</li>
+                <li>猜成语</li>
+              </ul>
+            </div>
+            <div class="subject01">
+              <dl>
+                <dt><input name="ti01" type="checkbox" value="" class="ti-input question-check" /><font>32.</font>下列叙述中正确的是:（单选）</dt>
+                <dd class="ti-selected"><font>A.</font> 消耗1升汽油，乙车最多可行驶5千米</dd>
+                <dd><font>B.</font> 三辆车中，甲车消耗汽油最多</dd>
+                <dd><font>C.</font> 甲车以80千米/小时的速度行驶，消耗10升汽油</dd>
+                <dd><font>D.</font> 最高限速80千米/小时. 在该市用丙车比用乙车更省油</dd>
+              </dl>
+            </div>
+            <div class="ban-di">
+              <div class="left di-left"><span>正确率：100%</span> <span>引用：7</span> <span>被答：99</span></div>
+              <div class="right di-right"><a href="#" class="di-biao03"></a><a href="#" class="di-biao02"></a><a href="#" class="di-biao04"></a></div>
+            </div>
+           </div>
+          <div class="mid-box">
+            <div class="box-ban">
+              <ul>
+                <li>成语</li>
+                <li>阅读机</li>
+                <li>初中语文</li>
+              </ul>
+            </div>
+            <div class="subject02">
+              <dl>
+                <dt><input name="ti01" type="checkbox" value="" class="ti-input question-check" />
+                <font>31.</font>折戟沉沙铁未销，自将磨洗认前朝。东风不与周郎便，铜雀春深锁二乔。这首诗的作者唐代诗人杜
+    活的年代与诗中所描述的历史事件发生的年代大约相隔了几个朝代？</dt>
+                <dd class="laiyuan">来源：《百科知识文库》</dd>
+              </dl>
+            </div>
+            <div class="ban-di">
+              <div class="left di-left"><span>正确率：100%</span> <span>引用：7</span> <span>被答：99</span></div>
+              <div class="right di-right"><a href="#" class="di-biao03"></a><a href="#" class="di-biao02"></a><a href="#" class="di-biao04"></a></div>
+            </div>
+           </div>
+          <div class="mid-box">
+            <div class="box-ban">
+              <ul>
+                <li>成语</li>
+                <li>阅读机</li>
+                <li>初中语文</li>
+              </ul>
+            </div>
+            <div class="subject02">
+              <dl>
+                <dt><input name="ti01" type="checkbox" value="" class="ti-input question-check" />
+                <font>31.</font>折戟沉沙铁未销，自将磨洗认前朝。东风不与周郎便，铜雀春深锁二乔。这首诗的作者唐代诗人杜
+    活的年代与诗中所描述的历史事件发生的年代大约相隔了几个朝代？</dt>
+                <dd class="laiyuan">来源：《百科知识文库》</dd>
+              </dl>
+            </div>
+            <div class="ban-di">
+              <div class="left di-left"><span>正确率：100%</span> <span>引用：7</span> <span>被答：99</span></div>
+              <div class="right di-right"><a href="#" class="di-biao03"></a><a href="#" class="di-biao02"></a><a href="#" class="di-biao04"></a></div>
+            </div>
+           </div>
+          <div class="pages">
+            <div id="pagination" class="pagination"><a href="#">首页</a><a href="#">上一页</a><a href="#">1</a><span class="current">2</span><a href="#">3</a><a href="#">下一页</a><a href="#">尾页</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="r-list right">
+        <div class="list-item">
+          <ul>
+            <li><a href="#">全部试卷 <font>（45）</font></a></li>
+            <li><a href="#">未分组 <font>（44）</font></a></li>
+            <li class="choosed">自然百科题库 <font>（8）</font></li>
+            <li><a href="#">高三数学题库 <font>（15）</font></a></li>
+            <li><a href="#" class="add-new-zu " id="new-zu"> 添加新分组</a>
+              <div class="new-zu-input"><span ><input name='2' type='text' class='jh-fenzu' id='fenzu' /></span><span class="clearfix"><a href='#' class='jh-btn-qd'>确定</a><a href='#' class='jh-btn-qx'>取消</a></span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+     </div>
+    <script src="../js/jn.js">
+    </script>
+  <!-- InstanceEndEditable -->
+  </div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

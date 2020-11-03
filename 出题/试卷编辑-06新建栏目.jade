@@ -1,0 +1,437 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title 试卷预编辑
+		<!--[if IE 6]>
+		<script src="../js/iePNG.js" type="text/javascript"></script>
+		<script type="text/javascript"> DD_belatedPNG.fix('.add-new-question,.add-new-column,.jn .container-exam .sidebar ul li a');</script>
+		<![endif]-->
+		link(href="../css/CSS-reset.css" type="text/css" rel="styleSheet")
+		link(href="../css/question/jquery-ui-1.8.17.custom.css" type="text/css" rel="styleSheet")
+		link(href="../css/question/jn-question.css" type="text/css" rel="styleSheet")
+		<!--[if lte IE 7]>
+		link(href="../css/question/jn-question-ie.css" type="text/css" rel="styleSheet")
+		<![endif]-->
+
+	body.jn.body-grey
+		div.exam-nav.clearfix
+			ul.left-nav
+				li
+					a(href="#").selected 试卷编辑
+				li
+					a(href="#") 试卷设置
+				li
+					a(href="#") 竞赛信息填写
+				li
+					a(href="#").last &nbsp
+
+			ul.right-nav
+				li
+					a(href="#").scan 预览
+				li
+					a(href="#").publish 发布
+				li
+					a(href="#").close 关闭
+
+		div.container-exam
+			div.sidebar
+				ul
+					li.cover.hover
+						a(href="#") 试卷封面
+					li.category
+						a(href="#") 试卷目录
+					//试卷目录下面全部的题型与题目
+					div.paper-all
+						//第一组题目的标题
+						div.paper-title
+							a(href="#").sub-nav-title 一、文学知识拓展训练
+							//每一题
+						ul.child-list
+							li
+								a(href="#") 1. 题目名称题目名称
+							li
+								a(href="#") 2. 题目名称题目名称
+							li
+								a(href="#") 3. 题目名称题目名称
+							li
+								a(href="#") 1. 题目名称题目名称
+							li
+								a(href="#") 2. 题目名称题目名称
+							li
+								a(href="#") 3. 题目名称题目名称
+							li
+								a(href="#") 1. 题目名称题目名称
+							li
+								a(href="#") 2. 题目名称题目名称
+							li
+								a(href="#") 3. 题目名称题目名称
+							li
+								a(href="#") 1. 题目名称题目名称
+							li
+								a(href="#") 2. 题目名称题目名称
+							li
+								a(href="#") 3. 题目名称题目名称
+							li
+								a(href="#") 1. 题目名称题目名称
+							li
+								a(href="#") 2. 题目名称题目名称
+							li
+								a(href="#") 3. 题目名称题目名称
+							li
+								a(href="#") 1. 题目名称题目名称
+							li
+								a(href="#") 2. 题目名称题目名称
+							li
+								a(href="#") 3. 题目名称题目名称
+							li
+								a(href="#") 2. 题目名称题目名称
+							li
+								a(href="#") 3. 题目名称题目名称
+							li
+								a(href="#") 1. 题目名称题目名称
+							li
+								a(href="#") 2. 题目名称题目名称
+							li
+								a(href="#") 3. 题目名称题目名称
+
+					li.manage
+						a(href="#") 试卷目录管理
+
+			div.container-paper
+				div.container-paper-inner
+					div.header 高中古文学知识测评试卷
+					//每个问题的全部内容放到一个block中
+					div.question-review
+						div.question-title 一. <span class="core-title">文学知识拓展训练</span>（2分）
+							div.small-icon.clearfix
+								a(href="#").edit
+								a(href="#").delete
+								a(href="#").share
+						// 每道题一个review
+						div.question-danxuan-review#main-body
+							div.tigan 01. 当我们浪费粮食时，老爷爷经常用唐代李绅的诗句来教育我们：（ 单选<span class="red-value"> 2分 </span>）
+
+							ul.question-list
+								li.clearfix.select-background
+									.input-block
+										input(type="radio" id="radio1" name="danxuan")
+									label(for="radio1").red-value A.春种一粒粟，秋收万颗子
+								li.clearfix
+									.input-block
+										input(type="radio" id="radio2" name="danxuan")
+									label(for="radio2") B.锄禾日当午，汗滴禾下土
+								li.clearfix
+									.input-block
+										input(type="radio" id="radio3" name="danxuan")
+									label(for="radio3") C.四海无闲田，农夫犹饿死
+								li.clearfix
+									.input-block
+										input(type="radio" id="radio4" name="danxuan")
+									label(for="radio4") D.谁知盘中餐，粒粒皆辛苦
+							div.zhishidian-show.clearfix
+								div.intro 知识点:
+								ul
+									li 古诗词
+									li 农夫
+									li 语文
+
+							div.small-right-icon#show-content
+								a(href="#").edit
+								a(href="#").delete
+								a(href="#").share
+								a(href="#").add
+						div.question-duoxuan-review
+							div.tigan 02. 当我们浪费粮食时，老爷爷经常用唐代李绅的诗句来教育我们：（ 多选<span class="red-value"> 2分 </span>）
+							ul.question-list
+								li.clearfix
+									.input-block
+										input(type="radio" id="radio-A" name="danxuan")
+									label(for="radio-A").red-value A.春种一粒粟，秋收万颗子
+								li.clearfix
+									.input-block
+										input(type="radio" id="radio-B" name="danxuan")
+									label(for="radio-B") B.锄禾日当午，汗滴禾下土
+								li.clearfix
+									.input-block
+										input(type="radio" id="radio-C" name="danxuan")
+									label(for="radio-C") C.四海无闲田，农夫犹饿死
+								li.clearfix
+									.input-block
+										input(type="radio" id="radio-D" name="danxuan")
+									label(for="radio-D") D.谁知盘中餐，粒粒皆辛苦
+							div.zhishidian-show.clearfix
+								div.intro 知识点:
+								ul
+									li 古诗词
+									li 农夫
+									li 语文
+							div.small-right-icon#show-content
+								a(href="#").edit
+								a(href="#").delete
+								a(href="#").share
+								a(href="#").add
+
+					div.question-block
+						div.question-title 二.诗歌基础知识学习笔记
+							div.small-icon.clearfix
+								a(href="#").edit
+								a(href="#").delete
+								a(href="#").share
+						form.question-body.clearfix#keydown
+							//左侧的题干、知识点、提醒、答案部分
+							div.question-content
+								div.tigan.clearfix
+									label 题干:
+									div.tigan-group
+										div.tigan-text
+											label(for="tigan") 请在此输入题干信息
+											textarea(id="tigan" class="input_item")
+
+										div.tigan-img
+											div.img-detail.clearfix
+												div.img-block
+													img(src="../imagestemp/organization-jn/jn-exam-1.jpg")
+													a.false
+												div.img-block
+													img(src="../imagestemp/organization-jn/jn-exam-1.jpg")
+													a.false
+											div.upload.clearfix
+												a.photo-icon
+
+								div.zhishidian.clearfix
+									label 知识点:
+									.zhishidian-block
+										label(for="zhishidian" ) 请以空格划分不同的知识点
+										input(type="text" id="zhishidian" class="input_item")
+
+								div#tixing.tixing.clearfix
+									label 题型:
+									ul.clearfix
+										li
+											a(href="#tab1") 单选
+										li
+											a(href="#tab2").selected 多选
+										li
+											a(href="#tab3") 填空
+										li
+											a(href="#tab4") 判断
+										li
+											a(href="#tab5") 简答
+								div#tab1.danxuan-block.clearfix
+									div.xuanxiang
+										label 选项:
+									ul
+										li.clearfix
+											div.small-block
+												input(type="radio" name="new-danxuan").radio
+											span.item A
+											input(type="text").text
+											a(href="#").false
+										li.clearfix
+											div.small-block
+												input(type="radio" name="new-danxuan").radio
+											span.item B
+											input(type="text").text
+											a(href="#").false
+										li.clearfix.img-item
+											div.small-block
+												input(type="radio" name="new-danxuan").radio
+											span.item C
+											div.img-block
+												img(src="../imagestemp/organization-jn/jn-exam-1.jpg")
+												a.false
+										li.clearfix.img-item
+											div.small-block
+												input(type="radio" name="new-danxuan").radio
+											span.item D
+											div.img-block
+												img(src="../images/question/jn-question-uploading.jpg")
+												a.false
+
+										li.other-function
+											a(href="#").danxuan-addtxt +添加文字选项
+											a(href="#").danxuan-addimg +添加图片选项
+											input(type="radio" checked=)
+											span  选中状态为正确选项
+
+								div#tab2.duoxuan-block.clearfix
+									div.xuanxiang
+										label 选项:
+									ul
+										li.clearfix
+											div.small-block
+												input(type="radio").radio
+											span.item A
+											input(type="text").text
+											a(href="#").false
+										li.clearfix
+											div.small-block
+												input(type="radio").radio
+											span.item B
+											div.question-block
+												input(type="text" id="question-info" ).text.input_item
+												label(for="question-info") 至少需要两个选项
+											a(href="#").false
+										li.clearfix
+											div.small-block
+												input(type="radio").radio
+											span.item C
+											input(type="text").text
+											a(href="#").false
+										li.clearfix
+											div.small-block
+												input(type="radio").radio
+											span.item D
+											input(type="text").text
+											a(href="#").false
+										li.other-function
+											a(href="#").danxuan-addtxt +添加文字选项
+											a(href="#").danxuan-addimg +添加图片选项
+											input(type="radio" checked=)
+											span  选中状态为正确选项
+
+								div#tab4.panduan-block.clearfix
+									div.xuanxiang
+										label 选项:
+									ul
+										li.clearfix
+											div.small-block
+												input(type="radio" name="true-false" value="true").radio
+											div.question-block
+												input(type="text" id="right-item" ).text.input_item
+												label(for="question-info") 正确
+											a(href="#").false
+										li.clearfix
+											div.small-block
+												input(type="radio" name="true-false" value="false").radio
+											div.question-block
+												input(type="text" id="wrong-item" ).text.input_item
+												label(for="wrong-item") 错误
+											a(href="#").false
+										li.other-function
+											input(type="radio" checked)
+											span  选中状态为正确选项
+
+								div#tab3.tiankong-block.clearfix
+									div.xuanxiang
+										label 答案:
+									ul
+										li.clearfix
+											input(type="text").text
+											a(href="#").false
+										li.other-function
+											a(href="#").danxuan-addtxt +添加多个答案
+
+
+
+								div#tab5.jianda-block.clearfix
+									div.xuanxiang
+										label 答案:
+									div.tigan
+										div.tigan-group
+											div.tigan-text#jianda-info
+												textarea(id="jianda" class="input_item")
+												label(for="jianda") 您可以在此输入参考答案，试卷公布答案时，此答案将作为参考公布给答题者。<br/>简答题答案需要人工判分，试卷发布后用户此题答案将发送至试卷管理页，请注意查收
+
+							//浮动在右侧的分值选项
+							div.question-value
+								div.info 添加分值
+								div.icon#plus-value +
+								div.value#question-value-number
+									input(type="text" value="2分")
+								div.icon#minus-value -
+						//放置确定和取消按钮
+						div.submit-button.clearfix
+							a(href="#").cancel 取消
+							a(href="#").confirm 确定
+					div.function-menu
+						ul
+							li
+								a(href="#").add-new-question  添加新题
+							li
+								a(href="#") |
+							li
+								a(href="#") 批量导入
+							li
+								a(href="#") |
+							li
+								a(href="#") 题库选择
+							li
+								a(href="#").add-new-column 添加新栏目
+					div.tanchuang
+						div.open-add-content
+							div.open-header
+								div.title  修改栏目名称
+								a(href="#").close
+							div.open-content
+								div.col-content.clearfix
+									div.col-title
+										div.col-name 栏目：
+										div.input-block
+											label(for="col-name4")
+											input(type="text" class="col-name input_item" id="col-name4")
+							div.open-button
+								div.open-container.clearfix
+									a(href="#").cancel 取 消
+									a(href="#").save 保 存
+					div.tanchuang
+						div.open-question-delete
+							div.open-header
+								div.title  提示
+								a(href="#").close
+							div.open-content
+								div.col-content.clearfix
+									div.col-title
+										div.col-name 是否真的删除本题目
+							div.open-button
+								div.open-container.clearfix
+									a(href="#").cancel 取 消
+									a(href="#").save 确 认
+
+					div.tanchuang
+						div.open-delete-setting
+							div.open-header
+								div.title  删除设置
+								a(href="#").close
+							div.open-content
+								div.confirm-information 您是否要删除栏目一古诗词文集精选？
+								div.item-list.clearfix
+									div.input-block
+										input(type="radio" name="delete-col" id="delete-all")
+									label(for="delete-all") 删除栏目及栏目下所有内容
+								div.item-list.clearfix
+									div.input-block
+										input(type="radio" name="delete-col" id="delete-col")
+									label(for="delete-col") 只删除栏目
+								div.move 试题批量移动至
+								table.col-list
+									thead
+										tr
+											th 栏目二 古文选集
+									tbody
+										tr
+											td 栏目三 小说
+										tr
+											td 栏目四 思想与表达
+										tr
+											td 栏目五 互联网文学冲击下的传统文学
+										tr
+											td 栏目六 音乐与先秦散文
+										tr
+											td 栏目七 电商时代
+										tr
+											td 栏目八 人民币
+							div.open-button
+								div.open-container.clearfix
+									a(href="#").cancel 取 消
+									a(href="#").save 保 存
+
+
+
+		script(src="../js/jquery-1.8.2.min.js")
+		script(src="../js/jquery-ui-1.8.17.custom.min.js")
+		script(src="../js/jquery-tab.js")
+		script(src="../js/jn.js")
+		script(src="../js/placeholder.js")
+		script(src="../js/pride.js")

@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/头部底部和左侧.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>机构中心-竞赛及试卷-竞赛管理</title>
+<!-- InstanceEndEditable -->
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/organization-center/oc-topleft.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.8.2.min.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<link href="../css/organization-center/oc-right.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+</head>
+
+
+<body>
+ <!-- InstanceBeginEditable name="emptydiv" -->
+     <!--顶部编辑部分-->
+  <!-- InstanceEndEditable -->
+<!--head-->
+<div class="top-ban"></div>
+<div class="oc-head">
+  <div class="oc-head-con">
+    <div class="left">
+      <div>
+        <a href="#" class="head-logo"></a>
+        <span>机构管理中心</span>
+        <div class="top-menu"><a href="#">赛点首页</a>&nbsp;&nbsp;<font>管理中心</font>&nbsp;&nbsp;<a href="#">公司首页</a></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="load-name">
+        <a href="#"><img src="../imagestemp/organization-cen/dl_pic.jpg" width="43" height="43" /></a>
+        <div class="load-text"><strong>潇hyhyhdfdfdfdfdfdyhjyj潇</strong>（Admin）</div>
+      </div>
+      <div class="link-quit right"><a href="#">退出</a></div>
+    </div>
+  </div>
+</div>
+
+<!--main-->
+<div class="oc-main">
+  <!--main左侧-->
+  <div class="left main-l">
+    <!--竞赛及试卷-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon01.png" width="20" height="20" /></i>竞赛及试卷</dt>
+      <dd class="menu-item selected"><a href="#">竞赛管理</a> </dd>
+      <dd class="menu-item"><a href="#">全部试卷</a></dd>
+      <dd class="menu-item"><a href="#">统计数据</a></dd>
+    </dl>
+    <!--题库-->
+    <dl class="l-menu">
+      <dt class="menu-tit clickable"><a href="#"><i class="menu-icon"><img src="../images/organization-cen/left-icon02.png" width="20" height="20" /></i>题库</a></dt>
+    </dl>
+    <!--用户-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon03.png" width="20" height="20" /></i>用户</dt>
+      <dd class="menu-item"><a href="#">群组管理</a> </dd>
+      <dd class="menu-item"><a href="#">用户申请</a></dd>
+      <dd class="menu-item"><a href="#">权限分配</a></dd>
+    </dl>
+    <!--设置-->
+    <dl class="l-menu">
+      <dt class="menu-tit"><i class="menu-icon"><img src="../images/organization-cen/left-icon04.png" width="20" height="20" /></i>设置</dt>
+      <dd class="menu-item"><a href="#">基本信息</a> </dd>
+      <dd class="menu-item"><a href="#">密码修改</a></dd>
+    </dl>
+    <!--消息-->
+    <dl class="l-menu">
+      <dt class="menu-tit clickable"><a href="#"><i class="menu-icon"><img src="../images/organization-cen/left-icon05.png" width="20" height="20" /></i>消息</a></dt>
+    </dl> 
+  </div>
+  <!--main右侧-->
+  <div class="right main-r">
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+     <!--右侧可编辑部分-->
+     <div class="sj">
+     <div class="r-topban">竞赛管理</div>
+     <div class="r-qhban bottom-bian">
+      <ul class="left">
+        <li>全部竞赛</li>
+        <li class="active"><a href="#">未发布</a></li>
+        <li><a href="#">已发布</a></li>
+        <li><a href="#">已结束</a></li>
+      </ul>
+      <div class="r-search right"> 
+        <a href="#" class="helpbox left">竞赛发布帮助</a>
+        <!--搜索框-->
+        <div class="search-box right">
+          <form id="keydown">
+            <div class="info positionR"><span class="hint positionA">搜索竞赛</span><input class="left" type="text" id="name" value=""><label for="name"><a href="#" class="seachbtn"></a></label></div>
+           <script>
+					//点击变色
+						$(".info").click(function(){
+								$(this).addClass("infoclick")
+								$(this).children("label").addClass("labelclick")
+								$(this).children("input").focus()
+								})
+					   $(".info input").blur(function(){
+								$(this).parent(".info").removeClass("infoclick")
+								$(this).siblings("label").removeClass("labelclick")})
+					//文本框值变化			
+					 $("#keydown .info input").each(function(){
+						  var thisVal=$(this).val();
+    						 //判断文本框的值是否为空，有值的情况就隐藏提示语，没有值就显示
+							 if(thisVal!=""){
+							   $(this).siblings("span").hide();
+							  }else{
+							   $(this).siblings("span").show();
+							  }
+							  $(this).keydown(function(){
+							   var val=$(this).val();
+							   $(this).siblings("span").hide();
+							  }).blur(function(){
+								var val=$(this).val();
+								if(val!=""){
+								 $(this).siblings("span").hide();
+								}else{
+								 $(this).siblings("span").show();
+								}})})
+                    </script>
+          </form> 
+        </div>
+      </div>
+    </div>
+     <div class="r-con">
+      <div class="con-box"><a href="#" class="new-add"></a></div>
+      <div class="con-box bluebox">
+        <div class="box-ban"></div>
+        <div class="box-biaoti box-icon01">2015年首届全国大学生机械产品数字学生机械产品数字学生机械产品数字</div>
+        <div class="box-midban01">
+          <div class="width01 left">数量：<span class="font14">32</span></div>
+          <div class="width02 left">分值：<span class="font14">100/<font>120</font></span></div>
+        </div>
+        <div class="box-diban"><a href="#">编辑</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">删除</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">提交</a></div>
+      </div>
+      <div class="con-box bluebox">
+        <div class="box-ban"></div>
+        <div class="box-biaoti box-icon01">2015年首届全国大学生机械产品数字学生机械产品数字学生机械产品数字</div>
+        <div class="box-midban01">
+          <div class="width01 left">数量：<span class="font14">32</span></div>
+          <div class="width02 left">分值：<span class="font14">100/<font>120</font></span></div>
+        </div>
+        <div class="box-diban"><a href="#">张敏敏</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">删除</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">提交</a></div>
+      </div>
+      <div class="con-box orangebox">
+        <div class="box-ban"></div>
+        <div class="box-biaoti box-icon01">2015年首届全国大学生机械产品数字学生机械产品数字学生机械产品数字</div>
+        <div class="box-midban01">
+          <div class="width01 left">数量：<span class="font14">32</span></div>
+          <div class="width02 left">分值：<span class="font14">100/<font>120</font></span></div>
+        </div>
+        <div class="box-diban"><a href="#">撤销提交</a></div>
+      </div>
+      <div class="con-box greenbox">
+        <div class="box-ban">审核通过--9月12日定时发布</div>
+        <div class="box-biaoti box-icon02">2015年首届全国大学生机械产品数字学生机械产品数字学生机械产品数字</div>
+        <div class="box-midban02">
+          <div class="width03 left">0</div>
+          <div class="width04 left">2</div>
+          <div class="width05 left">145</div>
+        </div>
+        <div class="box-diban"><a href="#">撤回</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">发布管理</a></div>
+      </div>
+    </div>
+     </div>
+  <!-- InstanceEndEditable -->
+  </div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

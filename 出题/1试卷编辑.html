@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>试卷编辑</title><!--[if IE 6]>
+    <script src="../js/iePNG.js" type="text/javascript"></script>
+    <script type="text/javascript"> DD_belatedPNG.fix('img,.jn .container-exam .sidebar ul li a');</script>
+    <![endif]-->
+    <link href="../css/CSS-reset.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jquery-ui-1.8.17.custom.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jn-question.css" type="text/css" rel="styleSheet"><!--[if lte IE 7]>
+    <link href="../css/question/jn-question-ie.css" type="text/css" rel="styleSheet"><![endif]-->
+  </head>
+  <body class="jn body-grey">
+    <div class="exam-nav clearfix">
+      <ul class="left-nav">
+        <li><a href="#" class="selected">试卷编辑</a></li>
+        <li><a href="#">试卷设置</a></li>
+        <li><a href="#">竞赛信息填写</a></li>
+        <!--最后一个2像素的li留空，使得上一个border右侧有凹槽效果-->
+        <li><a href="#" class="last">&nbsp</a></li>
+      </ul>
+      <ul class="right-nav">
+        <li><a href="#" class="scan">预览</a></li>
+        <li><a href="#" class="publish">发布</a></li>
+        <li><a href="#" class="close">关闭</a></li>
+      </ul>
+    </div>
+    <div class="container-exam">
+      <div class="sidebar">
+        <ul>
+          <li class="cover hover"><a href="#">试卷封面</a></li>
+          <li class="category"><a href="#">试卷目录</a></li>
+          <li class="manage"><a href="#">试卷目录管理</a></li>
+        </ul>
+      </div>
+      <div class="container-pre">
+        <div class="container-pre-inner">
+          <div class="banner">
+            <div class="banner-inner">
+              <div class="title clearfix">
+                <div id="text-place" class="title-inner title-inner-single">
+                  <!--textarea-->
+                  <!--div.show-text-double 好多汉字 好多汉字 好多汉字 好多汉字 好多汉字 好多汉字 好多汉字 好多汉字好多汉字 多汉字 好多汉字好多汉字多汉字 好多汉字好多汉字-->
+                  <div class="show-text-single">请输入试卷名称</div><img id="paper-name" src="../images/question/jn-question-pre-icon.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <form>
+              <div class="group clearfix">
+                <label>考试类别</label>
+                <select name="exam-type">
+                  <option value="first-class">一级分类</option>
+                  <option value="number2">内容</option>
+                </select>
+                <select name="exam-type">
+                  <option value="second-class">二级分类</option>
+                  <option value="number3">内容</option>
+                </select>
+              </div>
+              <div class="group clearfix">
+                <label>试卷总分</label>
+                <select name="grade">
+                  <option value="100">100分</option>
+                  <option value="90">90分</option>
+                </select>
+              </div>
+              <div class="group clearfix">
+                <label>答卷时限</label>
+                <select name="time">
+                  <option value="60">限时60分钟</option>
+                  <option value="50">限时50分钟</option>
+                </select>
+              </div>
+              <div class="group clearfix">
+                <label><span class="red-star">*</span><span>试卷形态</span></label>
+                <input type="checkbox" checked><span class="type-information"> 固定试卷</span>
+              </div>
+              <div class="button clearfix"><a href="#" class="editagain">继续试题编辑</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script src="../js/jquery-tab.js"></script>
+    <script src="../js/pre-edit.js"></script>
+    <script src="../js/pride.js"></script>
+  </body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>试卷预编辑</title>
+    <link href="../css/CSS-reset.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jn-question.css" type="text/css" rel="styleSheet">
+    <link href="../css/question/jquery.datetimepicker.css" type="text/css" rel="styleSheet"><!--[if lte IE 7]>
+    <link href="../css/question/jn-question-ie.css" type="text/css" rel="styleSheet"><![endif]-->
+  </head>
+  <body class="jn body-grey">
+    <div class="exam-nav clearfix">
+      <ul class="left-nav">
+        <li><a href="#">试卷编辑</a></li>
+        <li><a href="#" class="selected">试卷设置</a></li>
+        <li><a href="#">竞赛信息填写</a></li>
+        <li><a href="#" class="last">&nbsp</a></li>
+      </ul>
+      <ul class="right-nav">
+        <li><a href="#" class="scan">预览</a></li>
+        <li><a href="#" class="publish">发布</a></li>
+        <li><a href="#" class="close">关闭</a></li>
+      </ul>
+    </div>
+    <div class="container-exam">
+      <div class="sidebar">
+        <ul>
+          <li class="xinxishezhi shouqi"><a href="#">试卷信息设置</a></li>
+          <!--试卷目录下面全部的题型与题目-->
+          <div class="paper-all no-scroll">
+            <!--第一组题目的标题-->
+            <div class="paper-title"></div>
+            <ul>
+              <li><a href="#page1">试题分配</a></li>
+              <li><a href="#page2">答题次数限制</a></li>
+              <li><a href="#page3">答题对象限制</a></li>
+              <li><a href="#page4">用户信息收集</a></li>
+              <li><a href="#page5">答卷限制</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+      <div class="container-paper container-has-cal">
+        <div class="container-paper-inner container-paper-inner1">
+          <div id="page1" class="paper-assign-block">
+            <div class="title clearfix">
+              <h1>试题分配：</h1>
+              <div class="subtitle"> 动态试题怎么分配试题及分数？</div>
+              <div class="more">注：每题分值为整数</div>
+            </div>
+            <div class="main-content">
+              <div class="total">试卷目标总分：100 分 已分配总分：100 分 已分配题数：67 道题</div>
+              <div class="col-content-block">
+                <div class="subtitle">一.<span class="bold">微观世界的大道理 </span>(单选题) 总题数: 50 题</div>
+                <div class="detail-information">动态选题<input value="15" class="type-number"/>道 每题分值<input value="2" class="type-number"/>分 栏目总分数：<span class="number">30</span>分</div>
+              </div>
+              <div class="col-content-block">
+                <div class="subtitle">一.<span class="bold">栏目名称</span>(多选题) 总题数:50题</div>
+                <div class="detail-information">动态选题<input value="50" class="type-number"/>道 每题分值<input value="1" class="type-number"/>分 栏目总分数：<span class="number">50</span>分</div>
+              </div>
+              <div class="col-content-block">
+                <div class="subtitle">一.<span class="bold">栏目名称</span>(简答题) 总题数:50题</div>
+                <div class="detail-information">动态选题<input value="2" class="type-number"/>道 每题分值<input value="10" class="type-number"/>分 栏目总分数：<span class="number">20</span>分</div>
+              </div>
+            </div>
+          </div>
+          <div id="page2" class="paper-assign-block">
+            <div class="title">
+              <h1>答卷次数限制：</h1>
+              <div class="subtitle">用户可以多次答题吗？</div>
+            </div>
+            <div class="main-content">
+              <div class="input-line clearfix selected-input">
+                <div class="input-block">
+                  <input type="radio" name="times" id="one-person-once">
+                </div>
+                <label for="one-person-once" class="selected-item">一人一次</label>
+              </div>
+              <div class="input-line">
+                <div class="input-block">
+                  <input type="radio" name="times" id="one-person-many">
+                </div>
+                <label for="one-person-many">一人多次</label><span class="more-information">（保留单个用户的最高分及答题次数）</span>
+              </div>
+            </div>
+          </div>
+          <div id="page3" class="paper-assign-block">
+            <div class="title">
+              <h1>答卷对象限制：</h1>
+              <div class="subtitle">谁可以作答我的试卷？</div>
+            </div>
+            <div class="main-content">
+              <div class="input-line">
+                <div class="input-block">
+                  <input type="radio" name="object" id="open-public">
+                </div>
+                <label for="open-public">完全公开</label>
+              </div>
+              <div class="input-line clearfix">
+                <div class="input-block">
+                  <input type="radio" name="object" id="set-pwd">
+                </div>
+                <label for="set-pwd">设置答题密码</label>
+              </div>
+              <div class="input-block-password clearfix">
+                <label for="pwd">请输入6位答题密码</label>
+                <input type="text" id="pwd" class="input_item">
+                <!--只有一个按钮 会有两种样式  删掉不需要的那个--><a href="#" class="queren">确 认</a><a href="#" class="xiugai">修 改</a>
+              </div>
+              <div class="input-line clearfix autoheight">
+                <div class="input-block">
+                  <input type="radio" name="object" id="select-user">
+                </div>
+                <label for="select-user">指定用户可答</label>
+                <div id="tabs" class="select-button-group"><a href="#tab1" class="selected">选择我的好友</a><a href="#tab2">选择我的群组</a></div>
+              </div>
+              <div id="tab-group">
+                <div id="tab1" class="select-my-friend">
+                  <div class="select-block">
+                    <div class="input-keywords">
+                      <label for="keywords">请输入关键词</label>
+                      <input type="text" id="keywords" class="input_item">
+                    </div>
+                    <div class="information-line">全部好友 相关结果2个 相关结果0个</div>
+                    <div class="friends-block clearfix">
+                      <div class="friend-block select clearfix">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p9.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">潇潇(Admin)</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p9.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">潇潇(Admin)</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p9.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">潇潇(Admin)</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p9.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">潇潇(Admin)</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block select clearfix">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p4.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">潇潇(Admin)</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p4.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">潇潇(Admin)</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p4.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">潇潇(Admin)</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p4.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">潇潇(Admin)</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="confirm-close">确认收起</div>
+                  </div>
+                </div>
+                <div id="tab2" class="select-my-group">
+                  <div class="select-block">
+                    <div class="input-keywords">
+                      <label for="keywords2">请输入关键词</label>
+                      <input type="text" id="keywords2" class="input_item">
+                    </div>
+                    <div class="information-line">全部好友 相关结果2个 相关结果0个</div>
+                    <div class="friends-block clearfix">
+                      <div class="friend-block select clearfix">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p9.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">初中数学组</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p9.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">初中数学组</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p9.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">高中数学组</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p9.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">高中数学组</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block select clearfix">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p4.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">初中数学组</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p4.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">初中数学组</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p4.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">高中数学组</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                      <div class="friend-block">
+                        <div class="portrait"><img src="../images/question/jn-paper-setting-p4.jpg"></div>
+                        <div class="name-level">
+                          <div class="name">高中数学组</div>
+                          <div class="level">5</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="confirm-close">确认收起</div>
+                  </div>
+                </div>
+                <div class="yixuanze-info">已选择</div>
+                <div class="user-line clearfix">
+                  <div class="title-name">用户(10):</div>
+                  <div class="user-tags clearfix"><a href="#" class="select-tag">Admine</a><a href="#" class="select-tag">张思敏</a><a href="#" class="select-tag">张益达</a><a href="#" class="select-tag">曾小贤</a></div>
+                </div>
+                <div class="user-line clearfix">
+                  <div class="title-name">群组 (2):</div>
+                  <div class="user-tags clearfix"><a href="#" class="select-tag">科技博览会1群</a><a href="#" class="select-tag">科技博览会2群</a></div>
+                </div>
+              </div>
+              <div class="input-line">
+                <div class="input-block">
+                  <input type="radio" name="object" id="jiaoyan">
+                </div>
+                <label for="jiaoyan">校验用户信息</label><span class="more-information">（用户必须填写跟上传的一致的内容才可答题）</span>
+              </div>
+              <div class="jiaoyan-block">
+                <div class="jiaoyan-user-line first-line"><span>1) 上传校验信息</span><a href="#" class="upload-again">点击上传</a><span class="more-information">（上传信息须符合信息模板；点击<span class="download">下载校验信息模板</span>）</span></div>
+                <div class="jiaoyan-user-line"><span>2) 选择检验项目</span></div>
+              </div>
+            </div>
+          </div>
+          <div id="page4" class="paper-assign-block">
+            <div class="title">
+              <h1>用户信息收集：</h1>
+              <div class="subtitle">您可以要求答题者填写一些信息，而这些信息不进行校验。</div>
+            </div>
+            <div class="main-content">
+              <div class="tab">姓名</div>
+              <div class="tab">生日</div>
+              <div class="tab cancel">省份</div>
+              <div class="tab">市区</div>
+              <div class="tab">职业</div>
+              <div class="tab">单位</div>
+              <div class="tab">年龄</div>
+              <div id="ziding-tab" class="tab user">自定义标签</div>
+            </div>
+          </div>
+          <div id="page5" class="paper-assign-block">
+            <div class="title">
+              <h1>答题时间：</h1>
+              <div class="subtitle">用户什么时间可以在站内看到您发布的额竞赛或试卷</div>
+            </div>
+            <div class="main-content">
+              <div class="input-line">
+                <div class="input-block">
+                  <input type="radio" name="publish-time" id="publish-right-now">
+                </div>
+                <label for="publish-right-now">发布后立即可答</label>
+              </div>
+              <div class="input-line">
+                <div class="input-block">
+                  <input type="radio" name="publish-time" id="set-publish-time">
+                </div>
+                <label for="set-publish-time">指定答题时间</label>
+              </div>
+              <div class="set-time clearfix tab-time">
+                <div class="input-block">
+                  <label for="set-juti-time">请设置具体时间</label>
+                  <input type="text" id="set-juti-time" class="input_item_focus">
+                </div>
+                <div class="time-button"><img src="../images/question/jn-examedit-cal.jpg"></div>
+              </div>
+            </div>
+          </div>
+          <div id="page6" class="paper-assign-block">
+            <div class="title">
+              <h1>答卷设置：</h1>
+              <div class="subtitle">答题者什么时候可以看到答案及结果？</div>
+            </div>
+            <div class="main-content">
+              <div class="input-line">
+                <div class="input-block">
+                  <input type="radio" name="paper-setting" id="hide-answer">
+                </div>
+                <label for="hide-answer">不公布答案</label>
+              </div>
+              <div class="input-line">
+                <div class="input-block">
+                  <input type="radio" name="paper-setting" id="show-answer">
+                </div>
+                <label for="show-answer">答完题后立即公布答案</label>
+              </div>
+              <div class="input-line">
+                <div class="input-block">
+                  <input type="radio" name="paper-setting" id="finish-show-answer">
+                </div>
+                <label for="finish-show-answer">竞赛活动结束后，立即公布答案</label>
+              </div>
+              <div class="input-line">
+                <div class="input-block">
+                  <input type="radio" name="paper-setting" id="user-time">
+                </div>
+                <label for="user-time">自由设定答案公布时间</label>
+              </div>
+              <div class="set-time clearfix tab-time">
+                <div class="input-block">
+                  <label for="set-time">请设置具体时间</label>
+                  <input type="text" id="set-time" class="input_item_focus">
+                </div>
+                <div class="time-button time-button"><img src="../images/question/jn-examedit-cal.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tanchuang">
+        <div class="zidingyi-tab">
+          <div class="open-header">
+            <div class="title"> 自定义标签</div><a href="#" class="close"></a>
+          </div>
+          <div class="open-content">
+            <div class="col-content clearfix">
+              <div class="col-title">
+                <div class="input-block">
+                  <label for="zidingtab-name">请输入您想要收集的信息名称</label>
+                  <input type="text" id="zidingtab-name" class="col-name input_item">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="open-button">
+            <div class="open-container clearfix"><a href="#" class="cancel">取 消</a><a href="#" class="save">保 存</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-tab.js"></script>
+    <script src="../js/jquery.datetimepicker.full.min.js"></script>
+    <script src="../js/placeholder.js"></script>
+    <script src="../js/scrollHighlight.min.js"></script>
+    <script src="../js/paper-assign.js"></script>
+    <script src="../js/date.js"></script>
+  </body>
+</html>

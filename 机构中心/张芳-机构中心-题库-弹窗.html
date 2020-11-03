@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>机构中心-竞赛及试卷-竞赛管理</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/organization-center/zhangfang-oc-popup.css" rel="stylesheet" type="text/css" />
+</head>
+<script src="../js/jquery-1.8.2.min.js"></script>
+<body>
+<div class="zhangfang">
+<div class="shade">
+<div class="popup popup-group" style="margin:100px auto">
+	<a href="javascript:void(0)" class="close"></a>
+	<div class="top">选择加入的竞赛或试卷</div>
+    <div class="cont">
+    	<div class="choose">
+            <div class="choose-box">
+            	<div class="row"><input type="checkbox"/><label>2016年新员工</label></div>
+                <div class="row"><input type="checkbox"/><label>2016年新员工</label></div>
+                <div class="row"><input type="checkbox"/><label>研发总部</label></div>
+                <div class="row"><input type="checkbox"/><label>科研与企业知识分部</label></div>
+                <div class="row"><input type="checkbox"/><label>行政部</label></div>
+                <div class="row"><input type="checkbox"/><label>人力资源</label></div>
+                <div class="row"><input type="checkbox"/><label>责任编辑部</label></div>
+                <div class="add-group">
+
+                    <div class="creat clearfix"><div class="input-item left"><input type="text" /></div><a href="javascript:void(0)" class="a1 left">创 建</a><a href="javascript:void(0)" class="a2 left">取 消</a></div>
+                </div>
+            </div>
+            <script>
+				$(".row label").click(
+					function(){	   
+					if($(this).siblings("input").prop("checked")==true){
+					 $(this).siblings("input").prop("checked",false)
+					 }	
+					else{ 
+					$(this).siblings("input").prop("checked",true)}	
+						})
+			   $(".add-group .add").click(
+			   	 function(){
+					 $(this).css({"display":"none"}).siblings(".creat").css({"display":"block"})
+					 })
+			 $(".add-group .creat a").click(
+			   	 function(){
+					 $(this).parent('.creat').css({"display":"none"}).siblings(".add").css({"display":"block"})
+					 })
+            </script>
+        </div>
+    </div>
+    <div class="btn-wrap">
+    	<div class="box">
+        	<a href="javascript:void(0)" class="a1">取 消</a>
+            <a href="javascript:void(0)" class="a2">确 认</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
